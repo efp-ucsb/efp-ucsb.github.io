@@ -2901,15 +2901,66 @@ input, select, textarea {
 /*                           Added by Charlie Nusbaum                 */
 /**/
 /*--------------------------------------------------------------------*/
-
+/* Align text */
 #leftAlign.Text {
 	text-align: left;
 }
 
+/*----- Sponsors Page -------*/
+.SponsorImages img {
+    vertical-align: middle;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.Founding img {
+	width: 50%;
+	height: 50%;
+}
 
 
+.Platinum img{
+	width: 50%;
+	height: 50%;
+}
 
 
+.Lead img{
+	width: 20%;
+	height: 20%;
+}
+
+
+.Advisory img{
+	width: 20%;
+	height: 20%;
+}
+
+
+.Business img{
+	width: 20%;
+	height: 20%;
+}
+
+.CorpColumn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.CorpRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Corporate p {
+	align: left;
+}
 
 
 
