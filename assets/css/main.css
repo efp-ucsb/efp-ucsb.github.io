@@ -2906,6 +2906,19 @@ input, select, textarea {
 	text-align: left;
 }
 
+/* Wrap text around images */
+
+#leftWrap.Image {
+	float: left;
+	max-width: 25%;
+	max-height: 25%;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+/* fix the fact that some images overflow outside the div container */
+
+
 /*----- Sponsors Page -------*/
 .SponsorImages img {
     vertical-align: middle;
