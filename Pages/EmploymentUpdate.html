@@ -18,7 +18,7 @@ Last Updated: September 11, 2018
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<section id="header">
+				<section id="header" style = "border-bottom: none;">
 
 					<!-- header-->
 					<h1>
@@ -44,9 +44,9 @@ Last Updated: September 11, 2018
 								</li>
 								<li><a href="Articles.html">Articles</a></li>
 								<li class = "current"><a href="Data.html">Data</a>
-								<ul>
+									<ul>
 										<li><a href="EmploymentUpdate.html">Employment</a></li>
-										<li><a href="HousingUpdate.html">Real Estate</a></li>
+										<li><a href="HousingUpdate.html">Real Estate</a></li>										
 									</ul>
 								<li><a href="Services.html">Services</a>
 								<ul>
@@ -106,11 +106,12 @@ Last Updated: September 11, 2018
 								</ul>
 							</footer>
 						</section>
-
 -->
+
 				</section>
+
 			<!-- Main -->
-				<section id="main">
+				<section id="main" style = "background-color: white; border-bottom: solid 1px #ccc;">
 					<div class="container">
 <!--
 						<div class="row">
@@ -257,12 +258,139 @@ Last Updated: September 11, 2018
 							</div>
 						</div>
 -->
-						<div class = "Mission">
-							<h2>Our Mission</h2>
+						<div class = "DataSummary">
+							<header class = "major">
+								<h2 style = "background: white;">Executive Summary</h2>
+							</header>
 							<br>
 							<p class = "Text" id = "leftAlign">
-							 	The Economic Forecast Project is a University of California, Santa Barbara community-sponsored research department.  Our mission is to provide reliable economic, demographic, health and environmental data and analysis to our community of citizens, government, business, non-profit and other users.  To this end, the EFP maintains extensive databases of Santa Barbara County and the Central Coast. Our research is presented to local communities via the internet, publications, and events held across the Santa Barbara region throughout the year. We strive to present our work in the most accurate, coherent and detailed manner possible. We encourage feedback to help understand the needs of our community.
+							 	The Economic Forecast Project is a University of California, Santa Barbara community-sponsored research department.  Our mission is to provide reliable economic, demographic, health and environmental data and analysis to our community of citizens, government, business, non-profit and other users.  To this end, the EFP maintains extensive databases of Santa Barbara County and the Central Coast. Our research is presented to local communities via the internet, publications, and events held across the Santa Barbara region throughout the year. We strive to present our work in the most accurate, coherent and detailed manner possible. We encourage feedback to help understand the needs of our community. <strong>Rewrite this to be about the data.</strong>
 							</p>
+						</div>
+
+						<div style = "text-align: center;">
+							<img src = "../images/EmploymentUpdate/Tables/SB-CA-US_comparison_table.png" style="margin:0 auto; max-width: 80%"/>
+						</div>
+						<div id = "Employment_amCharts" style = "text-align: center;">
+							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/amcharts.js"></script>
+							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/serial.js"></script>
+							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/light.js"></script>
+							<script type = "text/javascript" src="../images/EmploymentUpdate/monthly_nonfarm.js"></script>
+							<script type = "text/javascript" src="../images/EmploymentUpdate/monthly_uerate.js"></script>
+							<div id = "monthly_nonfarm" style="width:80%; height: 650px; margin: 10px auto;
+							background-color: rgb(255,255,255); overflow: hidden;"></div>
+
+							<div id = "monthly_uerate" style="width:80%; height: 650px; margin: 0 auto;
+							background-color: rgb(255,255,255); overflow: hidden;"></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section id="main">
+					<div class="container">
+
+						<div class = "DataDetail">
+							<header class = "major">
+								<h2>Detailed Data</h2>
+							</header>
+							<br>
+							<p class = "Text" id = "leftAlign">
+							 	The Economic Forecast Project is a University of California, Santa Barbara community-sponsored research department.  Our mission is to provide reliable economic, demographic, health and environmental data and analysis to our community of citizens, government, business, non-profit and other users.  To this end, the EFP maintains extensive databases of Santa Barbara County and the Central Coast. Our research is presented to local communities via the internet, publications, and events held across the Santa Barbara region throughout the year. We strive to present our work in the most accurate, coherent and detailed manner possible. We encourage feedback to help understand the needs of our community. <strong>Rewrite this to describe how we break down the data and what can be found at each link.</strong>
+							</p>
+
+							<div class="row">
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href = "#" class = "image featured">
+											<img src = "../images/EmploymentUpdate/Figures/sb_county/sbc_empl_ces.png"/>
+										</a>
+										<header>
+											<h3>
+												Santa Barbara County
+											</h3>
+										</header>
+										<p>
+											See up to date employment data for Santa Barbara County. 
+										</p>
+										<footer>
+											<ul class="actions">
+												<li>
+													<a href="#" target="_blank" class="button alt">View</a>
+												</li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+								
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href = "#" class = "image featured">
+											<img src = "../images/EmploymentUpdate/Figures/ven_county/ven_empl_ces.png"/>
+										</a>
+										<header>
+											<h3>
+												Ventura County
+											</h3>
+										</header>
+										<p>
+											See up to date employment data for Ventura County.
+										</p>
+										<footer>
+											<ul class="actions">
+												<li>
+													<a href="#" target="_blank" class="button alt">View</a>
+												</li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+
+								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<a href = "#" class = "image featured">
+											<img src = "../images/EmploymentUpdate/Figures/slo_county/slo_empl_ces.png"/>
+										</a>
+										<header>
+											<h3>
+												San Luis Obispo County
+											</h3>
+										</header>
+										<p>
+											See up to date employment data for San Luis Obispo County.
+											<br>   
+										</p>
+										<footer>
+											<ul class="actions">
+												<li>
+													<a href="#" target = "_blank" class = "button alt">View</a>
+												</li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+
+<!--								<div class="col-4 col-6-medium col-12-small">
+									<section class="box">
+										<header>
+											<h3>
+												Siena Westgate Ranch Apartments, Santa Maria, CA.
+											</h3>
+										</header>
+										<p>
+											Economic impact of building and maintaining the complex.
+										</p>
+										<footer>
+											<ul class="actions">
+												<li>
+													<a href="https://www.dropbox.com/s/oaygahp0sj173gk/Towbes_Final_07252012.pdf?dl=0" target="_blank" class="button alt">Read the report</a>
+												</li>
+											</ul>
+										</footer>
+									</section>
+								</div>
+-->
+							</div>							
 						</div>
 					</div>
 				</section>
