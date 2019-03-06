@@ -36,7 +36,11 @@ body {
 }
 
 ol, ul {
+	padding:-50px;
+	margin-left: 5em;
+/*
 	list-style: none;
+*/
 }
 
 blockquote, q {
@@ -102,7 +106,7 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
-		font-weight: 300;
+		font-weight: 500; /* peter changed from 300 to 500 */
 		color: #5d5d5d;
 		font-size: 14pt;
 		line-height: 1.75em;
@@ -2917,13 +2921,38 @@ input, select, textarea {
 }
 
 
+/*----- Local Events Page ---------*/
+#Events ul {
+	display: inline-block;
+    margin-left: 100px;
+
+}
+
+
+/*----- Centering and Resizing Images under Detailed Data Discussion ---------*/
+
+.DetailedHousing img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 65%;
+	max-height: 65%;
+	display: block;
+}
+
+
 /*----- Sponsors Page -------*/
+.SponsorImages div{
+	text-align: center;
+}
 .SponsorImages img {
     vertical-align: middle;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+
 
 }
 
@@ -2972,6 +3001,3 @@ input, select, textarea {
 .Corporate p {
 	align: left;
 }
-
-
-
