@@ -2920,6 +2920,14 @@ input, select, textarea {
 	padding-bottom: 20px;
 }
 
+#rightWrap.Image {
+	float: right;
+	max-width: 25%;
+	max-height: 25%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
 
 /*----- Local Events Page ---------*/
 #Events ul {
