@@ -10,19 +10,19 @@ document.write('\
           </header>\
           <ul class="dates">\
             <li>\
-              <span class="date">May<strong>1</strong></span>\
-              <h3><a href="#">Roger McNamee: "Zucked"</a></h3>\
-              <p>Co-sponsored by the EFP, Roger will discuss his recent book.</p>\
+              <span class="date">Jan<strong>16</strong></span>\
+              <h3>2020 North County Forum</h3>\
+              <p>Topic to be announced.</p>\
             </li>\
             <li>\
               <span class="date">May <strong>7</strong></span>\
-              <h3><a href="#">North County Economic Summit</a></h3>\
-              <p>Exploring recent activity in the North County at Allan Hancock College.</p>\
+              <h3>2020 UCSB Santa Barbara Economic Summit</h3>\
+              <p>Topic to be announced.</p>\
             </li>\
             <li>\
-              <span class="date">May<strong>16</strong></span>\
-              <h3><a href="#">South County Economic Summit</a></h3>\
-              <p>Financing the Future at the beautiful Granada Theater.</p>\
+              <span class="date">May<strong>21</strong></span>\
+              <h3>2020 UCSB North County Economic Summit</h3>\
+              <p>Topic to be announced.</p>\
             </li>\
 <!--\
             <li>\
