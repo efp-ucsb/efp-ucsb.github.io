@@ -5,8 +5,8 @@
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-	Edits by: Charlie Nusbaum;
-	Last Edited: February 4, 2019;
+	Edits by: Charlie Nusbaum, Rhys Tracy;
+	Last Edited: August 13, 2019;
 */
 
 html, body, div, span, applet, object,
@@ -36,7 +36,11 @@ body {
 }
 
 ol, ul {
+	padding:-50px;
+	margin-left: 5em;
+/*
 	list-style: none;
+*/
 }
 
 blockquote, q {
@@ -102,7 +106,7 @@ input, select, textarea {
 
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
-		font-weight: 300;
+		font-weight: 500; /* peter changed from 300 to 500 */
 		color: #5d5d5d;
 		font-size: 14pt;
 		line-height: 1.75em;
@@ -215,6 +219,98 @@ input, select, textarea {
 				width: calc(100% - 40px);
 			}
 
+		}
+
+		.container h3{
+			text-align: center;
+		}
+
+/*Split Screen*/
+
+		.split{
+			overflow: hidden;
+			padding: 0 0 20px 0;
+		}
+
+		.split h3{
+			text-align: center;
+			padding: 0 0 20px 0;
+		}
+
+		.split p{
+			text-align: center;
+			padding: 15px 0 35px 0;
+		}
+
+		.left-side{
+			float: left;
+			width: 50%;
+		}
+
+		.right-side{
+			float: right;
+			width: 50%;
+		}
+
+
+		/*Split Screen (w/ line)*/
+
+				.split-line{
+					overflow: hidden;
+					padding: 0 0 20px 0;
+				}
+
+
+				.split-line h3{
+					text-align: center;
+					padding: 0 0 20px 0;
+				}
+
+				.split-line p{
+					text-align: center;
+					padding: 15px 0 35px 0;
+				}
+
+				.split-line .left-side{
+					float: left;
+					width: 50%;
+				}
+
+				.split-line .left-side:after{
+					content: "";
+  				background-color: #39bd53;
+  				position: absolute;
+  				width: 7px;
+  				height: 211px;
+					top: 0px;
+					left: 50%;
+  				display: block;
+				}
+
+				.split-line .right-side{
+					float: right;
+					width: 50%;
+				}
+
+				.split-line .right-side:after{
+					content: "";
+  				background-color: #39bd53;
+  				position: absolute;
+  				width: 7px;
+  				height: 211px;
+					top: 0px;
+  				display: block;
+				}
+
+/*IMG help*/
+
+		.center-pic{
+			margin: 0 auto;
+			max-width: 80%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px 0 20px 0;
 		}
 
 /* Row */
@@ -2041,6 +2137,14 @@ input, select, textarea {
 					border-top-color: #827a7c;
 				}
 
+			.icon.featured.alt3 {
+				background-color: #39bd53;
+			}
+
+				.icon.featured.alt3:after {
+					border-top-color: #39bd53;
+				}
+
 /* Page Wrapper */
 
 	#page-wrapper > section {
@@ -2077,6 +2181,41 @@ input, select, textarea {
 			-webkit-transform: translateX(-50%);
 			transform: translateX(-50%)
 		}
+
+		/* Timeline Header */
+
+			#timelineheader {
+				position: relative;
+				background: #ffffff;
+				padding: 5em 0 1px 0;
+				text-align: center;
+
+			}
+
+				#timelineheader h1 {
+					color: #252122;
+					font-weight: 900;
+					font-size: 2.5em;
+					letter-spacing: -0.035em;
+					line-height: 1;
+					display: flex;       /* charlie added this */
+					align-items: center; /* charlie added this */
+					justify-content: space-between; /* charlie added this */
+
+				}
+
+				/* charlie added this whole bit */
+				#timelineheader h1 a {
+					position: absolute;
+					left: 50%;
+					-webkit-transform: translateX(-50%);
+					transform: translateX(-50%)
+				}
+
+				#timelineheader .major h2{
+					font-size: 30px;
+					top: -12px;
+				}
 
 /* Nav */
 
@@ -2116,6 +2255,12 @@ input, select, textarea {
 
 				#nav > ul > li.current > a {
 					background: #d52349;
+					color: #fff !important;
+					font-weight: 700;
+				}
+
+				#nav > ul > li.can_current > a{
+					background: #39bd53;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2202,6 +2347,148 @@ input, select, textarea {
 				margin: 0;
 				font-size: 1.5em;
 			}
+
+
+/* Cannabis Banner */
+
+		#cannabanner{
+			background: url("../../images/weed_banner.jpg");
+			background-position: center center;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			text-align: center;
+			position: relative;
+			padding: 8em 0;
+			margin: 2.6em 0 0 0;
+		}
+
+		#cannabanner header{
+			background-color: #000;
+			display: inline-block;
+			padding: 2.5em 5em;
+			border-radius: 5px;
+		}
+
+		#cannabanner header h2{
+			color: #39bd53;
+			font-weight: 700;
+			font-size: 3.5em;
+			margin: 0 0 0.65em 0;
+			line-height: 1;
+		}
+
+		#cannabanner header p{
+			color: #fff;
+			padding: 0;
+			font-style: normal;
+			margin: 0:auto;
+			font-size: 1.8em;
+		}
+
+/* Timeline */
+
+
+		.timeline{
+			box-sizing: border-box;
+			background-color: #888;
+
+			position: relative;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.timeline::after{
+			content: '';
+			position: absolute;
+			width: 6px;
+			background-color: #fff;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			margin-left: -3px;
+		}
+
+		.tcontainer{
+			padding: 5px 40px;
+  		position: relative;
+  		background-color: inherit;
+  		width: 50%;
+		}
+
+		.tcontainer::after{
+			content: '';
+  		position: absolute;
+  		width: 25px;
+  		height: 25px;
+  		right: -12.5px;
+  		background-color: white;
+  		border: 4px solid #39bd53;
+  		top: 15px;
+  		border-radius: 50%;
+  		z-index: 1;
+		}
+
+		.tcontainer.left{
+			left: 0;
+		}
+
+		.tcontainer.right{
+			left: 50%;
+		}
+
+		.tcontainer.left::before{
+			content: " ";
+  		height: 0;
+  		position: absolute;
+  		top: 22px;
+  		width: 0;
+  		z-index: 1;
+  		right: 30px;
+  		border: medium solid white;
+  		border-width: 10px 0 10px 10px;
+  		border-color: transparent transparent transparent white;
+		}
+
+		.tcontainer.right::before{
+			content: " ";
+  		height: 0;
+  		position: absolute;
+  		top: 22px;
+  		width: 0;
+  		z-index: 1;
+  		left: 30px;
+  		border: medium solid white;
+  		border-width: 10px 10px 10px 0px;
+  		border-color: transparent white transparent transparent;
+		}
+
+		.tcontainer.right::after{
+			left: -12.5px;
+		}
+
+		.content{
+			padding: 20px 30px 1px;
+			background-color: #fff;
+			position: relative;
+			border-radius: 6px;
+		}
+
+
+/* Blog page*/
+
+		.blog{
+			padding: 10px 5px;
+		}
+
+		.blog img{
+			width:30%;
+			padding-right: 70%;
+		}
+		.blog p{
+			font-size: 20px;
+			width: 60%;
+			padding-left: 35%;
+		}
 
 /* Intro */
 
@@ -2388,6 +2675,7 @@ input, select, textarea {
 			#header {
 				padding: 4em 0 3em 0;
 			}
+
 
 		/* Banner */
 
@@ -2916,14 +3204,47 @@ input, select, textarea {
 	padding-bottom: 20px;
 }
 
+#rightWrap.Image {
+	float: right;
+	max-width: 25%;
+	max-height: 25%;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+
+/*----- Local Events Page ---------*/
+#Events ul {
+	display: inline-block;
+    margin-left: 100px;
+
+}
+
+
+/*----- Centering and Resizing Images under Detailed Data Discussion ---------*/
+
+.DetailedHousing img {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 65%;
+	max-height: 65%;
+	display: block;
+}
+
 
 /*----- Sponsors Page -------*/
+.SponsorImages div{
+	text-align: center;
+}
 .SponsorImages img {
     vertical-align: middle;
-    margin-top: 20px; 
-    margin-bottom: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 20px;
     margin-right: 20px;
+
 
 }
 
@@ -2972,6 +3293,3 @@ input, select, textarea {
 .Corporate p {
 	align: left;
 }
-
-
-

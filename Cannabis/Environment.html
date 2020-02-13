@@ -1,0 +1,201 @@
+<!DOCTYPE hmtl>
+
+<!--
+File:Environment.html
+Author: Rhys Tracy
+Date Created:7/18/19
+Cannabis Project Fun Links and Extra Information Page
+-->
+
+<html>
+
+
+	<head>
+
+		<title>UCSB Economic Forecast Project</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<h1><a href="Environment.html">Environmental Impact of Cannabis</a></h1>
+
+					<!-- header-->
+					<nav id="nav">
+						<ul>
+							<li><a href="Main.html">Cannabis Project Home</a></li>
+							<li><a href="History.html">History</a></li>
+
+							<li><a href="Data.html">Data</a></li>
+
+							<li class="can_current"><a href="Impact.html">Impacts</a>
+								<ul>
+									<li><a href="Impact.html">Impact Study</a></li>
+									<li><a href="Employment.html">Employment</a></li>
+									<li><a href="Environment.html">Environmental Impacts</a></li>
+								</ul>
+							</li>
+							<li><a href="Resources.html">Resources</a>
+								<ul>
+									<li><a href="Taxes.html">Tax Procedures</a></li>
+									<li><a href="Licenses.html">Licensing Procedures</a></li>
+									<li><a href="Regulations.html">State Cannabis Regulations</a></li>
+									<li><a href="Federal.html">Federal Policies and Interactions</a></li>
+									<li><a href="Links.html">Interesting Links and Other Information</a></li>
+								</ul>
+							</li>
+
+							<li><a href="../index.html">EFP Home</a>
+								<ul>
+									<li><a href="../Pages/About.html">About</a>
+										<ul>
+											<li><a href="../Pages/About.html">About Us</a></li>
+											<li><a href="../Pages/Team.html">Team</a></li>
+											<li><a href="../Pages/SouthCountyBoard.html">Board of Directors</a>
+												<ul>
+													<li><a href = "../Pages/SouthCountyBoard.html">South County</a></li>
+													<li><a href = "../Pages/NorthCountyBoard.html">North County</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+	<!--								<li><a href="Pages/Articles.html">Articles</a></li> -->
+									<li><a href="../Pages/Data.html">Data</a>
+										<ul>
+											<li><a href="../Pages/EmploymentUpdate.html">Employment</a></li>
+											<li><a href="../Pages/HousingUpdate.html">Real Estate</a></li>
+											<li><a href="../Pages/CIP/index.html">Community Indicators Project</a></li>
+
+										</ul>
+									</li>
+
+									<li><a href="../Pages/Impact_studies.html">Services</a></li>
+								</ul>
+							</li>
+
+
+							<li><a href="../Pages/Contact.html">Contact</a></li>
+
+						</ul>
+					</nav>
+
+						<section id="cannabanner">
+							<header>
+								<h2>Cannabis Project</h2>
+								<p>Economic Impact of Cannabis in Santa Barbara County and across the US</p>
+							</header>
+						</section>
+
+					</section>
+
+
+					<!--Main-->
+
+
+					<section id="main">
+						<div class="split" style="padding: 10px 0">
+							<div class="left-side">
+								<div class="split">
+									<div class="left-side">
+										<h2 style="text-align: center; padding-bottom: 30px;">Cannabis and the Ozone:</h2>
+										<h2 style="text-align: center;"><a href="D2 Will Vizuete PPT_2.pdf" class="button alt" target="_blank">Study on SB County</a></h2>
+									</div>
+									<div class="right-side">
+										<h2 style="text-align: center; padding-bottom: 30px;">Cannabis Terpene Emissions:</h2>
+										<h2 style="text-align: center;"><a href="Atmospheric Environment 2019 Wang.pdf" class="button alt" target="_blank">Study by UNC</a></h2>
+									</div>
+								</div>
+							</div>
+							<div class="right-side">
+								<div class="split">
+									<div class="left-side">
+										<h2 style="text-align: center; padding-bottom: 30px;">Environmental Impacts:</h2>
+										<h2 style="text-align: center;"><a href="Environmental Science & Technology 2017 Ashworth.pdf" class="button alt" target="_blank">Various Studies</a></h2>
+									</div>
+									<div class="right-side">
+										<h2 style="text-align: center; padding-bottom: 30px;">Cannabis and Air Quality:</h2>
+										<h2 style="text-align: center;"><a href="acp-2019-479.pdf" class="button alt" target="_blank">Various Studies</a></h2>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+				<!--	<script>
+						var UID = {
+							_current: 0,
+							getNew: function(){
+								this._current++;
+								return this._current;
+							}
+						};
+
+						HTMLElement.prototype.pseudoStyle = function(element,prop,value){
+							var _this = this;
+							var _sheetId = "pseudoStyles";
+							var _head = document.head || document.getElementsByTagName('head')[0];
+							var _sheet = document.getElementById(_sheetId) || document.createElement('style');
+							_sheet.id = _sheetId;
+							var className = "pseudoStyle" + UID.getNew();
+
+							_this.className +=  " "+className;
+
+							_sheet.innerHTML += " ."+className+":"+element+"{"+prop+":"+value+"}";
+							_head.appendChild(_sheet);
+							return this;
+						};
+
+						function setH(){
+							ob = document.getElementsByTagName("section")[1];
+							var h = ob.height;
+							alert(h);
+							var str = h.toString();
+							var string = str+"px"
+							arrl = document.getElementsByClassName("left-side");
+							var i;
+							for(i=0; i<arrl.length; i++){
+								arrl[i].pseudoStyle("after", "height", "500px")
+							}
+							arrr = document.getElementsByClassName("left-side");
+							var i;
+							for(i=0; i<arrr.length; i++){
+								arrr[i].pseudoStyle("after", "height", "500px")
+							}
+						};
+
+						window.addEventListener("resize", setH);
+
+						setH();
+					</script>
+
+					-->
+
+
+
+				</div>
+
+				<script type = "text/javascript" src="../assets/js/jquery.min.js"></script>
+				<script type = "text/javascript" src="../assets/js/jquery.dropotron.min.js"></script>
+				<script type = "text/javascript" src="../assets/js/browser.min.js"></script>
+				<script type = "text/javascript" src="../assets/js/breakpoints.min.js"></script>
+				<script type = "text/javascript" src="../assets/js/util.js"></script>
+				<script type = "text/javascript" src="../assets/js/main.js"></script>
+				<script>
+				    $(document).ready(function(){
+				        $("#includeFooter").load("footerScript.html");
+				    });
+				</script>
+
+
+				<!--Script to load footer that actually works-->
+
+				<script src="../footer.js"></script>
+
+
+			</body>
+		</html>
