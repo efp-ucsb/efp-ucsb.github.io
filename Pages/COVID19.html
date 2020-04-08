@@ -104,126 +104,120 @@ Last Updated: September 11, 2018
 					</h2>
 				</header>
 			</section>
-<!--
-				<section id="main" style = "background-color: white; border-bottom: solid 1px #ccc;">
-					<div class="container">
-						<div class = "DataSummary">
-							<header class = "major">
-								<h2 style = "background: white;">Real Estate Data</h2>
-							</header>
-							<br>
-							<p class = "Text" id = "leftAlign">
-							 	The Real Estate Snapshot aims to provide a summary of the housing and rental markets in Santa Barbara County. Our aim is not to provide suggestions or predictions on the trajectory of the real estate market, but rather to describe the data as we see it to the community. Through the use of both tables and graphs, we hope to deliver insights to and generate discussions between all stakeholders in the Santa Barbara County real estate market.
-							</p>
-						</div>
-
-						<div style = "text-align: center;">
-							<img src = "../images/Zillow/Tables/Zillow Summary Table.png" style="margin:0 auto; max-width: 80%;"/>
-						</div>
-						<div id = "Housing_amCharts" style = "text-align: center;">
-							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/amcharts.js"></script>
-							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/serial.js"></script>
-							<script type = "text/javascript" src="https://static.sa.ucsb.edu/js/amcharts/light.js"></script>
-							<script type = "text/javascript" src="../images/Zillow/ZHVI_USCASB.js"></script>
-							<script type = "text/javascript" src="../images/Zillow/YoY_USCASB.js"></script>
-							<div id = "ZHVI_USCASB" style="width:80%; height: 650px; margin: 10px auto;
-							background-color: rgb(255,255,255); overflow: hidden;"></div>
-
-							<div id = "YoY_USCASB" style="width:80%; height: 650px; margin: 0 auto;
-							background-color: rgb(255,255,255); overflow: hidden;"></div>
-						</div>
-					</div>
-				</section>
 
 
-				<section id="main">
-					<div class="container">
+            <section id="main">
 
-						<div class = "DataDetail">
-							<header class = "major">
-								<h2>Detailed Data</h2>
-							</header>
-							<br>
-							<p class = "Text" id = "leftAlign">
-							 	Here you will find a more detailed depiction and more robust discussion of three components of the Santa Barbara County real estate market. The home values section discusses trends in home values in the western United States, California, and Santa Barbara County. The inventories section describes trends in monthly listings throughout the county. Finally, the rents section depicts the growth in median rental prices.
-							</p>
+                <div class="container">
 
-							<div class="row">
-								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href = "#" class = "image featured">
-											<img src = "../images/Zillow/Home Values/ZHVI_SBcities.png"/>
-										</a>
-										<header>
-											<h3>
-												Home Values
-											</h3>
-										</header>
-										<p>
-											View home value data by MSA, county, city, and neighborhood.
-										</p>
-										<footer>
-											<ul class="actions">
-												<li>
-													<a href="HomeValues.html" class="button alt">View</a>
-												</li>
-											</ul>
-										</footer>
-									</section>
-								</div>
+                    <div class = "DetailedSantaBarbara">
 
-								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href = "#" class = "image featured">
-											<img src = "../images/Zillow/Inventories/inventories_Western.png"/>
-										</a>
-										<header>
-											<h3>
-												Inventories
-											</h3>
-										</header>
-										<p>
-											Check out housing inventories by State, MSA, and county.
-										</p>
-										<footer>
-											<ul class="actions">
-												<li>
-													<a href="Inventories.html" class="button alt">View</a>
-												</li>
-											</ul>
-										</footer>
-									</section>
-								</div>
+                        <header class = "major">
+                            <h2>Employment</h2>
+                        </header>
 
-								<div class="col-4 col-6-medium col-12-small">
-									<section class="box">
-										<a href = "#" class = "image featured">
-											<img src = "../images/Zillow/Rents/ZRI_cities.png"/>
-										</a>
-										<header>
-											<h3>
-												Rents
-											</h3>
-										</header>
-										<p>
-											See rental prices and their year-over-year growth by city.
-											<br>
-										</p>
-										<footer>
-											<ul class="actions">
-												<li>
-													<a href="Rents.html" class = "button alt">View</a>
-												</li>
-											</ul>
-										</footer>
-									</section>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
 
--->
+
+                        <p class = "Text" id = "leftAlign">
+                        There has been a lot of discussion about the effects of
+                        COVID-19 on the US economy in the media. Regarding the
+                        effects on employment,
+                        <a href="https://www.chicagotribune.com/coronavirus/ct-nw-coronavirus-job-losses-federal-report-20200403-cut4xnhiffeinkfbpaxuaxgj2m-story.html">Christopher Rugaber of the Chicago Tribune</a>
+                        reports that some economists predict that the
+                        unemployment rate (previously sitting at a half-century
+                        low of 3.5%) may reach above 15%.
+                        <a href="https://www.cnbc.com/2020/03/30/coronavirus-job-losses-could-total-47-million-unemployment-rate-of-32percent-fed-says.html">Jeff Cox of CNBC</a>
+                        reports a more dire outlook from St. Louis Fed
+                        projections that this slowdown could cost 47 million
+                        jobs and lead to an unemployment rate of 32%. What do
+                        these numbers mean for Santa Barbara, and what do they
+                        mean for the Tricounty area more generally?
+                        </p>
+
+                        <p class = "Text" id = "leftAlign">
+                        To dive into the data a bit and, perhaps, demystify how
+                        some of these figures are obtained, we have constructed
+                        estimates of projected job losses for California, Santa
+                        Barbara County, San Luis Obispo County, and Ventura
+                        County. Endeavoring to be transparent, we will detail
+                        precisely how these figures are generated. To begin, we
+                        make use of aggregate projections by the
+                        <a href="https://www.epi.org/blog/nearly-20-million-jobs-lost-by-july-due-to-the-coronavirus/">Economic Policy Insitute</a>
+                        which predict a private sector contraction of 19.8
+                        million jobs by the summer. They disaggregate this
+                        national figure by state, and we follow a similar
+                        process when disaggregating by county.
+                        </p>
+
+                        <p class = "Text" id = "leftAlign">
+                        We utilize two separate approaches to come up with the
+                        loss figures reported below. We dub these the "Private
+                        share" and "Leisure, Hospitality, and Retail share"
+                        approaches. Briefly, the former assumes that all
+                        projected job losses are uniformly distributed accross
+                        industries (weighted by the share of total private
+                        employment, of course). That is, if there were two
+                        industries of equal size, IND1 and IND2, one half of
+                        all losses would be predicted to come from each. The
+                        second approach, in contrast, assumes that all job
+                        losses are concentrated in the Leisure, Hospitality,
+                        and Retail sector. That is, it assumes all other
+                        industries are unaffected. Clearly both of these
+                        extremes are incorrect: while we may expect the LHR
+                        sector to be more exposed, we know that there will be
+                        general equilibrium effects elsewhere. Indeed, the
+                        "truth" is likely somewhere between both extremes. As
+                        such, we weight both models equally and think of the
+                        results as a reasonably conservative estimate of
+                        projected job losses given the aggregate prediction we
+                        use. Quantitative results are reasonably inelastic to
+                        changes in this weighting scheme.
+                        </p>
+
+
+                        <br>
+                        <div style="text-align:center;">
+                            <img src = "../images/COVID19/table_projections_web.png" style="width:70%;" />
+                        </div>
+                        <br>
+
+                        <p class = "Text" id = "leftAlign">
+                        For reference, we also report the baseline (not
+                        seasonally adjusted) employment level for the various
+                        regions and sectors. Finally, we translate these raw
+                        losses into unemployment rate figures for Santa
+                        Barbara, San Luis Obispo, and Ventura counties. Using
+                        numbers from the reference month, we calculate the
+                        effect on the unemployment rate if 0 to 50,000 jobs are
+                        lost. Technically this assumes that all lost jobs are
+                        by those who live in-county, but this assumption is
+                        likely unimportant quantitatively. In the graph below
+                        we see that as more individuals lose jobs, the higher
+                        is the associated unemployment rate. At 0 job losses,
+                        where each line crosses the y-axis is the reference
+                        month's unemployment rate (i.e. the rate we have most
+                        recently observed). The differences in the slopes of
+                        each line reflect differences in the base population.
+                        For example, a loss of 50,000 jobs in Ventura would
+                        indeed be painful, but would be much more devastating
+                        to San Luis Obispo county. The dotted lines indicate
+                        where our numbers above fall into this graph.
+                        </p>
+
+                        <div style="text-align:center;">
+                            <img src = "../images/COVID19/ur_projections.png" style="width:70%;" />
+                        </div>
+                        <br>
+                        <br style="clear:both;">
+                        <br><br>
+
+                        <br><br>
+
+                    </div>
+
+                </div>
+
+            </section>
 
 		</div>
 
