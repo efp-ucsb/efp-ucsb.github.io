@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+
+
+<html>
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148923481-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-148923481-2');
+        </script>
+        <title>UCSB Economic Forecast Project</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+    </head>
+
+    <body class="homepage is-preload">
+
+        <div id="page-wrapper">
+
+
+            <!--Header / Banner-->
+            <!--{{{-->
+            <section id="header" style = "border-bottom: none;">
+
+                <h1>
+                    <a href="COVID19.html" class="PageTitle">COVID-19</a>
+                </h1>
+
+                <!-- Navigation -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="About.html">About</a>
+                            <ul>
+                                <li><a href="About.html">About Us</a></li>
+                                <li><a href="Team.html">Team</a></li>
+                                <li><a href="SouthCountyBoard.html">Board of Directors</a>
+                                    <ul>
+                                        <li><a href = "SouthCountyBoard.html">South County</a></li>
+                                        <li><a href = "NorthCountyBoard.html">North County</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class = "current"><a href="COVID19.html">COVID19</a></li>
+                        <li><a href="Data.html">Data</a>
+                            <ul>
+                                <li><a href="EmploymentUpdate.html">Employment</a></li>
+                                <li><a href="HousingUpdate.html">Real Estate</a></li>
+                                <li><a href="CIP/index.html">Community Indicators Project</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="Impact_studies.html">Services</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Banner -->
+                <section id="banner">
+                    <header>
+                        <h2>Economic Forecast Project</h2>
+                        <h2>University of California, Santa Barbara</h2>
+                        <p>Exploring the Economic Trends of Santa Barbara County</p>
+                    </header>
+                </section>
+
+            </section>
+            <!--}}}-->
+
+
+            <!--Main-->
+            <!--{{{-->
+            <section id="main" style = "background-color: white; border-bottom: solid 1px #ccc;">
+
+                <div class="container">
+
+                    <header class = "major">
+                        <h2 style = "background: white;">Employment</h2>
+                    </header>
+
+                    <p class = "Text" align = "justify">
+                    In the media there has been a lot of discussion about the
+                    effects of COVID-19 on the US economy. Regarding the
+                    effects on employment,
+                    <a href="https://www.chicagotribune.com/coronavirus/ct-nw-coronavirus-job-losses-federal-report-20200403-cut4xnhiffeinkfbpaxuaxgj2m-story.html">Christopher Rugaber of the Chicago Tribune</a>
+                    reports that some economists predict that the unemployment
+                    rate (previously sitting at a half-century low of 3.5%) may
+                    reach above 15%.
+                    <a href="https://www.cnbc.com/2020/03/30/coronavirus-job-losses-could-total-47-million-unemployment-rate-of-32percent-fed-says.html">Jeff Cox of CNBC</a>
+                    reports of a more dire outlook from
+                    <a href="https://www.stlouisfed.org/on-the-economy/2020/march/back-envelope-estimates-next-quarters-unemployment-rate">St. Louis Fed</a>
+                    projections that suggest this slowdown could cost 47
+                    million jobs and lead to jobless rates around 32%. What do
+                    these numbers mean for Santa Barbara, and what do they mean
+                    for the Tricounty area more generally?
+                    </p>
+
+
+                    <p class="Text" align = "justify">
+                    Before we pull out our crystal ball and try to predict
+                    the future, what do the data tell us right now? There
+                    are a few places to start. The gold standard
+                    unemployment numbers that (virtually) everyone uses
+                    are released by the <a href="https://www.bls.gov/">Bureau of Labor Statistics</a>
+                    on the first Friday of each month. These releases are
+                    for the aggregate US economy and are preliminary
+                    estimates of <em>last month's</em> unemployment
+                    numbers. Any revisions are typically made the following
+                    month. Disagregated numbers (by state, MSA, county, and
+                    sub-county place) lag these releases. The
+                    <a href="https://www.edd.ca.gov/">Employment Development Department</a>
+                    publishes the numbers for California (typically) on the
+                    third Friday of each month. EFP analyzes this data and
+                    publishes a snapshot overview in our monthly
+                    <a href="https://efp.ucsb.edu/Pages/EmploymentUpdate.html">Employment Update</a>.
+                    Another important source of data comes from the
+                    <a href="https://oui.doleta.gov/unemploy/claims.asp">Department of Labor's
+                        Office of Unemployment Insurance</a>. They report
+                    state-level numbers of new (initial) UI claims,
+                    continuing claims, and information regarding who is
+                    covered by the program. These data are weekly and
+                    reported by the "file week end date" (FWED). While it
+                    is easy to verify a new claim, backing out who is
+                    remaining on unemployment insurance takes more time.
+                    This means that there is a one-week lag in FWED initial
+                    and continued claims. Below we plot the most recent 5
+                    weeks of initial claims along with the level of
+                    continued claims for California.
+                    </p>
+
+                    <br>
+                    <div style="text-align:center;">
+                        <img src = "../images/COVID19/claims_CA.png" style="width:70%;" />
+                    </div>
+                    <br>
+
+
+                    <p class = "Text" align = "justify">
+                    Now let's dive into the data a bit and, perhaps,
+                    demystify how some of the above projections are
+                    obtained, we have constructed estimates of projected
+                    job losses for California, Santa Barbara County, San
+                    Luis Obispo County, and Ventura County. Endeavoring to
+                    be transparent, we detail precisely how these figures
+                    are generated. To begin, we make use of aggregate
+                    projections by the
+                    <a href="https://www.epi.org/blog/nearly-20-million-jobs-lost-by-july-due-to-the-coronavirus/">Economic Policy Insitute</a>
+                    which predict a private sector contraction of 19.8
+                    million jobs by the summer. EPI then disaggregates this
+                    national figure by state; we follow a similar procedure
+                    to uncover county-level numbers.
+                    </p>
+
+                    <p class = "Text" align = "justify">
+                    We utilize two separate approaches to come up with the
+                    loss figures reported below. We dub these the "Private
+                    share" and "Leisure, Hospitality, and Retail share"
+                    approaches. Briefly, the former assumes that all
+                    projected job losses are uniformly distributed accross
+                    industries (weighted by their share of total private
+                    employment, of course). That is, if there were two
+                    industries of equal size, IND1 and IND2, one half of
+                    all losses would be predicted to come from each. The
+                    second approach, in contrast, assumes that all job
+                    losses are concentrated in the Leisure, Hospitality,
+                    and Retail sectors. Put differently, it assumes all
+                    other industries are unaffected. Clearly both of these
+                    extremes are incorrect: while we may expect the LHR
+                    sector to be more exposed, we know that there will be
+                    general equilibrium effects elsewhere. Indeed, the
+                    "truth" is likely somewhere in the middle. As such, we
+                    weight both models equally and think of the results as
+                    a reasonably conservative estimate of projected job
+                    losses. Quantitative results are largely inelastic to
+                    changes in the weight scheme. Further, one must keep in
+                    mind that these "conservative estimates" are <em>given</em>
+                    the aggregate prediction we use.
+                    </p>
+
+                    <br>
+                    <div style="text-align:center;">
+                        <img src = "../images/COVID19/table_projections_epi.png" style="width:70%;" />
+                    </div>
+                    <br>
+
+                    <p class = "Text" align = "justify">
+                    For reference, we also report the baseline (not
+                    seasonally adjusted) employment level for the various
+                    regions and sectors. Finally, we translate these raw
+                    losses into unemployment rate figures for Santa
+                    Barbara, San Luis Obispo, and Ventura counties. Using
+                    numbers from the reference month, we calculate the
+                    effect on the unemployment rate if 0 to 50,000
+                    additional jobs are lost. Technically this assumes that
+                    all lost jobs are by those who live in-county, but this
+                    assumption is likely unimportant quantitatively. In the
+                    graph below we see that as more individuals lose jobs,
+                    the higher is the associated unemployment rate. At 0
+                    job losses--where each line crosses the y-axis--we
+                    recover the reference month's unemployment rate (i.e.
+                    the rate we have most recently observed). The
+                    differences in the slopes of each line reflect
+                    differences in the base population.  For example, a
+                    loss of 50,000 jobs in Ventura would indeed be painful,
+                    but would be devastating to San Luis Obispo county. The
+                    dotted lines indicate where our numbers above fall into
+                    this graph.
+                    </p>
+
+                    <div style="text-align:center;">
+                        <img src = "../images/COVID19/ur_projections_epi.png" style="width:70%;" />
+                    </div>
+                    <br>
+                    <br style="clear:both;">
+
+                    <p class = "Text" align = "justify">
+                    Finally, we repeat the above process using the St.
+                    Louis Fed's forecast of 47 million lost jobs. The
+                    results are presented below.
+                    </p>
+
+                    <br>
+                    <div style="text-align:center;">
+                        <img src = "../images/COVID19/table_projections_fed.png" style="width:70%;" />
+                    </div>
+                    <br>
+
+                    <br>
+                    <div style="text-align:center;">
+                        <img src = "../images/COVID19/ur_projections_fed.png" style="width:70%;" />
+                    </div>
+                    <br>
+
+                    <br><br>
+
+                </div>
+
+            </section>
+            <!--}}}-->
+
+
+        </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.dropotron.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!--Script to load footer that actually works-->
+    <script src="../footer.js"></script>
+
+    </body>
+
+</html>
