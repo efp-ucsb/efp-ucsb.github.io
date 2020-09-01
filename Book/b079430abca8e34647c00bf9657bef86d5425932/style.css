@@ -12,3 +12,7 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+hr {
+  background-color: #0000FF !important;
+}
