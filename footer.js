@@ -10,10 +10,11 @@ document.write('\
           </header>\
           <ul class="dates">\
             <li>\
-              <span class="date">Jan<strong>16</strong></span>\
-              <h3>2020 North County Forum</h3>\
-              <p>Topic to be announced.</p>\
+              <span class="date">Sept<strong>17</strong></span>\
+              <h3>EFP Informs Webinar</h3>\
+              <p>COVID-19 and the Residential Real Estate Market</p>\
             </li>\
+<!--\
             <li>\
               <span class="date">May <strong>7</strong></span>\
               <h3>2020 UCSB Santa Barbara Economic Summit</h3>\
@@ -24,6 +25,7 @@ document.write('\
               <h3>2020 UCSB North County Economic Summit</h3>\
               <p>Topic to be announced.</p>\
             </li>\
+-->\
 <!--\
             <li>\
               <span class="date">Jan <strong>12</strong></span>\
