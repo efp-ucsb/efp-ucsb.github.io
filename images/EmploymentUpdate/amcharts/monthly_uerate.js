@@ -76,7 +76,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
     "dataProvider": [ 
         {
             "xValue": "Jan 1990",
-            "yValue0": 4.23,
+            "yValue0": 4.22,
             "yValue1": 5.27,
             "yValue2": 5.42
         },
@@ -88,7 +88,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Mar 1990",
-            "yValue0": 4.59,
+            "yValue0": 4.60,
             "yValue1": 5.17,
             "yValue2": 5.26
         },
@@ -100,31 +100,31 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 1990",
-            "yValue0": 4.65,
+            "yValue0": 4.64,
             "yValue1": 5.42,
             "yValue2": 5.36
         },
         {
             "xValue": "Jun 1990",
-            "yValue0": 4.63,
+            "yValue0": 4.62,
             "yValue1": 5.27,
             "yValue2": 5.22
         },
         {
             "xValue": "Jul 1990",
-            "yValue0": 5.00,
+            "yValue0": 4.99,
             "yValue1": 5.77,
             "yValue2": 5.57
         },
         {
             "xValue": "Aug 1990",
-            "yValue0": 5.00,
+            "yValue0": 5.01,
             "yValue1": 5.90,
             "yValue2": 5.70
         },
         {
             "xValue": "Sep 1990",
-            "yValue0": 5.19,
+            "yValue0": 5.20,
             "yValue1": 6.13,
             "yValue2": 5.85
         },
@@ -148,37 +148,37 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 1991",
-            "yValue0": 5.68,
+            "yValue0": 5.67,
             "yValue1": 6.94,
             "yValue2": 6.40
         },
         {
             "xValue": "Feb 1991",
-            "yValue0": 5.70,
+            "yValue0": 5.71,
             "yValue1": 7.29,
             "yValue2": 6.64
         },
         {
             "xValue": "Mar 1991",
-            "yValue0": 5.74,
+            "yValue0": 5.75,
             "yValue1": 7.57,
             "yValue2": 6.89
         },
         {
             "xValue": "Apr 1991",
-            "yValue0": 5.82,
+            "yValue0": 5.83,
             "yValue1": 7.50,
             "yValue2": 6.69
         },
         {
             "xValue": "May 1991",
-            "yValue0": 5.81,
+            "yValue0": 5.80,
             "yValue1": 7.83,
             "yValue2": 6.92
         },
         {
             "xValue": "Jun 1991",
-            "yValue0": 5.93,
+            "yValue0": 5.92,
             "yValue1": 7.67,
             "yValue2": 6.76
         },
@@ -190,19 +190,19 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Aug 1991",
-            "yValue0": 5.53,
+            "yValue0": 5.54,
             "yValue1": 7.74,
             "yValue2": 6.81
         },
         {
             "xValue": "Sep 1991",
-            "yValue0": 6.12,
+            "yValue0": 6.13,
             "yValue1": 7.78,
             "yValue2": 6.80
         },
         {
             "xValue": "Oct 1991",
-            "yValue0": 6.10,
+            "yValue0": 6.11,
             "yValue1": 8.04,
             "yValue2": 7.01
         },
@@ -220,7 +220,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 1992",
-            "yValue0": 6.59,
+            "yValue0": 6.58,
             "yValue1": 8.52,
             "yValue2": 7.29
         },
@@ -232,7 +232,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Mar 1992",
-            "yValue0": 6.91,
+            "yValue0": 6.92,
             "yValue1": 8.83,
             "yValue2": 7.46
         },
@@ -268,13 +268,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Sep 1992",
-            "yValue0": 7.78,
+            "yValue0": 7.79,
             "yValue1": 9.83,
             "yValue2": 7.64
         },
         {
             "xValue": "Oct 1992",
-            "yValue0": 7.92,
+            "yValue0": 7.93,
             "yValue1": 9.70,
             "yValue2": 7.44
         },
@@ -322,7 +322,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jun 1993",
-            "yValue0": 7.98,
+            "yValue0": 7.97,
             "yValue1": 9.51,
             "yValue2": 6.98
         },
@@ -334,7 +334,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Aug 1993",
-            "yValue0": 7.87,
+            "yValue0": 7.88,
             "yValue1": 9.41,
             "yValue2": 6.75
         },
@@ -388,13 +388,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 1994",
-            "yValue0": 7.24,
+            "yValue0": 7.25,
             "yValue1": 8.63,
             "yValue2": 6.12
         },
         {
             "xValue": "Jun 1994",
-            "yValue0": 7.19,
+            "yValue0": 7.20,
             "yValue1": 8.65,
             "yValue2": 6.01
         },
@@ -490,7 +490,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 1995",
-            "yValue0": 6.53,
+            "yValue0": 6.54,
             "yValue1": 7.85,
             "yValue2": 5.59
         },
@@ -634,7 +634,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 1997",
-            "yValue0": 4.98,
+            "yValue0": 4.97,
             "yValue1": 6.05,
             "yValue2": 4.74
         },
@@ -682,7 +682,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jun 1998",
-            "yValue0": 4.35,
+            "yValue0": 4.34,
             "yValue1": 5.96,
             "yValue2": 4.52
         },
@@ -730,7 +730,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Feb 1999",
-            "yValue0": 4.27,
+            "yValue0": 4.28,
             "yValue1": 5.57,
             "yValue2": 4.31
         },
@@ -778,13 +778,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 1999",
-            "yValue0": 3.70,
+            "yValue0": 3.69,
             "yValue1": 5.10,
             "yValue2": 4.10
         },
         {
             "xValue": "Nov 1999",
-            "yValue0": 3.53,
+            "yValue0": 3.52,
             "yValue1": 4.99,
             "yValue2": 4.06
         },
@@ -796,19 +796,19 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 2000",
-            "yValue0": 4.19,
+            "yValue0": 4.20,
             "yValue1": 4.96,
             "yValue2": 4.03
         },
         {
             "xValue": "Feb 2000",
-            "yValue0": 4.32,
+            "yValue0": 4.33,
             "yValue1": 5.11,
             "yValue2": 4.04
         },
         {
             "xValue": "Mar 2000",
-            "yValue0": 4.43,
+            "yValue0": 4.44,
             "yValue1": 5.09,
             "yValue2": 4.08
         },
@@ -820,7 +820,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2000",
-            "yValue0": 4.67,
+            "yValue0": 4.66,
             "yValue1": 5.21,
             "yValue2": 4.05
         },
@@ -880,13 +880,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Mar 2001",
-            "yValue0": 4.46,
+            "yValue0": 4.47,
             "yValue1": 5.00,
             "yValue2": 4.27
         },
         {
             "xValue": "Apr 2001",
-            "yValue0": 4.32,
+            "yValue0": 4.33,
             "yValue1": 4.96,
             "yValue2": 4.34
         },
@@ -898,7 +898,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jun 2001",
-            "yValue0": 4.26,
+            "yValue0": 4.27,
             "yValue1": 5.20,
             "yValue2": 4.52
         },
@@ -964,13 +964,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2002",
-            "yValue0": 5.06,
+            "yValue0": 5.07,
             "yValue1": 6.70,
             "yValue2": 5.82
         },
         {
             "xValue": "Jun 2002",
-            "yValue0": 5.15,
+            "yValue0": 5.16,
             "yValue1": 6.67,
             "yValue2": 5.76
         },
@@ -1036,7 +1036,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2003",
-            "yValue0": 5.15,
+            "yValue0": 5.16,
             "yValue1": 6.91,
             "yValue2": 6.12
         },
@@ -1078,13 +1078,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Dec 2003",
-            "yValue0": 4.74,
+            "yValue0": 4.75,
             "yValue1": 6.47,
             "yValue2": 5.69
         },
         {
             "xValue": "Jan 2004",
-            "yValue0": 4.78,
+            "yValue0": 4.77,
             "yValue1": 6.51,
             "yValue2": 5.73
         },
@@ -1102,13 +1102,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Apr 2004",
-            "yValue0": 4.79,
+            "yValue0": 4.80,
             "yValue1": 6.42,
             "yValue2": 5.62
         },
         {
             "xValue": "May 2004",
-            "yValue0": 4.89,
+            "yValue0": 4.90,
             "yValue1": 6.37,
             "yValue2": 5.58
         },
@@ -1252,7 +1252,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2006",
-            "yValue0": 4.00,
+            "yValue0": 3.99,
             "yValue1": 4.84,
             "yValue2": 4.60
         },
@@ -1282,7 +1282,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 2006",
-            "yValue0": 3.85,
+            "yValue0": 3.84,
             "yValue1": 4.69,
             "yValue2": 4.38
         },
@@ -1306,13 +1306,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Feb 2007",
-            "yValue0": 4.30,
+            "yValue0": 4.31,
             "yValue1": 5.12,
             "yValue2": 4.56
         },
         {
             "xValue": "Mar 2007",
-            "yValue0": 4.15,
+            "yValue0": 4.16,
             "yValue1": 4.98,
             "yValue2": 4.36
         },
@@ -1324,7 +1324,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2007",
-            "yValue0": 4.19,
+            "yValue0": 4.18,
             "yValue1": 5.13,
             "yValue2": 4.47
         },
@@ -1360,7 +1360,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Nov 2007",
-            "yValue0": 4.55,
+            "yValue0": 4.54,
             "yValue1": 5.71,
             "yValue2": 4.74
         },
@@ -1396,7 +1396,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2008",
-            "yValue0": 5.17,
+            "yValue0": 5.16,
             "yValue1": 6.79,
             "yValue2": 5.39
         },
@@ -1420,7 +1420,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Sep 2008",
-            "yValue0": 5.87,
+            "yValue0": 5.88,
             "yValue1": 7.97,
             "yValue2": 6.20
         },
@@ -1522,7 +1522,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Feb 2010",
-            "yValue0": 9.50,
+            "yValue0": 9.49,
             "yValue1": 12.11,
             "yValue2": 9.84
         },
@@ -1552,7 +1552,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jul 2010",
-            "yValue0": 9.63,
+            "yValue0": 9.62,
             "yValue1": 12.12,
             "yValue2": 9.32
         },
@@ -1564,7 +1564,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Sep 2010",
-            "yValue0": 9.87,
+            "yValue0": 9.88,
             "yValue1": 12.26,
             "yValue2": 9.46
         },
@@ -1588,7 +1588,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 2011",
-            "yValue0": 9.30,
+            "yValue0": 9.29,
             "yValue1": 12.00,
             "yValue2": 9.14
         },
@@ -1636,7 +1636,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Sep 2011",
-            "yValue0": 9.49,
+            "yValue0": 9.50,
             "yValue1": 11.83,
             "yValue2": 9.04
         },
@@ -1660,13 +1660,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 2012",
-            "yValue0": 8.43,
+            "yValue0": 8.42,
             "yValue1": 10.87,
             "yValue2": 8.23
         },
         {
             "xValue": "Feb 2012",
-            "yValue0": 8.68,
+            "yValue0": 8.67,
             "yValue1": 10.92,
             "yValue2": 8.29
         },
@@ -1684,7 +1684,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "May 2012",
-            "yValue0": 8.78,
+            "yValue0": 8.79,
             "yValue1": 10.73,
             "yValue2": 8.15
         },
@@ -1714,13 +1714,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 2012",
-            "yValue0": 7.95,
+            "yValue0": 7.96,
             "yValue1": 9.88,
             "yValue2": 7.84
         },
         {
             "xValue": "Nov 2012",
-            "yValue0": 7.87,
+            "yValue0": 7.88,
             "yValue1": 9.72,
             "yValue2": 7.79
         },
@@ -1732,7 +1732,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 2013",
-            "yValue0": 7.72,
+            "yValue0": 7.71,
             "yValue1": 9.73,
             "yValue2": 7.96
         },
@@ -1750,15 +1750,15 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Apr 2013",
-            "yValue0": 7.27,
+            "yValue0": 7.28,
             "yValue1": 9.13,
             "yValue2": 7.56
         },
         {
             "xValue": "May 2013",
-            "yValue0": 7.25,
+            "yValue0": 7.26,
             "yValue1": 9.10,
-            "yValue2": 7.54
+            "yValue2": 7.53
         },
         {
             "xValue": "Jun 2013",
@@ -1781,14 +1781,14 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         {
             "xValue": "Sep 2013",
             "yValue0": 7.11,
-            "yValue1": 8.75,
+            "yValue1": 8.76,
             "yValue2": 7.21
         },
         {
             "xValue": "Oct 2013",
-            "yValue0": 7.07,
+            "yValue0": 7.08,
             "yValue1": 8.66,
-            "yValue2": 7.33
+            "yValue2": 7.34
         },
         {
             "xValue": "Nov 2013",
@@ -1804,13 +1804,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jan 2014",
-            "yValue0": 6.36,
+            "yValue0": 6.35,
             "yValue1": 7.99,
             "yValue2": 6.53
         },
         {
             "xValue": "Feb 2014",
-            "yValue0": 6.54,
+            "yValue0": 6.53,
             "yValue1": 8.12,
             "yValue2": 6.66
         },
@@ -1835,7 +1835,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         {
             "xValue": "Jun 2014",
             "yValue0": 5.99,
-            "yValue1": 7.39,
+            "yValue1": 7.38,
             "yValue2": 6.08
         },
         {
@@ -1846,9 +1846,9 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Aug 2014",
-            "yValue0": 6.18,
+            "yValue0": 6.17,
             "yValue1": 7.40,
-            "yValue2": 6.16
+            "yValue2": 6.15
         },
         {
             "xValue": "Sep 2014",
@@ -1858,13 +1858,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 2014",
-            "yValue0": 5.89,
+            "yValue0": 5.90,
             "yValue1": 7.06,
             "yValue2": 5.79
         },
         {
             "xValue": "Nov 2014",
-            "yValue0": 6.09,
+            "yValue0": 6.10,
             "yValue1": 7.08,
             "yValue2": 5.82
         },
@@ -1882,7 +1882,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Feb 2015",
-            "yValue0": 5.46,
+            "yValue0": 5.45,
             "yValue1": 6.55,
             "yValue2": 5.50
         },
@@ -1906,13 +1906,13 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Jun 2015",
-            "yValue0": 5.16,
+            "yValue0": 5.15,
             "yValue1": 6.16,
-            "yValue2": 5.28
+            "yValue2": 5.27
         },
         {
             "xValue": "Jul 2015",
-            "yValue0": 5.15,
+            "yValue0": 5.14,
             "yValue1": 6.06,
             "yValue2": 5.26
         },
@@ -1930,31 +1930,31 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Oct 2015",
-            "yValue0": 5.26,
+            "yValue0": 5.27,
             "yValue1": 5.88,
             "yValue2": 5.09
         },
         {
             "xValue": "Nov 2015",
-            "yValue0": 5.56,
+            "yValue0": 5.57,
             "yValue1": 5.90,
             "yValue2": 5.13
         },
         {
             "xValue": "Dec 2015",
-            "yValue0": 5.33,
+            "yValue0": 5.34,
             "yValue1": 5.81,
-            "yValue2": 5.06
+            "yValue2": 5.07
         },
         {
             "xValue": "Jan 2016",
-            "yValue0": 5.07,
+            "yValue0": 5.08,
             "yValue1": 5.60,
-            "yValue2": 4.91
+            "yValue2": 4.92
         },
         {
             "xValue": "Feb 2016",
-            "yValue0": 5.02,
+            "yValue0": 5.03,
             "yValue1": 5.59,
             "yValue2": 4.92
         },
@@ -1962,31 +1962,31 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
             "xValue": "Mar 2016",
             "yValue0": 5.08,
             "yValue1": 5.63,
-            "yValue2": 4.95
+            "yValue2": 4.96
         },
         {
             "xValue": "Apr 2016",
-            "yValue0": 5.11,
+            "yValue0": 5.10,
             "yValue1": 5.56,
-            "yValue2": 5.01
+            "yValue2": 5.00
         },
         {
             "xValue": "May 2016",
-            "yValue0": 4.93,
+            "yValue0": 4.92,
             "yValue1": 5.41,
-            "yValue2": 4.68
+            "yValue2": 4.67
         },
         {
             "xValue": "Jun 2016",
-            "yValue0": 5.03,
+            "yValue0": 5.01,
             "yValue1": 5.40,
-            "yValue2": 4.84
+            "yValue2": 4.82
         },
         {
             "xValue": "Jul 2016",
             "yValue0": 4.92,
-            "yValue1": 5.35,
-            "yValue2": 4.75
+            "yValue1": 5.34,
+            "yValue2": 4.74
         },
         {
             "xValue": "Aug 2016",
@@ -1996,7 +1996,7 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
         },
         {
             "xValue": "Sep 2016",
-            "yValue0": 5.19,
+            "yValue0": 5.20,
             "yValue1": 5.53,
             "yValue2": 4.99
         },
@@ -2004,277 +2004,289 @@ var chart = AmCharts.makeChart("monthly_uerate" , {
             "xValue": "Oct 2016",
             "yValue0": 5.17,
             "yValue1": 5.53,
-            "yValue2": 5.03
+            "yValue2": 5.04
         },
         {
             "xValue": "Nov 2016",
-            "yValue0": 5.17,
+            "yValue0": 5.18,
             "yValue1": 5.37,
-            "yValue2": 4.77
+            "yValue2": 4.78
         },
         {
             "xValue": "Dec 2016",
-            "yValue0": 5.41,
+            "yValue0": 5.42,
             "yValue1": 5.40,
-            "yValue2": 4.83
+            "yValue2": 4.84
         },
         {
             "xValue": "Jan 2017",
-            "yValue0": 5.10,
+            "yValue0": 5.11,
             "yValue1": 5.37,
-            "yValue2": 4.75
+            "yValue2": 4.76
         },
         {
             "xValue": "Feb 2017",
-            "yValue0": 5.06,
+            "yValue0": 5.08,
             "yValue1": 5.23,
-            "yValue2": 4.64
+            "yValue2": 4.65
         },
         {
             "xValue": "Mar 2017",
             "yValue0": 4.70,
-            "yValue1": 4.90,
-            "yValue2": 4.45
+            "yValue1": 4.91,
+            "yValue2": 4.46
         },
         {
             "xValue": "Apr 2017",
-            "yValue0": 4.48,
-            "yValue1": 4.86,
+            "yValue0": 4.47,
+            "yValue1": 4.87,
             "yValue2": 4.31
         },
         {
             "xValue": "May 2017",
-            "yValue0": 4.46,
-            "yValue1": 4.72,
-            "yValue2": 4.23
+            "yValue0": 4.45,
+            "yValue1": 4.73,
+            "yValue2": 4.21
         },
         {
             "xValue": "Jun 2017",
-            "yValue0": 4.32,
-            "yValue1": 4.60,
-            "yValue2": 4.18
+            "yValue0": 4.29,
+            "yValue1": 4.59,
+            "yValue2": 4.15
         },
         {
             "xValue": "Jul 2017",
-            "yValue0": 4.40,
-            "yValue1": 4.64,
-            "yValue2": 4.24
+            "yValue0": 4.39,
+            "yValue1": 4.63,
+            "yValue2": 4.21
         },
         {
             "xValue": "Aug 2017",
             "yValue0": 4.44,
-            "yValue1": 4.73,
+            "yValue1": 4.72,
             "yValue2": 4.33
         },
         {
             "xValue": "Sep 2017",
-            "yValue0": 4.37,
-            "yValue1": 4.64,
-            "yValue2": 4.29
+            "yValue0": 4.38,
+            "yValue1": 4.65,
+            "yValue2": 4.31
         },
         {
             "xValue": "Oct 2017",
-            "yValue0": 4.30,
-            "yValue1": 4.56,
-            "yValue2": 4.23
+            "yValue0": 4.31,
+            "yValue1": 4.55,
+            "yValue2": 4.25
         },
         {
             "xValue": "Nov 2017",
-            "yValue0": 4.45,
+            "yValue0": 4.46,
             "yValue1": 4.64,
-            "yValue2": 4.33
+            "yValue2": 4.34
         },
         {
             "xValue": "Dec 2017",
-            "yValue0": 4.35,
+            "yValue0": 4.37,
             "yValue1": 4.68,
-            "yValue2": 4.29
+            "yValue2": 4.30
         },
         {
             "xValue": "Jan 2018",
-            "yValue0": 4.35,
-            "yValue1": 4.56,
-            "yValue2": 4.23
+            "yValue0": 4.36,
+            "yValue1": 4.57,
+            "yValue2": 4.24
         },
         {
             "xValue": "Feb 2018",
-            "yValue0": 4.20,
-            "yValue1": 4.49,
-            "yValue2": 4.19
+            "yValue0": 4.21,
+            "yValue1": 4.51,
+            "yValue2": 4.20
         },
         {
             "xValue": "Mar 2018",
             "yValue0": 4.11,
-            "yValue1": 4.30,
-            "yValue2": 3.96
+            "yValue1": 4.31,
+            "yValue2": 3.97
         },
         {
             "xValue": "Apr 2018",
             "yValue0": 3.93,
-            "yValue1": 4.05,
+            "yValue1": 4.06,
             "yValue2": 3.81
         },
         {
             "xValue": "May 2018",
             "yValue0": 3.57,
-            "yValue1": 3.88,
-            "yValue2": 3.63
+            "yValue1": 3.89,
+            "yValue2": 3.61
         },
         {
             "xValue": "Jun 2018",
-            "yValue0": 3.82,
-            "yValue1": 4.01,
-            "yValue2": 3.82
+            "yValue0": 3.79,
+            "yValue1": 4.00,
+            "yValue2": 3.77
         },
         {
             "xValue": "Jul 2018",
-            "yValue0": 3.77,
-            "yValue1": 4.04,
-            "yValue2": 3.73
+            "yValue0": 3.76,
+            "yValue1": 4.01,
+            "yValue2": 3.69
         },
         {
             "xValue": "Aug 2018",
             "yValue0": 3.81,
-            "yValue1": 4.14,
+            "yValue1": 4.11,
             "yValue2": 3.73
         },
         {
             "xValue": "Sep 2018",
-            "yValue0": 3.86,
-            "yValue1": 4.16,
-            "yValue2": 3.81
+            "yValue0": 3.88,
+            "yValue1": 4.17,
+            "yValue2": 3.84
         },
         {
             "xValue": "Oct 2018",
-            "yValue0": 3.95,
+            "yValue0": 3.96,
             "yValue1": 4.31,
-            "yValue2": 3.86
+            "yValue2": 3.88
         },
         {
             "xValue": "Nov 2018",
-            "yValue0": 4.01,
+            "yValue0": 4.03,
             "yValue1": 4.43,
-            "yValue2": 3.97
+            "yValue2": 3.99
         },
         {
             "xValue": "Dec 2018",
-            "yValue0": 4.28,
+            "yValue0": 4.29,
             "yValue1": 4.72,
-            "yValue2": 4.18
+            "yValue2": 4.20
         },
         {
             "xValue": "Jan 2019",
-            "yValue0": 4.38,
-            "yValue1": 4.75,
-            "yValue2": 4.19
+            "yValue0": 4.39,
+            "yValue1": 4.76,
+            "yValue2": 4.22
         },
         {
             "xValue": "Feb 2019",
             "yValue0": 4.14,
-            "yValue1": 4.44,
-            "yValue2": 3.93
+            "yValue1": 4.46,
+            "yValue2": 3.95
         },
         {
             "xValue": "Mar 2019",
             "yValue0": 4.07,
-            "yValue1": 4.27,
-            "yValue2": 3.76
+            "yValue1": 4.30,
+            "yValue2": 3.77
         },
         {
             "xValue": "Apr 2019",
             "yValue0": 3.40,
-            "yValue1": 3.76,
-            "yValue2": 3.32
+            "yValue1": 3.77,
+            "yValue2": 3.31
         },
         {
             "xValue": "May 2019",
-            "yValue0": 3.24,
-            "yValue1": 3.68,
-            "yValue2": 3.35
+            "yValue0": 3.26,
+            "yValue1": 3.69,
+            "yValue2": 3.32
         },
         {
             "xValue": "Jun 2019",
-            "yValue0": 3.25,
+            "yValue0": 3.22,
             "yValue1": 3.62,
-            "yValue2": 3.39
+            "yValue2": 3.33
         },
         {
             "xValue": "Jul 2019",
-            "yValue0": 3.45,
-            "yValue1": 3.90,
-            "yValue2": 3.61
+            "yValue0": 3.44,
+            "yValue1": 3.86,
+            "yValue2": 3.54
         },
         {
             "xValue": "Aug 2019",
             "yValue0": 3.50,
-            "yValue1": 3.94,
-            "yValue2": 3.63
+            "yValue1": 3.91,
+            "yValue2": 3.64
         },
         {
             "xValue": "Sep 2019",
-            "yValue0": 3.57,
-            "yValue1": 3.89,
-            "yValue2": 3.52
+            "yValue0": 3.59,
+            "yValue1": 3.91,
+            "yValue2": 3.58
         },
         {
             "xValue": "Oct 2019",
-            "yValue0": 3.68,
+            "yValue0": 3.69,
             "yValue1": 4.05,
-            "yValue2": 3.69
+            "yValue2": 3.73
         },
         {
             "xValue": "Nov 2019",
-            "yValue0": 3.76,
-            "yValue1": 4.19,
-            "yValue2": 3.81
+            "yValue0": 3.78,
+            "yValue1": 4.18,
+            "yValue2": 3.84
         },
         {
             "xValue": "Dec 2019",
-            "yValue0": 3.76,
-            "yValue1": 4.26,
-            "yValue2": 3.91
+            "yValue0": 3.77,
+            "yValue1": 4.27,
+            "yValue2": 3.95
         },
         {
             "xValue": "Jan 2020",
             "yValue0": 3.92,
-            "yValue1": 4.31,
-            "yValue2": 3.85
+            "yValue1": 4.33,
+            "yValue2": 3.88
         },
         {
             "xValue": "Feb 2020",
-            "yValue0": 4.00,
-            "yValue1": 4.29,
-            "yValue2": 3.67
+            "yValue0": 3.99,
+            "yValue1": 4.32,
+            "yValue2": 3.70
         },
         {
             "xValue": "Mar 2020",
-            "yValue0": 4.92,
-            "yValue1": 5.49,
-            "yValue2": 4.34
+            "yValue0": 4.91,
+            "yValue1": 5.53,
+            "yValue2": 4.35
         },
         {
             "xValue": "Apr 2020",
             "yValue0": 13.55,
-            "yValue1": 15.74,
-            "yValue2": 14.24
+            "yValue1": 15.79,
+            "yValue2": 14.20
         },
         {
             "xValue": "May 2020",
-            "yValue0": 14.05,
-            "yValue1": 15.98,
-            "yValue2": 12.51
+            "yValue0": 14.13,
+            "yValue1": 16.02,
+            "yValue2": 12.36
         },
         {
             "xValue": "Jun 2020",
-            "yValue0": 10.81,
-            "yValue1": 13.11,
-            "yValue2": 9.88
+            "yValue0": 10.70,
+            "yValue1": 13.07,
+            "yValue2": 9.66
         },
         {
             "xValue": "Jul 2020",
-            "yValue0": 9.54,
-            "yValue1": 12.06,
-            "yValue2": 9.42
+            "yValue0": 9.75,
+            "yValue1": 12.07,
+            "yValue2": 9.19
+        },
+        {
+            "xValue": "Aug 2020",
+            "yValue0": 7.85,
+            "yValue1": 10.52,
+            "yValue2": 8.14
+        },
+        {
+            "xValue": "Sep 2020",
+            "yValue0": 8.94,
+            "yValue1": 11.83,
+            "yValue2": 8.46
         }
     ],
 });
