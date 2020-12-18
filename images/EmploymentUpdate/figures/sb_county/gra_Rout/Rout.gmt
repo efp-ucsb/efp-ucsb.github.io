@@ -3,6 +3,7 @@ padj       gra_Rout\Rout.a3
 mdlest     gra_Rout\Rout.est
 acf        gra_Rout\Rout.acf
 pacf       gra_Rout\Rout.pcf
+acf2       gra_Rout\Rout.ac2
 sprsd      gra_Rout\Rout.spr
 sptukrsd   gra_Rout\Rout.str
 ftr        gra_Rout\Rout.ftr
