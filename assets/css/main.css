@@ -2342,7 +2342,7 @@ input, select, textarea {
 
 			#banner header p {
 				color: #003660;
-				padding: 0;
+				padding: 1.4rem 0 0 0;
 				font-style: normal;
 				margin: 0;
 				font-size: 1em;
