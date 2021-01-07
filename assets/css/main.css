@@ -2270,7 +2270,7 @@ input, select, textarea {
 		background-color: #252122;
 		background-color: rgba(34, 30, 31, 0.98);
 		padding: 1.25em 1.5em 1.25em 1.5em;
-		font-style: italic;
+		font-style: normal;
 		min-width: 13em;
 		box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
 		text-align: left;
@@ -2316,7 +2316,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/efp-ocean-web.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -2341,11 +2341,13 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #d52349;
+				color: #003660;
 				padding: 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1em;
+				font-weight: 600;
+				letter-spacing: 0.5px;
 			}
 
 
