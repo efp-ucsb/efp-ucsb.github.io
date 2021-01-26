@@ -2229,7 +2229,7 @@ input, select, textarea {
 
 			#nav > ul > li {
 				display: inline-block;
-				font-style: italic;
+				font-style: normal;
 				margin: 0 0.35em 0 0.35em;
 			}
 
@@ -2239,7 +2239,7 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 5px;
-					color: #5d5d5d;
+					color: #003660;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
 					-moz-transition: background-color .25s ease-in-out;
@@ -2254,7 +2254,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.current > a {
-					background: #d52349;
+					background: #003660;
 					color: #fff !important;
 					font-weight: 700;
 				}
@@ -2270,7 +2270,7 @@ input, select, textarea {
 		background-color: #252122;
 		background-color: rgba(34, 30, 31, 0.98);
 		padding: 1.25em 1.5em 1.25em 1.5em;
-		font-style: italic;
+		font-style: normal;
 		min-width: 13em;
 		box-shadow: 0px 8px 15px 0px rgba(0, 0, 0, 0.5);
 		text-align: left;
@@ -2316,9 +2316,9 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #CCE8F4 url("../../images/pic01.jpg");
+		background: #CCE8F4 url("../../images/efp-ocean-web.jpg");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: cover;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -2327,9 +2327,9 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.98);
+			background-color: rgba(255,255,255,.6);
 			display: inline-block;
-			padding: 2.5em 5em;
+			padding: 3em 7em;
 			border-radius: 5px;
 		}
 
@@ -2341,13 +2341,19 @@ input, select, textarea {
 			}
 
 			#banner header p {
-				color: #d52349;
-				padding: 0;
+				color: #003660;
+				padding: 1.4rem 0 0 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1em;
+				font-weight: 600;
+				letter-spacing: 0.5px;
 			}
-
+@media screen and (min-width: 1280px) {
+	#banner header img {
+		width: 38rem;
+	}
+}
 
 /* Cannabis Banner */
 
