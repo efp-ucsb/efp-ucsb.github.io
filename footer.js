@@ -9,11 +9,13 @@ document.write('\
             <h2>Calendar</h2>\
           </header>\
           <ul class="dates">\
+<!--\
             <li>\
               <span class="date">Sept<strong>17</strong></span>\
               <h3>EFP Informs Webinar</h3>\
               <p>COVID-19 and the Residential Real Estate Market</p>\
             </li>\
+-->\
 <!--\
             <li>\
               <span class="date">May <strong>7</strong></span>\
