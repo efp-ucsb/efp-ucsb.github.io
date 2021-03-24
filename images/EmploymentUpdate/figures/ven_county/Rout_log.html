@@ -99,7 +99,7 @@
 
 <h1 class="center">Log for X-13ARIMA-SEATS program (Version 1.1 Build 39)</h1>
 
-<h2 class="center"> Jan 22, 2021  23.06.27 </h2>
+<h2 class="center"> Mar 24, 2021  13.49.56 </h2>
 
 <p>&nbsp;</p>
 
@@ -114,7 +114,7 @@
   summary ="Results of Unit Root Test for identifying orders of differencing" >
 <caption><strong>Orders of Differencing Identified</strong></caption>
 <tr><th scope="row">Regular difference order</th><td class="center">  1</td></tr>
-<tr><th scope="row">Seasonal difference order</th><td class="center">  1</td></tr>
+<tr><th scope="row">Seasonal difference order</th><td class="center">  0</td></tr>
 </table>
 
 <p>&nbsp;</p>
@@ -122,11 +122,11 @@
   summary ="Best Five ARIMA Models" >
 <caption><strong>Best Five ARIMA Models</strong></caption>
 <tr><td class="head">&nbsp;</td><th scope="col">ARIMA Model</th><th scope="col"><abbr title="Bayesian information criterion 2">BIC2</abbr></th></tr>
-<tr><th scope="row">Model  1</th><td class="center">(0 1 0)(0 1 1)</td><td class="center">    13.510</td></tr>
-<tr><th scope="row">Model  2</th><td class="center">(0 1 1)(0 1 1)</td><td class="center">    13.525</td></tr>
-<tr><th scope="row">Model  3</th><td class="center">(1 1 0)(0 1 1)</td><td class="center">    13.525</td></tr>
-<tr><th scope="row">Model  4</th><td class="center">(0 1 0)(0 1 2)</td><td class="center">    13.526</td></tr>
-<tr><th scope="row">Model  5</th><td class="center">(0 1 0)(1 1 1)</td><td class="center">    13.526</td></tr>
+<tr><th scope="row">Model  1</th><td class="center">(0 1 0)(1 0 1)</td><td class="center">    13.017</td></tr>
+<tr><th scope="row">Model  2</th><td class="center">(0 1 0)(1 0 2)</td><td class="center">    13.031</td></tr>
+<tr><th scope="row">Model  3</th><td class="center">(0 1 0)(2 0 1)</td><td class="center">    13.031</td></tr>
+<tr><th scope="row">Model  4</th><td class="center">(0 1 1)(1 0 1)</td><td class="center">    13.033</td></tr>
+<tr><th scope="row">Model  5</th><td class="center">(1 1 0)(1 0 1)</td><td class="center">    13.033</td></tr>
 </table>
 
 <p>&nbsp;</p>
@@ -137,27 +137,27 @@
 <caption><strong>X-11 Seasonal Adjustment Diagnostics</strong></caption>
 <tr>
 <th scope="row">Moving seasonality ratio</th>
-<td>      4.381</td>
+<td>      4.756</td>
 </tr>
 <tr>
 <th scope="row"><abbr title="I over C">I/C</abbr> Ratio</th>
-<td>      1.273</td>
+<td>      1.316</td>
 </tr>
 <tr>
 <th scope="row">Stable Seasonal F, B1 table</th>
-<td>      6.162</td>
+<td>     11.492</td>
 </tr>
 <tr>
 <th scope="row">Stable Seasonal F, D8 table</th>
-<td>      8.970</td>
+<td>     18.945</td>
 </tr>
 <tr>
 <th scope="row">Moving Seasonal F, D8 table</th>
-<td>      4.991</td>
+<td>      3.564</td>
 </tr>
 <tr>
 <th scope="row">Identifiable seasonality</th>
-<td>no </td>
+<td>yes</td>
 </tr>
 </table>
 
@@ -165,19 +165,19 @@
 <table class="w60"
   summary ="M and Q Quality Control Diagnostics" >
 <caption><strong>M and Q Quality Control Diagnostics</strong></caption>
-<tr><th scope="row">M01</th><td class="center">     1.139</td></tr>
-<tr><th scope="row">M02</th><td class="center">     0.052</td></tr>
-<tr><th scope="row">M03</th><td class="center">     0.137</td></tr>
-<tr><th scope="row">M04</th><td class="center">     0.462</td></tr>
-<tr><th scope="row">M05</th><td class="center">     0.391</td></tr>
-<tr><th scope="row">M06</th><td class="center">     0.152</td></tr>
-<tr><th scope="row">M07</th><td class="center">     1.107</td></tr>
-<tr><th scope="row">M08</th><td class="center">     1.379</td></tr>
-<tr><th scope="row">M09</th><td class="center">     0.595</td></tr>
-<tr><th scope="row">M10</th><td class="center">     1.612</td></tr>
-<tr><th scope="row">M11</th><td class="center">     1.521</td></tr>
-<tr><th scope="row">    Q  </th><td class="center">     0.691</td></tr>
-<tr><th scope="row">    Q2 </th><td class="center">     0.770</td></tr>
+<tr><th scope="row">M01</th><td class="center">     1.199</td></tr>
+<tr><th scope="row">M02</th><td class="center">     0.053</td></tr>
+<tr><th scope="row">M03</th><td class="center">     0.158</td></tr>
+<tr><th scope="row">M04</th><td class="center">     0.589</td></tr>
+<tr><th scope="row">M05</th><td class="center">     0.373</td></tr>
+<tr><th scope="row">M06</th><td class="center">     0.302</td></tr>
+<tr><th scope="row">M07</th><td class="center">     0.683</td></tr>
+<tr><th scope="row">M08</th><td class="center">     1.207</td></tr>
+<tr><th scope="row">M09</th><td class="center">     0.360</td></tr>
+<tr><th scope="row">M10</th><td class="center">     0.749</td></tr>
+<tr><th scope="row">M11</th><td class="center">     0.678</td></tr>
+<tr><th scope="row">    Q  </th><td class="center">     0.550</td></tr>
+<tr><th scope="row">    Q2 </th><td class="center">     0.611</td></tr>
 </table>
 
 <p>&nbsp;</p>
