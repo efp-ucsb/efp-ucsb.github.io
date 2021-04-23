@@ -41,3 +41,5 @@ economic-data
 city-engagement
 cultural
 ggplot-theme
+voter-turnout-increases
+santa-barbara-county-trends-toward-voting-for-democrat-candidates
