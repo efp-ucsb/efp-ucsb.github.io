@@ -31,15 +31,3 @@ infant-mortality-rates-decrease-1
 what-is-the-measure-30
 why-is-it-important-32
 how-are-we-doing-36
-district-codes-used-in-caaspp-and-lunch-sections
-sat-data
-demographic-data
-crime-data
-health-data
-education-data
-economic-data
-city-engagement
-cultural
-ggplot-theme
-voter-turnout-increases
-santa-barbara-county-trends-toward-voting-for-democrat-candidates
