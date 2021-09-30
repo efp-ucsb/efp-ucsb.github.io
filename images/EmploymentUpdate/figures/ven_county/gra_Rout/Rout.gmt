@@ -6,6 +6,7 @@ pacf       gra_Rout/Rout.pcf
 acf2       gra_Rout/Rout.ac2
 sprsd      gra_Rout/Rout.spr
 sptukrsd   gra_Rout/Rout.str
+ftr        gra_Rout/Rout.ftr
 fct        gra_Rout/Rout.fct
 ador       gra_Rout/Rout.b1 
 irrwt      gra_Rout/Rout.c17
