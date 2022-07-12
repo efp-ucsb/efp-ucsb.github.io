@@ -2,8 +2,9 @@ $arima:
 $arima$estimates:
 operator	factor	period	lag	estimate	standard error	fixed
 --------	------	------	---	--------	--------------	-----
-MA	Seasonal	12	12	+0.98850621328544E+00	+0.55917881530553E-01	       
+MA	Nonseasonal	01	01	-0.31861639829179E+00	+0.77840481471423E-01	       
+MA	Seasonal	12	12	-0.21666602073556E+00	+0.83099880853381E-01	       
 $variance:
 
-mle	+0.19877497546842E-01
-se	+0.24375351432970E-02
+mle	+0.15695164428779E-01
+se	+0.18245258045416E-02
