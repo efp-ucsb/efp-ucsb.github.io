@@ -1,0 +1,9 @@
+$arima:
+$arima$estimates:
+operator	factor	period	lag	estimate	standard error	fixed
+--------	------	------	---	--------	--------------	-----
+MA	Seasonal	12	12	+0.94620195854604E+00	+0.25032052373508E-01	       
+$variance:
+
+mle	+0.25077603706833E+05
+se	+0.18289722257424E+04
