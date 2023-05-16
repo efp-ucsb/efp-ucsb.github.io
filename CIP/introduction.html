@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Introduction | cip_2020.utf8</title>
+  <title>Introduction | cip_2022.knit</title>
   <meta name="description" content="" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Introduction | cip_2020.utf8" />
+  <meta property="og:title" content="Introduction | cip_2022.knit" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Introduction | cip_2020.utf8" />
+  <meta name="twitter:title" content="Introduction | cip_2022.knit" />
   
   
   
@@ -31,7 +30,8 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="social-indicators.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -47,10 +47,17 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.10.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
-<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -65,358 +72,73 @@
 
     <div class="book-summary">
       <nav role="navigation">
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
 
 <ul class="summary">
 <li><a href="./">Community Indicators Project</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>UCSB Economic Forecast Project</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>UCSB Economic Forecast Project</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#dear-residents"><i class="fa fa-check"></i>Dear Residents,</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html"><i class="fa fa-check"></i>Social Indicators</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#demographics"><i class="fa fa-check"></i>Demographics</a><ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html"><i class="fa fa-check"></i>Social Indicators</a>
+<ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#demographics"><i class="fa fa-check"></i>Demographics</a>
+<ul>
 <li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#population-growth"><i class="fa fa-check"></i>Population Growth</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#household-income-distribution"><i class="fa fa-check"></i>Household Income Distribution</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#neighborhood-and-community-well-being"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#crime-rates-remain-low"><i class="fa fa-check"></i>Crime Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#juvenile-felony-arrests-remain-lowest-in-decade"><i class="fa fa-check"></i>Juvenile Felony Arrests Remain Lowest in Decade</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#child-maltreatment-allegations-remain-constant"><i class="fa fa-check"></i>Child Maltreatment Allegations Remain Constant</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#individual-and-family-well-being"><i class="fa fa-check"></i>Individual and Family Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#domestic-violence-call-rate-decreases-slightly"><i class="fa fa-check"></i>Domestic Violence Call Rate Decreases Slightly</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#weapon-related-domestic-violence-call-rate"><i class="fa fa-check"></i>Weapon-Related Domestic Violence Call Rate</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#rape-crime-rates-increase"><i class="fa fa-check"></i>Rape Crime Rates Increase</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#births-to-teenage-mothers-declining"><i class="fa fa-check"></i>Births to Teenage Mothers Declining</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#mothers-receiving-inadequate-prenatal-care-drops"><i class="fa fa-check"></i>Mothers Receiving Inadequate Prenatal Care Drops</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#infant-mortality-rates-remain-low"><i class="fa fa-check"></i>Infant Mortality Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#elementary-school-lunch-eligibility"><i class="fa fa-check"></i>Elementary School Lunch Eligibility</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#poverty-in-the-county"><i class="fa fa-check"></i>Poverty in the County</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#poverty-status-of-families"><i class="fa fa-check"></i>Poverty Status of Families</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#numbers-of-meals-served-increases-35-percent-of-those-served-are-under-18"><i class="fa fa-check"></i>Numbers of Meals Served Increases, 35 Percent of Those Served are Under 18</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#number-of-homeless-using-health-care-program-follows-decreasing-trend"><i class="fa fa-check"></i>Number of Homeless Using Health Care Program Follows Decreasing Trend</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#education"><i class="fa fa-check"></i>Education</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#sat-scores-continue-downward-trend"><i class="fa fa-check"></i>SAT Scores Continue Downward Trend</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#higher-percentage-of-students-take-the-sat"><i class="fa fa-check"></i>Higher Percentage of Students Take the SAT</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#south-coast-outscores-the-north-coast-on-caaspp"><i class="fa fa-check"></i>South Coast Outscores the North Coast on CAASPP</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#book-and-magazine-circulation-surpasses-one-million"><i class="fa fa-check"></i>Book and Magazine Circulation Surpasses One Million</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#citizen-engagement"><i class="fa fa-check"></i>Citizen Engagement</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#voter-registration-and-turnout-increases"><i class="fa fa-check"></i>Voter Registration and Turnout Increases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#cultural-resources"><i class="fa fa-check"></i>Cultural Resources</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#performing-arts-ticket-sales-increase-as-number-of-shows-exhibit-a-slight-decline"><i class="fa fa-check"></i>Performing Arts Ticket Sales Increase as Number of Shows Exhibit a Slight Decline</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#neighborhood-and-community-well-being"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a>
+<ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#crime-rates-across-ucs-plummet-during-lockdowns"><i class="fa fa-check"></i>Crime Rates Across UCs Plummet During Lockdowns</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#juvenile-felony-arrests-reach-lowest-in-decade"><i class="fa fa-check"></i>Juvenile Felony Arrests Reach Lowest in Decade</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#rate-of-births-to-teenage-mothers-declining"><i class="fa fa-check"></i>Rate of Births to Teenage Mothers Declining</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#heart-diseases-remain-the-leading-cause-of-death-in-santa-barbara-county"><i class="fa fa-check"></i>Heart Diseases Remain the Leading Cause of Death in Santa Barbara County</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html"><i class="fa fa-check"></i>Environmental</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality"><i class="fa fa-check"></i>Water Quality</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html"><i class="fa fa-check"></i>Environmental</a>
+<ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality"><i class="fa fa-check"></i>Water Quality</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality-violation-days-relatively-stable"><i class="fa fa-check"></i>Water Quality Violation Days Relatively Stable</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-consumption-declines"><i class="fa fa-check"></i>Water Consumption Declines</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#particulate-matter-levels-increase"><i class="fa fa-check"></i>Particulate Matter Levels Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#air-quality"><i class="fa fa-check"></i>Air Quality</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#ozone-violation-days-significantly-reduced"><i class="fa fa-check"></i>Ozone Violation Days Significantly Reduced</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#no-businesses-release-toxic-air-pollutants-in-2015"><i class="fa fa-check"></i>No Businesses Release Toxic Air Pollutants in 2015</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#land-use"><i class="fa fa-check"></i>Land Use</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#pesticide-use-rises-slightly-over-past-year"><i class="fa fa-check"></i>Pesticide Use Rises Slightly Over Past Year</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#strawberries-dominate-pesticide-use-sites"><i class="fa fa-check"></i>Strawberries Dominate Pesticide Use Sites</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#workplace-pesticide-related-illnesses-and-injuries-increase"><i class="fa fa-check"></i>Workplace Pesticide Related Illnesses and Injuries Increase</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#land-use"><i class="fa fa-check"></i>Land Use</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#energy-use-decreases"><i class="fa fa-check"></i>Energy Use Decreases</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mobility"><i class="fa fa-check"></i>Mobility</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mobility"><i class="fa fa-check"></i>Mobility</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#most-workers-commute-alone-by-car"><i class="fa fa-check"></i>Most Workers Commute Alone by Car</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mean-commute-time-declines-marginally"><i class="fa fa-check"></i>Mean Commute Time Declines Marginally</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mean-commute-time-rises-marginally"><i class="fa fa-check"></i>Mean Commute Time Rises Marginally</a></li>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#bus-ridership-decreasing"><i class="fa fa-check"></i>Bus Ridership Decreasing</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#traffic-volumes-stabilize-over-last-five-years"><i class="fa fa-check"></i>Traffic Volumes Stabilize Over Last Five Years</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#resource-use"><i class="fa fa-check"></i>Resource Use</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#resource-use"><i class="fa fa-check"></i>Resource Use</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-waste-disposed-sees-slight-increase"><i class="fa fa-check"></i>Total Waste Disposed Sees Slight Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#nature"><i class="fa fa-check"></i>Nature</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-bird-count-experiences-a-decline"><i class="fa fa-check"></i>Total Bird Count Experiences a Decline</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#nature"><i class="fa fa-check"></i>Nature</a>
+<ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-bird-count-decreases-in-2020"><i class="fa fa-check"></i>Total Bird Count Decreases in 2020</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html"><i class="fa fa-check"></i>Economic</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#standard-of-living"><i class="fa fa-check"></i>Standard of Living</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#south-coast-household-income-increases"><i class="fa fa-check"></i>South Coast Household Income Increases</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#real-average-salary-per-worker-rises-slightly"><i class="fa fa-check"></i>Real Average Salary per Worker Rises Slightly</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html"><i class="fa fa-check"></i>Economic</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#standard-of-living"><i class="fa fa-check"></i>Standard of Living</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#south-county-household-income-increases"><i class="fa fa-check"></i>South County Household Income Increases</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#real-average-salary-per-worker-rises"><i class="fa fa-check"></i>Real Average Salary per Worker Rises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-quality-and-quantity"><i class="fa fa-check"></i>Job Quality and Quantity</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#growth-in-three-sectors"><i class="fa fa-check"></i>Growth in Three Sectors</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#average-salaries-in-santa-barbara-county"><i class="fa fa-check"></i>Average Salaries in Santa Barbara County</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-and-population-growth-rates-vary"><i class="fa fa-check"></i>Job and Population Growth Rates Vary</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#wholesale-trade-sector-sees-most-growth"><i class="fa fa-check"></i>Wholesale Trade Sector Sees Most Growth</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#government-to-population-ratio-stable"><i class="fa fa-check"></i>Government to Population Ratio Stable</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-quality-and-quantity"><i class="fa fa-check"></i>Job Quality and Quantity</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#pandemic-impacts-industry-employment"><i class="fa fa-check"></i>Pandemic Impacts Industry Employment</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#housing-affordability"><i class="fa fa-check"></i>Housing Affordability</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#santa-barbara-county-has-least-affordable-housing"><i class="fa fa-check"></i>Santa Barbara County has Least Affordable Housing</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#rental-rates-experience-slow-growth-but-continue-to-remain-high"><i class="fa fa-check"></i>Rental Rates Experience Slow Growth, but Continue to Remain High</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#business-vitality"><i class="fa fa-check"></i>Business Vitality</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#total-available-space-increases-slightly-as-gross-lease-rates-reach-record-highs"><i class="fa fa-check"></i>Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#housing-affordability"><i class="fa fa-check"></i>Housing Affordability</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#rental-rates-soar-post-pandemic"><i class="fa fa-check"></i>Rental Rates Soar Post-pandemic</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html"><i class="fa fa-check"></i>Non-Profit</a><ul>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#gifts-grants-and-contributions-to-non-profits-continue-to-grow"><i class="fa fa-check"></i>Gifts, Grants, and Contributions to Non-Profits Continue to Grow</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#non-profit-contributions-support-a-wide-range-of-charitable-purposes"><i class="fa fa-check"></i>Non-Profit Contributions Support A Wide Range Of Charitable Purposes</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#direct-relief"><i class="fa fa-check"></i>Direct Relief</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#united-way-of-santa-barbara-county"><i class="fa fa-check"></i>United Way of Santa Barbara County</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="healthcare.html"><a href="healthcare.html"><i class="fa fa-check"></i>Healthcare</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html"><i class="fa fa-check"></i>UCSB Economic Forecast Project</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#dear-residents-1"><i class="fa fa-check"></i>Dear Residents,</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#demographics-1"><i class="fa fa-check"></i>Demographics</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#population-growth-1"><i class="fa fa-check"></i>Population Growth</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#household-income-distribution-1"><i class="fa fa-check"></i>Household Income Distribution</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#neighborhood-and-community-well-being-1"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#crime-rates-remain-low-1"><i class="fa fa-check"></i>Crime Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#juvenile-felony-arrests-remain-lowest-in-decade-1"><i class="fa fa-check"></i>Juvenile Felony Arrests Remain Lowest in Decade</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#child-maltreatment-allegations-remain-constant-1"><i class="fa fa-check"></i>Child Maltreatment Allegations Remain Constant</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#individual-and-family-well-being-1"><i class="fa fa-check"></i>Individual and Family Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#domestic-violence-call-rate-decreases-slightly-1"><i class="fa fa-check"></i>Domestic Violence Call Rate Decreases Slightly</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#weapon-related-domestic-violence-call-rate-1"><i class="fa fa-check"></i>Weapon-Related Domestic Violence Call Rate</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#rape-crime-rates-increase-1"><i class="fa fa-check"></i>Rape Crime Rates Increase</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#births-to-teenage-mothers-declining-1"><i class="fa fa-check"></i>Births to Teenage Mothers Declining</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mothers-receiving-inadequate-prenatal-care-drops-1"><i class="fa fa-check"></i>Mothers Receiving Inadequate Prenatal Care Drops</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#infant-mortality-rates-remain-low-1"><i class="fa fa-check"></i>Infant Mortality Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#elementary-school-lunch-eligibility-1"><i class="fa fa-check"></i>Elementary School Lunch Eligibility</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#poverty-in-the-county-1"><i class="fa fa-check"></i>Poverty in the County</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#poverty-status-of-families-1"><i class="fa fa-check"></i>Poverty Status of Families</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#numbers-of-meals-served-increases-35-percent-of-those-served-are-under-18-1"><i class="fa fa-check"></i>Numbers of Meals Served Increases, 35 Percent of Those Served are Under 18</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#number-of-homeless-using-health-care-program-follows-decreasing-trend-1"><i class="fa fa-check"></i>Number of Homeless Using Health Care Program Follows Decreasing Trend</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#education-1"><i class="fa fa-check"></i>Education</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#sat-scores-continue-downward-trend-1"><i class="fa fa-check"></i>SAT Scores Continue Downward Trend</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#higher-percentage-of-students-take-the-sat-1"><i class="fa fa-check"></i>Higher Percentage of Students Take the SAT</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#south-coast-outscores-the-north-coast-on-caaspp-1"><i class="fa fa-check"></i>South Coast Outscores the North Coast on CAASPP</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#book-and-magazine-circulation-surpasses-one-million-1"><i class="fa fa-check"></i>Book and Magazine Circulation Surpasses One Million</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#citizen-engagement-1"><i class="fa fa-check"></i>Citizen Engagement</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#voter-registration-and-turnout-increases-1"><i class="fa fa-check"></i>Voter Registration and Turnout Increases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#cultural-resources-1"><i class="fa fa-check"></i>Cultural Resources</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#performing-arts-ticket-sales-increase-as-number-of-shows-exhibit-a-slight-decline-1"><i class="fa fa-check"></i>Performing Arts Ticket Sales Increase as Number of Shows Exhibit a Slight Decline</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-quality-1"><i class="fa fa-check"></i>Water Quality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-quality-violation-days-relatively-stable-1"><i class="fa fa-check"></i>Water Quality Violation Days Relatively Stable</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-consumption-declines-1"><i class="fa fa-check"></i>Water Consumption Declines</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#air-quality-1"><i class="fa fa-check"></i>Air Quality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#ozone-violation-days-significantly-reduced-1"><i class="fa fa-check"></i>Ozone Violation Days Significantly Reduced</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#no-businesses-release-toxic-air-pollutants-in-2015-1"><i class="fa fa-check"></i>No Businesses Release Toxic Air Pollutants in 2015</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#land-use-1"><i class="fa fa-check"></i>Land Use</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#pesticide-use-rises-slightly-over-past-year-1"><i class="fa fa-check"></i>Pesticide Use Rises Slightly Over Past Year</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#strawberries-dominate-pesticide-use-sites-1"><i class="fa fa-check"></i>Strawberries Dominate Pesticide Use Sites</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#workplace-pesticide-related-illnesses-and-injuries-increase-1"><i class="fa fa-check"></i>Workplace Pesticide Related Illnesses and Injuries Increase</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#energy-use-decreases-1"><i class="fa fa-check"></i>Energy Use Decreases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mobility-1"><i class="fa fa-check"></i>Mobility</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#most-workers-commute-alone-by-car-1"><i class="fa fa-check"></i>Most Workers Commute Alone by Car</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mean-commute-time-declines-marginally-1"><i class="fa fa-check"></i>Mean Commute Time Declines Marginally</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#bus-ridership-decreasing-1"><i class="fa fa-check"></i>Bus Ridership Decreasing</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#traffic-volumes-stabilize-over-last-five-years-1"><i class="fa fa-check"></i>Traffic Volumes Stabilize Over Last Five Years</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#resource-use-1"><i class="fa fa-check"></i>Resource Use</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-waste-disposed-sees-slight-increase-1"><i class="fa fa-check"></i>Total Waste Disposed Sees Slight Increase</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#nature-1"><i class="fa fa-check"></i>Nature</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-bird-count-experiences-a-decline-1"><i class="fa fa-check"></i>Total Bird Count Experiences a Decline</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#standard-of-living-1"><i class="fa fa-check"></i>Standard of Living</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#south-coast-household-income-increases-1"><i class="fa fa-check"></i>South Coast Household Income Increases</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#real-average-salary-per-worker-rises-slightly-1"><i class="fa fa-check"></i>Real Average Salary per Worker Rises Slightly</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#job-quality-and-quantity-1"><i class="fa fa-check"></i>Job Quality and Quantity</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#growth-in-three-sectors-1"><i class="fa fa-check"></i>Growth in Three Sectors</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#average-salaries-in-santa-barbara-county-1"><i class="fa fa-check"></i>Average Salaries in Santa Barbara County</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#job-and-population-growth-rates-vary-1"><i class="fa fa-check"></i>Job and Population Growth Rates Vary</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#wholesale-trade-sector-sees-most-growth-1"><i class="fa fa-check"></i>Wholesale Trade Sector Sees Most Growth</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#government-to-population-ratio-stable-1"><i class="fa fa-check"></i>Government to Population Ratio Stable</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#housing-affordability-1"><i class="fa fa-check"></i>Housing Affordability</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#santa-barbara-county-has-least-affordable-housing-1"><i class="fa fa-check"></i>Santa Barbara County has Least Affordable Housing</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#rental-rates-experience-slow-growth-but-continue-to-remain-high-1"><i class="fa fa-check"></i>Rental Rates Experience Slow Growth, but Continue to Remain High</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#business-vitality-1"><i class="fa fa-check"></i>Business Vitality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-available-space-increases-slightly-as-gross-lease-rates-reach-record-highs-1"><i class="fa fa-check"></i>Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#gifts-grants-and-contributions-to-non-profits-continue-to-grow-1"><i class="fa fa-check"></i>Gifts, Grants, and Contributions to Non-Profits Continue to Grow</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#non-profit-contributions-support-a-wide-range-of-charitable-purposes-1"><i class="fa fa-check"></i>Non-Profit Contributions Support A Wide Range Of Charitable Purposes</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#direct-relief-1"><i class="fa fa-check"></i>Direct Relief</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#united-way-of-santa-barbara-county-1"><i class="fa fa-check"></i>United Way of Santa Barbara County</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#dear-residents-2"><i class="fa fa-check"></i>Dear Residents,</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#demographics-2"><i class="fa fa-check"></i>Demographics</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#population-growth-2"><i class="fa fa-check"></i>Population Growth</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#household-income-distribution-2"><i class="fa fa-check"></i>Household Income Distribution</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#neighborhood-and-community-well-being-2"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#crime-rates-remain-low-2"><i class="fa fa-check"></i>Crime Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#juvenile-felony-arrests-remain-lowest-in-decade-2"><i class="fa fa-check"></i>Juvenile Felony Arrests Remain Lowest in Decade</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#child-maltreatment-allegations-remain-constant-2"><i class="fa fa-check"></i>Child Maltreatment Allegations Remain Constant</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#individual-and-family-well-being-2"><i class="fa fa-check"></i>Individual and Family Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#domestic-violence-call-rate-decreases-slightly-2"><i class="fa fa-check"></i>Domestic Violence Call Rate Decreases Slightly</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#weapon-related-domestic-violence-call-rate-2"><i class="fa fa-check"></i>Weapon-Related Domestic Violence Call Rate</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#rape-crime-rates-increase-2"><i class="fa fa-check"></i>Rape Crime Rates Increase</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#births-to-teenage-mothers-declining-2"><i class="fa fa-check"></i>Births to Teenage Mothers Declining</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mothers-receiving-inadequate-prenatal-care-drops-2"><i class="fa fa-check"></i>Mothers Receiving Inadequate Prenatal Care Drops</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#infant-mortality-rates-remain-low-2"><i class="fa fa-check"></i>Infant Mortality Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#elementary-school-lunch-eligibility-2"><i class="fa fa-check"></i>Elementary School Lunch Eligibility</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#poverty-in-the-county-2"><i class="fa fa-check"></i>Poverty in the County</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#poverty-status-of-families-2"><i class="fa fa-check"></i>Poverty Status of Families</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#numbers-of-meals-served-increases-35-percent-of-those-served-are-under-18-2"><i class="fa fa-check"></i>Numbers of Meals Served Increases, 35 Percent of Those Served are Under 18</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#number-of-homeless-using-health-care-program-follows-decreasing-trend-2"><i class="fa fa-check"></i>Number of Homeless Using Health Care Program Follows Decreasing Trend</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#education-2"><i class="fa fa-check"></i>Education</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#sat-scores-continue-downward-trend-2"><i class="fa fa-check"></i>SAT Scores Continue Downward Trend</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#higher-percentage-of-students-take-the-sat-2"><i class="fa fa-check"></i>Higher Percentage of Students Take the SAT</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#south-coast-outscores-the-north-coast-on-caaspp-2"><i class="fa fa-check"></i>South Coast Outscores the North Coast on CAASPP</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#book-and-magazine-circulation-surpasses-one-million-2"><i class="fa fa-check"></i>Book and Magazine Circulation Surpasses One Million</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#citizen-engagement-2"><i class="fa fa-check"></i>Citizen Engagement</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#voter-registration-and-turnout-increases-2"><i class="fa fa-check"></i>Voter Registration and Turnout Increases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#cultural-resources-2"><i class="fa fa-check"></i>Cultural Resources</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#performing-arts-ticket-sales-increase-as-number-of-shows-exhibit-a-slight-decline-2"><i class="fa fa-check"></i>Performing Arts Ticket Sales Increase as Number of Shows Exhibit a Slight Decline</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-quality-2"><i class="fa fa-check"></i>Water Quality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-quality-violation-days-relatively-stable-2"><i class="fa fa-check"></i>Water Quality Violation Days Relatively Stable</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#water-consumption-declines-2"><i class="fa fa-check"></i>Water Consumption Declines</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#air-quality-2"><i class="fa fa-check"></i>Air Quality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#ozone-violation-days-significantly-reduced-2"><i class="fa fa-check"></i>Ozone Violation Days Significantly Reduced</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#no-businesses-release-toxic-air-pollutants-in-2015-2"><i class="fa fa-check"></i>No Businesses Release Toxic Air Pollutants in 2015</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#land-use-2"><i class="fa fa-check"></i>Land Use</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#pesticide-use-rises-slightly-over-past-year-2"><i class="fa fa-check"></i>Pesticide Use Rises Slightly Over Past Year</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#strawberries-dominate-pesticide-use-sites-2"><i class="fa fa-check"></i>Strawberries Dominate Pesticide Use Sites</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#workplace-pesticide-related-illnesses-and-injuries-increase-2"><i class="fa fa-check"></i>Workplace Pesticide Related Illnesses and Injuries Increase</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#energy-use-decreases-2"><i class="fa fa-check"></i>Energy Use Decreases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mobility-2"><i class="fa fa-check"></i>Mobility</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#most-workers-commute-alone-by-car-2"><i class="fa fa-check"></i>Most Workers Commute Alone by Car</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#mean-commute-time-declines-marginally-2"><i class="fa fa-check"></i>Mean Commute Time Declines Marginally</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#bus-ridership-decreasing-2"><i class="fa fa-check"></i>Bus Ridership Decreasing</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#traffic-volumes-stabilize-over-last-five-years-2"><i class="fa fa-check"></i>Traffic Volumes Stabilize Over Last Five Years</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#resource-use-2"><i class="fa fa-check"></i>Resource Use</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-waste-disposed-sees-slight-increase-2"><i class="fa fa-check"></i>Total Waste Disposed Sees Slight Increase</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#nature-2"><i class="fa fa-check"></i>Nature</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-bird-count-experiences-a-decline-2"><i class="fa fa-check"></i>Total Bird Count Experiences a Decline</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#standard-of-living-2"><i class="fa fa-check"></i>Standard of Living</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#south-coast-household-income-increases-2"><i class="fa fa-check"></i>South Coast Household Income Increases</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#real-average-salary-per-worker-rises-slightly-2"><i class="fa fa-check"></i>Real Average Salary per Worker Rises Slightly</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#job-quality-and-quantity-2"><i class="fa fa-check"></i>Job Quality and Quantity</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#growth-in-three-sectors-2"><i class="fa fa-check"></i>Growth in Three Sectors</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#average-salaries-in-santa-barbara-county-2"><i class="fa fa-check"></i>Average Salaries in Santa Barbara County</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#job-and-population-growth-rates-vary-2"><i class="fa fa-check"></i>Job and Population Growth Rates Vary</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#wholesale-trade-sector-sees-most-growth-2"><i class="fa fa-check"></i>Wholesale Trade Sector Sees Most Growth</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#government-to-population-ratio-stable-2"><i class="fa fa-check"></i>Government to Population Ratio Stable</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#housing-affordability-2"><i class="fa fa-check"></i>Housing Affordability</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#santa-barbara-county-has-least-affordable-housing-2"><i class="fa fa-check"></i>Santa Barbara County has Least Affordable Housing</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#rental-rates-experience-slow-growth-but-continue-to-remain-high-2"><i class="fa fa-check"></i>Rental Rates Experience Slow Growth, but Continue to Remain High</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#business-vitality-2"><i class="fa fa-check"></i>Business Vitality</a><ul>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#total-available-space-increases-slightly-as-gross-lease-rates-reach-record-highs-2"><i class="fa fa-check"></i>Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#gifts-grants-and-contributions-to-non-profits-continue-to-grow-2"><i class="fa fa-check"></i>Gifts, Grants, and Contributions to Non-Profits Continue to Grow</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#non-profit-contributions-support-a-wide-range-of-charitable-purposes-2"><i class="fa fa-check"></i>Non-Profit Contributions Support A Wide Range Of Charitable Purposes</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#direct-relief-2"><i class="fa fa-check"></i>Direct Relief</a></li>
-<li class="chapter" data-level="" data-path="ucsb-economic-forecast-project-1.html"><a href="ucsb-economic-forecast-project-1.html#united-way-of-santa-barbara-county-2"><i class="fa fa-check"></i>United Way of Santa Barbara County</a></li>
-</ul></li>
-</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -437,10 +159,10 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="introduction" class="section level1 unnumbered">
-<h1>Introduction</h1>
-<div id="what-is-the-community-indicators-project" class="section level4 unnumbered">
-<h4>What is the Community Indicators Project?</h4>
+<div id="introduction" class="section level1 unnumbered hasAnchor">
+<h1>Introduction<a href="introduction.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="what-is-the-community-indicators-project" class="section level4 unnumbered hasAnchor">
+<h4>What is the Community Indicators Project?<a href="introduction.html#what-is-the-community-indicators-project" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>The Community Indicators Project is an effort to measure the social, environmental, and economic factors that make up the quality of life in our community. The project consists of the information in this report, additional data provided at our website (www.efp.ucsb.edu), as well as the process of generating the information. Both the product and the process are essential elements of the effort. Our mission is:</p>
 <br>
 <center>
@@ -461,7 +183,6 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -480,6 +201,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -500,10 +222,13 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
-},
-"search": true
+}
 });
 });
 </script>
@@ -511,7 +236,3 @@ gitbook.start({
 </body>
 
 </html>
-
-
-
-

@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Economic | cip_2020.utf8</title>
+  <title>Economic | cip_2022.knit</title>
   <meta name="description" content="" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.31 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Economic | cip_2020.utf8" />
+  <meta property="og:title" content="Economic | cip_2022.knit" />
   <meta property="og:type" content="book" />
-  
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Economic | cip_2020.utf8" />
+  <meta name="twitter:title" content="Economic | cip_2022.knit" />
   
   
   
@@ -30,8 +29,9 @@
   
   
 <link rel="prev" href="environmental.html"/>
-<link rel="next" href="non-profit.html"/>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="acknowledgments.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -47,9 +47,17 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="libs/plotly-binding-4.10.1/plotly.js"></script>
+<script src="libs/typedarray-0.1/typedarray.min.js"></script>
+<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
 
-<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
 
 
 
@@ -64,189 +72,73 @@
 
     <div class="book-summary">
       <nav role="navigation">
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
-        <a href="https://efp.ucsb.edu/" class="img-logo-link">
-          <img src="EFP_Logo.png" class="img-logo" />
-        </a>
-        <style>
-          .img-logo-link {
-            padding: 5px 0;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .img-logo {
-            height: 40px;
-            object-fit: contain;
-        }
-        ul.summary {
-            top: 50px !important;
-        }
-        </style>
-        
 
 <ul class="summary">
 <li><a href="./">Community Indicators Project</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>UCSB Economic Forecast Project</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>UCSB Economic Forecast Project</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#dear-residents"><i class="fa fa-check"></i>Dear Residents,</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html"><i class="fa fa-check"></i>Social Indicators</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#demographics"><i class="fa fa-check"></i>Demographics</a><ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html"><i class="fa fa-check"></i>Social Indicators</a>
+<ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#demographics"><i class="fa fa-check"></i>Demographics</a>
+<ul>
 <li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#population-growth"><i class="fa fa-check"></i>Population Growth</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#household-income-distribution"><i class="fa fa-check"></i>Household Income Distribution</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#neighborhood-and-community-well-being"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#crime-rates-remain-low"><i class="fa fa-check"></i>Crime Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#juvenile-felony-arrests-remain-lowest-in-decade"><i class="fa fa-check"></i>Juvenile Felony Arrests Remain Lowest in Decade</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#child-maltreatment-allegations-remain-constant"><i class="fa fa-check"></i>Child Maltreatment Allegations Remain Constant</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#individual-and-family-well-being"><i class="fa fa-check"></i>Individual and Family Well-Being</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#domestic-violence-call-rate-decreases-slightly"><i class="fa fa-check"></i>Domestic Violence Call Rate Decreases Slightly</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#weapon-related-domestic-violence-call-rate"><i class="fa fa-check"></i>Weapon-Related Domestic Violence Call Rate</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#rape-crime-rates-increase"><i class="fa fa-check"></i>Rape Crime Rates Increase</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#births-to-teenage-mothers-declining"><i class="fa fa-check"></i>Births to Teenage Mothers Declining</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#mothers-receiving-inadequate-prenatal-care-drops"><i class="fa fa-check"></i>Mothers Receiving Inadequate Prenatal Care Drops</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#infant-mortality-rates-remain-low"><i class="fa fa-check"></i>Infant Mortality Rates Remain Low</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#elementary-school-lunch-eligibility"><i class="fa fa-check"></i>Elementary School Lunch Eligibility</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#poverty-in-the-county"><i class="fa fa-check"></i>Poverty in the County</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#poverty-status-of-families"><i class="fa fa-check"></i>Poverty Status of Families</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#numbers-of-meals-served-increases-35-percent-of-those-served-are-under-18"><i class="fa fa-check"></i>Numbers of Meals Served Increases, 35 Percent of Those Served are Under 18</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#number-of-homeless-using-health-care-program-follows-decreasing-trend"><i class="fa fa-check"></i>Number of Homeless Using Health Care Program Follows Decreasing Trend</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#education"><i class="fa fa-check"></i>Education</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#sat-scores-continue-downward-trend"><i class="fa fa-check"></i>SAT Scores Continue Downward Trend</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#higher-percentage-of-students-take-the-sat"><i class="fa fa-check"></i>Higher Percentage of Students Take the SAT</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#south-coast-outscores-the-north-coast-on-caaspp"><i class="fa fa-check"></i>South Coast Outscores the North Coast on CAASPP</a></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#book-and-magazine-circulation-surpasses-one-million"><i class="fa fa-check"></i>Book and Magazine Circulation Surpasses One Million</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#citizen-engagement"><i class="fa fa-check"></i>Citizen Engagement</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#voter-registration-and-turnout-increases"><i class="fa fa-check"></i>Voter Registration and Turnout Increases</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#cultural-resources"><i class="fa fa-check"></i>Cultural Resources</a><ul>
-<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#performing-arts-ticket-sales-increase-as-number-of-shows-exhibit-a-slight-decline"><i class="fa fa-check"></i>Performing Arts Ticket Sales Increase as Number of Shows Exhibit a Slight Decline</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#neighborhood-and-community-well-being"><i class="fa fa-check"></i>Neighborhood and Community Well-Being</a>
+<ul>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#crime-rates-across-ucs-plummet-during-lockdowns"><i class="fa fa-check"></i>Crime Rates Across UCs Plummet During Lockdowns</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#juvenile-felony-arrests-reach-lowest-in-decade"><i class="fa fa-check"></i>Juvenile Felony Arrests Reach Lowest in Decade</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#rate-of-births-to-teenage-mothers-declining"><i class="fa fa-check"></i>Rate of Births to Teenage Mothers Declining</a></li>
+<li class="chapter" data-level="" data-path="social-indicators.html"><a href="social-indicators.html#heart-diseases-remain-the-leading-cause-of-death-in-santa-barbara-county"><i class="fa fa-check"></i>Heart Diseases Remain the Leading Cause of Death in Santa Barbara County</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html"><i class="fa fa-check"></i>Environmental</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality"><i class="fa fa-check"></i>Water Quality</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html"><i class="fa fa-check"></i>Environmental</a>
+<ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality"><i class="fa fa-check"></i>Water Quality</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-quality-violation-days-relatively-stable"><i class="fa fa-check"></i>Water Quality Violation Days Relatively Stable</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#water-consumption-declines"><i class="fa fa-check"></i>Water Consumption Declines</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#particulate-matter-levels-increase"><i class="fa fa-check"></i>Particulate Matter Levels Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#air-quality"><i class="fa fa-check"></i>Air Quality</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#ozone-violation-days-significantly-reduced"><i class="fa fa-check"></i>Ozone Violation Days Significantly Reduced</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#no-businesses-release-toxic-air-pollutants-in-2015"><i class="fa fa-check"></i>No Businesses Release Toxic Air Pollutants in 2015</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#land-use"><i class="fa fa-check"></i>Land Use</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#pesticide-use-rises-slightly-over-past-year"><i class="fa fa-check"></i>Pesticide Use Rises Slightly Over Past Year</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#strawberries-dominate-pesticide-use-sites"><i class="fa fa-check"></i>Strawberries Dominate Pesticide Use Sites</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#workplace-pesticide-related-illnesses-and-injuries-increase"><i class="fa fa-check"></i>Workplace Pesticide Related Illnesses and Injuries Increase</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#land-use"><i class="fa fa-check"></i>Land Use</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#energy-use-decreases"><i class="fa fa-check"></i>Energy Use Decreases</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mobility"><i class="fa fa-check"></i>Mobility</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mobility"><i class="fa fa-check"></i>Mobility</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#most-workers-commute-alone-by-car"><i class="fa fa-check"></i>Most Workers Commute Alone by Car</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mean-commute-time-declines-marginally"><i class="fa fa-check"></i>Mean Commute Time Declines Marginally</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#mean-commute-time-rises-marginally"><i class="fa fa-check"></i>Mean Commute Time Rises Marginally</a></li>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#bus-ridership-decreasing"><i class="fa fa-check"></i>Bus Ridership Decreasing</a></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#traffic-volumes-stabilize-over-last-five-years"><i class="fa fa-check"></i>Traffic Volumes Stabilize Over Last Five Years</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#resource-use"><i class="fa fa-check"></i>Resource Use</a><ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#resource-use"><i class="fa fa-check"></i>Resource Use</a>
+<ul>
 <li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-waste-disposed-sees-slight-increase"><i class="fa fa-check"></i>Total Waste Disposed Sees Slight Increase</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#nature"><i class="fa fa-check"></i>Nature</a><ul>
-<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-bird-count-experiences-a-decline"><i class="fa fa-check"></i>Total Bird Count Experiences a Decline</a></li>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#nature"><i class="fa fa-check"></i>Nature</a>
+<ul>
+<li class="chapter" data-level="" data-path="environmental.html"><a href="environmental.html#total-bird-count-decreases-in-2020"><i class="fa fa-check"></i>Total Bird Count Decreases in 2020</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html"><i class="fa fa-check"></i>Economic</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#standard-of-living"><i class="fa fa-check"></i>Standard of Living</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#south-coast-household-income-increases"><i class="fa fa-check"></i>South Coast Household Income Increases</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#real-average-salary-per-worker-rises-slightly"><i class="fa fa-check"></i>Real Average Salary per Worker Rises Slightly</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html"><i class="fa fa-check"></i>Economic</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#standard-of-living"><i class="fa fa-check"></i>Standard of Living</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#south-county-household-income-increases"><i class="fa fa-check"></i>South County Household Income Increases</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#real-average-salary-per-worker-rises"><i class="fa fa-check"></i>Real Average Salary per Worker Rises</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-quality-and-quantity"><i class="fa fa-check"></i>Job Quality and Quantity</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#growth-in-three-sectors"><i class="fa fa-check"></i>Growth in Three Sectors</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#average-salaries-in-santa-barbara-county"><i class="fa fa-check"></i>Average Salaries in Santa Barbara County</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-and-population-growth-rates-vary"><i class="fa fa-check"></i>Job and Population Growth Rates Vary</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#wholesale-trade-sector-sees-most-growth"><i class="fa fa-check"></i>Wholesale Trade Sector Sees Most Growth</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#government-to-population-ratio-stable"><i class="fa fa-check"></i>Government to Population Ratio Stable</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#job-quality-and-quantity"><i class="fa fa-check"></i>Job Quality and Quantity</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#pandemic-impacts-industry-employment"><i class="fa fa-check"></i>Pandemic Impacts Industry Employment</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#housing-affordability"><i class="fa fa-check"></i>Housing Affordability</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#santa-barbara-county-has-least-affordable-housing"><i class="fa fa-check"></i>Santa Barbara County has Least Affordable Housing</a></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#rental-rates-experience-slow-growth-but-continue-to-remain-high"><i class="fa fa-check"></i>Rental Rates Experience Slow Growth, but Continue to Remain High</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#business-vitality"><i class="fa fa-check"></i>Business Vitality</a><ul>
-<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#total-available-space-increases-slightly-as-gross-lease-rates-reach-record-highs"><i class="fa fa-check"></i>Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs</a></li>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#housing-affordability"><i class="fa fa-check"></i>Housing Affordability</a>
+<ul>
+<li class="chapter" data-level="" data-path="economic.html"><a href="economic.html#rental-rates-soar-post-pandemic"><i class="fa fa-check"></i>Rental Rates Soar Post-pandemic</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html"><i class="fa fa-check"></i>Non-Profit</a><ul>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#gifts-grants-and-contributions-to-non-profits-continue-to-grow"><i class="fa fa-check"></i>Gifts, Grants, and Contributions to Non-Profits Continue to Grow</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#non-profit-contributions-support-a-wide-range-of-charitable-purposes"><i class="fa fa-check"></i>Non-Profit Contributions Support A Wide Range Of Charitable Purposes</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#direct-relief"><i class="fa fa-check"></i>Direct Relief</a></li>
-<li class="chapter" data-level="" data-path="non-profit.html"><a href="non-profit.html#united-way-of-santa-barbara-county"><i class="fa fa-check"></i>United Way of Santa Barbara County</a></li>
-</ul></li>
-<li class="chapter" data-level="" data-path="healthcare.html"><a href="healthcare.html"><i class="fa fa-check"></i>Healthcare</a></li>
 <li class="chapter" data-level="" data-path="acknowledgments.html"><a href="acknowledgments.html"><i class="fa fa-check"></i>Acknowledgments</a></li>
-<li class="chapter" data-level="" data-path="voting.html"><a href="voting.html"><i class="fa fa-check"></i>Voting</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -267,8 +159,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="economic" class="section level1 unnumbered">
-<h1>Economic</h1>
+<div id="economic" class="section level1 unnumbered hasAnchor">
+<h1>Economic<a href="economic.html#economic" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <hr />
 <style>
 .column-left{
@@ -281,287 +173,647 @@
   width: 50%;
   text-align: right;
 }
+img {
+  width: 425px;
+  height: 305px;
+}
 </style>
-<div id="standard-of-living" class="section level2 unnumbered">
-<h2>Standard of Living</h2>
+<div id="standard-of-living" class="section level2 unnumbered hasAnchor">
+<h2>Standard of Living<a href="economic.html#standard-of-living" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <hr />
-<div id="south-coast-household-income-increases" class="section level3 unnumbered">
-<h3>South Coast Household Income Increases</h3>
+<div id="south-county-household-income-increases" class="section level3 unnumbered hasAnchor">
+<h3>South County Household Income Increases<a href="economic.html#south-county-household-income-increases" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="column-right">
+<div style="margin-bottom:20px;">
+
+</div>
+<p><img src="cip_2022_files/figure-html/South_Coast_Household_Income_Increases-1.png" width="95%" /></p>
 <div style="margin-bottom:100px;">
 
 </div>
-<p><img src="cip_2020_files/figure-html/South_Coast_Household_Income_Increases-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
 </div>
-</div>
-<div id="what-is-the-measure-28" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
+<div id="what-is-the-measure-9" class="section level4 unnumbered hasAnchor">
+<h4>What is the measure?<a href="economic.html#what-is-the-measure-9" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This data consists of money income – exclusive of certain money receipts such as capital gains – before payment of personal income taxes, Social Security, union dues, Medicare deductions and the like. It excludes non-cash benefits such as food stamps or health benefits. The data is adjusted for inflation.</p>
 </div>
-<div id="why-is-it-important-28" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
+<div id="why-is-it-important-10" class="section level4 unnumbered hasAnchor">
+<h4>Why is it important?<a href="economic.html#why-is-it-important-10" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>This is the best measure of income in the context of the standard of living for households because it controls for changes in household size. It measures the ability of families to make necessary and discretionary expenditures on goods and services.</p>
 </div>
-<div id="how-are-we-doing-34" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>The median household income in North County decreased slightly in 2016, falling from $63,887 to $63,694. This was a slight decline that came after a 5 percent increase in household income from 2014 to 2015. South County household income has continued to rise to $78,076, increasing 4.15 percent over the last year.</p>
+<div id="how-are-we-doing-13" class="section level4 unnumbered hasAnchor">
+<h4>How are we doing?<a href="economic.html#how-are-we-doing-13" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Average household income in North and South County both averaged above $100,000. Median household income in South County remains higher than North County by just over 20%, at $94,481.15 and $78509.14 respectively.</p>
 <hr />
 </div>
 </div>
-<div id="real-average-salary-per-worker-rises-slightly" class="section level3 unnumbered">
-<h3>Real Average Salary per Worker Rises Slightly</h3>
+<div id="real-average-salary-per-worker-rises" class="section level3 unnumbered hasAnchor">
+<h3>Real Average Salary per Worker Rises<a href="economic.html#real-average-salary-per-worker-rises" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <div class="column-right">
+<div style="margin-bottom:10px;">
+
+</div>
+<p><img src="cip_2022_files/figure-html/Real_Average_Salary-1.png" width="95%" /></p>
 <div style="margin-bottom:100px;">
 
 </div>
-<p><img src="cip_2020_files/figure-html/Real_Average_Salary-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
 </div>
-</div>
-<div id="what-is-the-measure-29" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
+<div id="what-is-the-measure-10" class="section level4 unnumbered hasAnchor">
+<h4>What is the measure?<a href="economic.html#what-is-the-measure-10" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Real Average Salary is computed by summing total wages and salaries paid to all workers in the County, and then dividing by the total number of wage- and salary-earning employees. This is a countywide measure and is adjusted for inflation.</p>
 </div>
-<div id="why-is-it-important-29" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
+<div id="why-is-it-important-11" class="section level4 unnumbered hasAnchor">
+<h4>Why is it important?<a href="economic.html#why-is-it-important-11" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>While real median family income includes all residents and all sources of income, the real average wage per worker measures wages or salaries only. It is a better indicator of the health of local companies and the economic well-being of workers.</p>
 </div>
-<div id="how-are-we-doing-35" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>The real average salary per worker increased slightly from last year’s level. It rose from $49,488 to $49,907 in 2016. This is a 4.51 percent increase from the average salary in 2009.</p>
+<div id="how-are-we-doing-14" class="section level4 unnumbered hasAnchor">
+<h4>How are we doing?<a href="economic.html#how-are-we-doing-14" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The real average salary per worker increased slightly from last year’s level. It rose from $57,986 to $61,062 in 2021. This is a 25 percent increase from the average salary a decade ago (2011).</p>
 <hr />
 </div>
 </div>
 </div>
-<div id="job-quality-and-quantity" class="section level2 unnumbered">
-<h2>Job Quality and Quantity</h2>
+<div id="job-quality-and-quantity" class="section level2 unnumbered hasAnchor">
+<h2>Job Quality and Quantity<a href="economic.html#job-quality-and-quantity" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <hr />
-<div id="growth-in-three-sectors" class="section level3 unnumbered">
-<h3>Growth in Three Sectors</h3>
-<div id="what-is-the-measure-30" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>Employment in Santa Barbara County, sorted by Industry Grouping in 2010 and 2015. This data was formulated by the UCSB Economic Forecast Project, using California Employment Development Department (EDD) data.</p>
+<div id="pandemic-impacts-industry-employment" class="section level3 unnumbered hasAnchor">
+<h3>Pandemic Impacts Industry Employment<a href="economic.html#pandemic-impacts-industry-employment" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="column-center">
+<div style="margin-bottom:10px;">
+
 </div>
-<div id="why-is-it-important-30" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
+<div id="htmlwidget-173b8f8e946e7eaf6557" style="width:100%;height:576px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-173b8f8e946e7eaf6557">{"x":{"data":[{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,2009000,2009352.00000001,2079047.99999999,2079400,2079719.50000001,2142980.49999999,2143300,2142788.49999999,2041511.50000001,2041000,2041419.50000001,2124480.49999999,2124900,2121579.49999993,1464120.50000007,1460800,0,0,1753400,1757380.50000009,2545519.49999991,2549500,2549148.49999999,2479551.50000001,2479200,2479886.50000001,2615813.49999999,2616500,2616152.99999999,2547447.00000001,2547100,2546731.49999999,2473768.50000001,2473400,0,0],"text":"Government","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(0,104,139,1)","hoveron":"points","name":"Government","legendgroup":"Government","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,1717400,1717531,1743469,1743600,1743814.5,1786285.5,1786500,1785871.99999999,1661528.00000001,1660900,1661250.00000001,1730549.99999999,1730900,1728190.49999994,1191709.50000006,1189000,0,0,1460800,1464120.50000007,2121579.49999993,2124900,2124480.49999999,2041419.50000001,2041000,2041511.50000001,2142788.49999999,2143300,2142980.49999999,2079719.50000001,2079400,2079047.99999999,2009352.00000001,2009000,0,0],"text":"Professional and Business Services","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(110,139,61,1)","hoveron":"points","name":"Professional and Business Services","legendgroup":"Professional and Business Services","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,1383500,1383611.5,1405688.5,1405800,1405966.5,1438933.5,1439100,1438896,1398504,1398300,1398513,1440687,1440900,1438539.99999995,971260.000000052,968900,0,0,1189000,1191709.50000006,1728190.49999994,1730900,1730549.99999999,1661250.00000001,1660900,1661528.00000001,1785871.99999999,1786500,1786285.5,1743814.5,1743600,1743469,1717531,1717400,0,0],"text":"Leisure and Hospitality","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(100,149,237,1)","hoveron":"points","name":"Leisure and Hospitality","legendgroup":"Leisure and Hospitality","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,1056400,1056503,1076897,1077000,1077106,1098094,1098200,1098017.5,1061882.5,1061700,1061878.5,1097221.5,1097400,1095591.49999996,737508.500000039,735700,0,0,968900,971260.000000052,1438539.99999995,1440900,1440687,1398513,1398300,1398504,1438896,1439100,1438933.5,1405966.5,1405800,1405688.5,1383611.5,1383500,0,0],"text":"Educational and Health Services","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(238,154,0,1)","hoveron":"points","name":"Educational and Health Services","legendgroup":"Educational and Health Services","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,795500,795536.000000001,802663.999999999,802700,802732.000000001,809067.999999999,809100,808852.999999995,759947.000000005,759700,759829.000000003,785370.999999997,785500,784230.499999972,532869.500000028,531600,0,0,735700,737508.500000039,1095591.49999996,1097400,1097221.5,1061878.5,1061700,1061882.5,1098017.5,1098200,1098094,1077106,1077000,1076897,1056503,1056400,0,0],"text":"Total Farm","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(139,35,35,1)","hoveron":"points","name":"Total Farm","legendgroup":"Total Farm","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,528000,528009.5,529890.5,529900,529927.500000001,535372.499999999,535400,535235.999999996,502764.000000004,502600,502712.500000002,524987.499999998,525100,524248.999999981,355751.000000019,354900,0,0,531600,532869.500000028,784230.499999972,785500,785370.999999997,759829.000000003,759700,759947.000000005,808852.999999995,809100,809067.999999999,802732.000000001,802700,802663.999999999,795536.000000001,795500,0,0],"text":"Goods Producing","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(93,71,139,1)","hoveron":"points","name":"Goods Producing","legendgroup":"Goods Producing","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,301800,301821,305979,306000,306033.000000001,312566.999999999,312600,312513.499999998,295386.500000002,295300,295367.000000001,308632.999999999,308700,308223.49999999,213876.50000001,213400,0,0,354900,355751.000000019,524248.999999981,525100,524987.499999998,502712.500000002,502600,502764.000000004,535235.999999996,535400,535372.499999999,529927.500000001,529900,529890.5,528009.5,528000,0,0],"text":"Retail Trade","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(205,51,51,1)","hoveron":"points","name":"Retail Trade","legendgroup":"Retail Trade","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,222500,222514.5,225385.5,225400,225425.000000001,230374.999999999,230400,230318.999999998,214281.000000002,214200,214264.500000001,227035.499999999,227100,226758.499999993,159141.500000007,158800,0,0,213400,213876.50000001,308223.49999999,308700,308632.999999999,295367.000000001,295300,295386.500000002,312513.499999998,312600,312566.999999999,306033.000000001,306000,305979,301821,301800,0,0],"text":"Financial Activities","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(188,143,143,1)","hoveron":"points","name":"Financial Activities","legendgroup":"Financial Activities","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,149900,149906,151094,151100,151106.5,152393.5,152400,152373.999999999,147226.000000001,147200,147250.500000001,157249.499999999,157300,157057.499999995,109042.500000005,108800,0,0,158800,159141.500000007,226758.499999993,227100,227035.499999999,214264.500000001,214200,214281.000000002,230318.999999998,230400,230374.999999999,225425.000000001,225400,225385.5,222514.5,222500,0,0],"text":"Other Services","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(143,188,143,1)","hoveron":"points","name":"Other Services","legendgroup":"Other Services","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,90100,90096.9999999999,89503.0000000001,89500,89507.5000000002,90992.4999999998,91000,90982.9999999996,87617.0000000004,87600,87629.5000000006,93470.4999999994,93500,93353.9999999968,64446.0000000032,64300,0,0,108800,109042.500000005,157057.499999995,157300,157249.499999999,147250.500000001,147200,147226.000000001,152373.999999999,152400,152393.5,151106.5,151100,151094,149906,149900,0,0],"text":"Wholesale Trade","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(255,127,80,1)","hoveron":"points","name":"Wholesale Trade","legendgroup":"Wholesale Trade","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,38900,38910.5000000002,40989.4999999998,41000,41006.0000000001,42193.9999999999,42200,42189.9999999998,40210.0000000002,40200,40225.0000000005,45174.9999999995,45200,45130.4999999985,31369.5000000015,31300,0,0,64300,64446.0000000032,93353.9999999968,93500,93470.4999999994,87629.5000000006,87600,87617.0000000004,90982.9999999996,91000,90992.4999999998,89507.5000000002,89500,89503.0000000001,90096.9999999999,90100,0,0],"text":"Information","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(205,92,92,1)","hoveron":"points","name":"Information","legendgroup":"Information","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[2016.995,2017,2017.005,2017.995,2018,2018.005,2018.995,2019,2019.005,2019.995,2020,2020.005,2020.995,2021,2021.005,2021.995,2022,2022.005,2022.005,2022.005,2022,2021.995,2021.005,2021,2020.995,2020.005,2020,2019.995,2019.005,2019,2018.995,2018.005,2018,2017.995,2017.005,2017,2016.995,2016.995],"y":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31300,31369.5000000015,45130.4999999985,45200,45174.9999999995,40225.0000000005,40200,40210.0000000002,42189.9999999998,42200,42193.9999999999,41006.0000000001,41000,40989.4999999998,38910.5000000002,38900,0,0],"text":"Transportation, Warehousing and Utilitie","type":"scatter","mode":"lines","line":{"width":1.88976377952756,"color":"transparent","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,50,204,1)","hoveron":"points","name":"Transportation, Warehousing and Utilitie","legendgroup":"Transportation, Warehousing and Utilitie","showlegend":true,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null}],"layout":{"margin":{"t":56.0719524007195,"r":9.29846409298464,"b":48.9719108897191,"l":99.4935657949357},"font":{"color":"rgba(0,0,0,1)","family":"serif","size":18.5969281859693},"title":{"text":"<b> Employment by Industry <\/b>","font":{"color":"rgba(0,0,0,1)","family":"serif","size":29.2237442922374},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[2016.7445,2022.2555],"tickmode":"array","ticktext":["2017","2018","2019","2020","2021","2022"],"tickvals":[2017,2018,2019,2020,2021,2022],"categoryorder":"array","categoryarray":["2017","2018","2019","2020","2021","2022"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.64923204649232,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"serif","size":14.8775425487754},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.845314917544058,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"y","title":{"text":"Year","font":{"color":"rgba(0,0,0,1)","family":"serif","size":18.5969281859693}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-130825,2747325],"tickmode":"array","ticktext":["0","1,000,000","2,000,000"],"tickvals":[0,1000000,2000000],"categoryorder":"array","categoryarray":["0","1,000,000","2,000,000"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":4.64923204649232,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"serif","size":14.8775425487754},"tickangle":-0,"showline":true,"linecolor":"rgba(0,0,0,1)","linewidth":0.845314917544058,"showgrid":false,"gridcolor":null,"gridwidth":0,"zeroline":false,"anchor":"x","title":{"text":"Total Employment","font":{"color":"rgba(0,0,0,1)","family":"serif","size":18.5969281859693}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"serif","size":14.8775425487754}},"hovermode":"closest","barmode":"relative","colorway":["deepskyblue4","darkolivegreen4","cornflowerblue","orange2","brown4","mediumpurple4","brown3","rosybrown","darkseagreen","coral","indianred","darkorchid"]},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"e520754e34c5":{"x":{},"y":{},"fill":{},"text":{},"type":"scatter"}},"cur_data":"e520754e34c5","visdat":{"e520754e34c5":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div style="margin-bottom:10px;">
+
+</div>
+</div>
+<div id="what-is-the-measure-11" class="section level4 unnumbered hasAnchor">
+<h4>What is the measure?<a href="economic.html#what-is-the-measure-11" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Employment in Santa Barbara County, sorted by industry. This data was formulated by the UCSB Economic Forecast Project, using California Employment Development Department (EDD) data.</p>
+</div>
+<div id="why-is-it-important-12" class="section level4 unnumbered hasAnchor">
+<h4>Why is it important?<a href="economic.html#why-is-it-important-12" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Shifts in the type of employment and associated wages can impact the real average worker’s salary and either enhance or constrain career opportunities for the local workforce.</p>
 </div>
-<div id="how-are-we-doing-36" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Since 2010, Santa Barbara County has experienced significant growth in the information (29 percent), leisure and hospitality (21 percent), and wholesale trade (20 percent) sectors. No sectors have experienced a decrease in employment since 2010. However, the financial activities secotor, which accounts for 3 percent of total employment in 2015, has seen no growth in employment since 2010.</p>
-<div style="margin-bottom:100px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/growth-1.png" width="100%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
+<div id="how-are-we-doing-15" class="section level4 unnumbered hasAnchor">
+<h4>How are we doing?<a href="economic.html#how-are-we-doing-15" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>The pandemic hit Leisure and Hospitality, Government, and Professional and Business Services, initially, the hardest. Following the onset of the pandemic in 2020, there has been general employment growth in all industries with most industries returning to pre-pandemic employment. Professional and Business Services’ employment has grown beyond pre-pandemic numbers, while Leisure and Hospitality has had the most rapid growth.</p>
+<!-- ### Average Salaries in Santa Barbara County {-} -->
+<!-- #### What is the measure? {-} -->
+<!-- Average salary by industry in Santa Barbara County is compared for 2010 and 2015. These two snapshots of Santa Barbara County average salary data, sorted by industry, are derived from California Employment Development Department data sources. This measure is inflation-adjusted and presented in 2009 dollars. -->
+<!-- #### Why is it important? {-} -->
+<!-- While a number of factors contribute to quality employment – such as job satisfaction, the quality of the workplace and co-workers – the level of pay is an important aspect of job quality and the easiest to measure. -->
+<!-- #### How are we doing? {-} -->
+<!-- Average salaries in most sectors in Santa Barbara County have been on the rise since 2010. The sectors with the largest growth in average salaries are information (35 percent), agriculture (25 percent), and financial activities (10 percent). The only industry that declined was education and health services (a less than 1 percent loss). -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- ```{r salaries, fig.margin = TRUE, fig.height = 6, echo= FALSE, out.width= '100%', eval=FALSE} -->
+<!-- data.plot <- t(as.matrix(data.frame('2015'=indSal$Salary.Real[which(indSal$Year==2015)],'2010'=indSal$Salary.Real[which(indSal$Year=="2010")]))) -->
+<!-- par(mar=c(15, 5, 5, 2), family = 'serif') -->
+<!-- barplot(data.plot, -->
+<!--        col = c('darkslateblue','cornflowerblue'), -->
+<!--        names.arg=indSal$Industry[which(indSal$Year=="2015")], -->
+<!--        ylim = c(0,100000), -->
+<!--        las = 2, -->
+<!--        axes = FALSE, -->
+<!--        xpd = FALSE, -->
+<!--        beside=TRUE, -->
+<!--        legend=gsub('X','',rownames(data.plot)) -->
+<!-- ) -->
+<!-- axis(2,  -->
+<!--        at = seq(0,100000,25000), -->
+<!--        lab = paste("$",(format(seq(0,100000,25000),big.mark=","))), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1.2, -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- mtext('Real Average Salary by Industry',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.75, -->
+<!--        font = 2 -->
+<!-- ) -->
+<!-- mtext("*In terms of 2009 dollars",  -->
+<!--        side = 1, -->
+<!--        line = 13, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext("Source: California Employment Development Department",  -->
+<!--        side = 1, -->
+<!--        line = 14, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- *** -->
+<!-- ### Job and Population Growth Rates Vary {-} -->
+<!-- #### What is the measure? {-} -->
+<!-- These indicators measure the difference between the the job growth rate and the population growth rate for both North County and South Coast. -->
+<!-- #### Why is it important? {-} -->
+<!-- When the rate of job creation exceeds the rate of population growth, with no change in labor force participation, the net result is a reduction in unemployment. Job creation reflects economic expansion and the health of local firms and is a measure of the vitality of the local economy. Job creation and population growth also puts pressure on the housing market and may lead to longer commute, perhaps from outside the region. -->
+<!-- #### How are we doing? {-} -->
+<!-- Job growth trends often mirror population growth trends. While South Coast patterns tend to be somewhat correlated, a large discrepancy in population and employment trends has not been seen in recent years. In 2015, the job growth exceeded population growth. For North County, job growth has exceeded population growth recently. -->
+<!-- <div class="column-left"> -->
+<!-- <div style="margin-bottom:20px;"> -->
+<!-- </div> -->
+<!-- ```{r, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- par(mar=c(7, 4.5, 5, 1), family = 'serif') -->
+<!-- barplot( -->
+<!--        height = as.integer(pop_growth$diff_nc*100), -->
+<!--        col = "deeppink3", -->
+<!--        names.arg=pop_growth$year, -->
+<!--        ylim = c(-6,6), -->
+<!--        las = 1, -->
+<!--        axes = FALSE, -->
+<!--        cex.names=1.2, -->
+<!-- ) -->
+<!-- axis(2,  -->
+<!--        at = seq(-6,6,2), -->
+<!--        lab = paste(seq(-6,6,2),"%"), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1.3 -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- mtext('Difference Between Population and Job Growth',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.5, -->
+<!--        font = 2, -->
+<!--        adj = 0 -->
+<!-- ) -->
+<!-- mtext('North County',  -->
+<!--        side = 3, -->
+<!--        line = .8, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext("Source: QCEW",  -->
+<!--        side = 1, -->
+<!--        line = 6, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div class="column-right"> -->
+<!-- <div style="margin-bottom:20px;"> -->
+<!-- </div> -->
+<!-- ```{r, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- par(mar=c(7, 4.5, 5, 1), family = 'serif') -->
+<!-- barplot( -->
+<!--        height = as.integer(pop_growth$diff_sc*100), -->
+<!--        col = "darkslateblue", -->
+<!--        names.arg=pop_growth$year, -->
+<!--        ylim = c(-6,6), -->
+<!--        las = 1, -->
+<!--        axes = FALSE, -->
+<!--        cex.names=1.2, -->
+<!-- ) -->
+<!-- axis(2,  -->
+<!--        at = seq(-6,6,2), -->
+<!--        lab = paste(seq(-6,6,2),"%"), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1.3 -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- mtext('Difference Between Population and Job Growth',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.5, -->
+<!--        font = 2, -->
+<!--        adj = 0 -->
+<!-- ) -->
+<!-- mtext('South Coast',  -->
+<!--        side = 3, -->
+<!--        line = .8, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext("Source: QCEW",  -->
+<!--        side = 1, -->
+<!--        line = 6, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- *** -->
+<!-- ### Wholesale Trade Sector Sees Most Growth {-} -->
+<!-- <div class="column-right"> -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- ```{r industrygrowth, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- indEmp$empChange2 <- (indEmp$emp2018 - indEmp$emp2010) / indEmp$emp2010  -->
+<!-- par(mar=c(3.75, 13, 4, 2), family = 'serif') -->
+<!-- barplot(indEmp$empChange2*100, -->
+<!--        col = 'darkslateblue', -->
+<!--        names.arg=indEmp$Industry, -->
+<!--        xlim = c(0,35), -->
+<!--        las = 2, -->
+<!--        axes = FALSE, -->
+<!--        xpd = FALSE, -->
+<!--        horiz = TRUE -->
+<!-- ) -->
+<!-- axis(1,  -->
+<!--        at = seq(0,35,5), -->
+<!--        lab = paste(seq(0,35,5),"%"), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1 -->
+<!-- ) -->
+<!-- abline(v=0) -->
+<!-- mtext('Job Growth by Industry',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.75, -->
+<!--        font = 2, -->
+<!--        adj = -2.5 -->
+<!-- ) -->
+<!-- mtext('Santa Barbara County, 2010 to 2018',  -->
+<!--        side = 3, -->
+<!--        line = .8, -->
+<!--        cex = 1.25, -->
+<!--        adj = -2.4, -->
+<!--        font = 2 -->
+<!-- ) -->
+<!-- mtext("Source: California Employment Development Department",  -->
+<!--        side = 1, -->
+<!--        line = 2.5, -->
+<!--        cex = 1, -->
+<!--        adj = 4.75, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- #### What is the measure? {-} -->
+<!-- Job growth by industry from 2010 to 2018 in Santa Barbara County. Employment figures are derived from the UCSB Economic Forecast Project using data from the California Employment Development Department. -->
+<!-- #### Why is it important? {-} -->
+<!-- While job creation is generally indicative of a healthy economy, growth can occur in only a few industries while others stagnate or decline. The job growth rate by industry reflects changes in employment patterns over time. It provides some insight into changes in economic diversity in Santa Barbara County. -->
+<!-- #### How are we doing? {-} -->
+<!-- Most industries in Santa Barbara County experienced job growth between the years of 2010 and 2018. The wholesale trade sector showed the most growth (33 percent) in the last eight years. The governement sector has had the least growth in employment since 2010.  -->
+<!-- *** -->
+<!-- ### Government to Population Ratio Stable {-} -->
+<!-- <div class="column-right"> -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- ```{r govtopop, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- par(mar=c(3.75, 3.25, 3.5, 0), family = 'serif') -->
+<!-- barplot( -->
+<!--        height = gov_ratio$empRate, -->
+<!--        col = 'darkslateblue', -->
+<!--        names.arg=gov_ratio$year, -->
+<!--        ylim = c(0,100), -->
+<!--        las = 1, -->
+<!--        axes = FALSE, -->
+<!--        xpd = FALSE, -->
+<!--        cex.names=1.2, -->
+<!-- ) -->
+<!-- axis(2,  -->
+<!--        at = seq(0,100,10), -->
+<!--        lab = seq(0,100,10), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1.3 -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- mtext('Government to Population Ratio',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.5, -->
+<!--        font = 2, -->
+<!--        adj = 0 -->
+<!-- ) -->
+<!-- mtext('Employees Per 1,000 People',  -->
+<!--        side = 3, -->
+<!--        line = .8, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext("Source: California Employment Development Department",  -->
+<!--        side = 1, -->
+<!--        line = 2.5, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- #### What is the measure? {-} -->
+<!-- The ratio of federal, state, and local government workers per 1,000 Santa Barbara County residents. -->
+<!-- #### Why is it important? {-} -->
+<!-- The public sector plays a central role in our society, providing important services such as police, fire, and environmental protection, education and social services. An increase in the proportion of government workers in the population may be seen by some as negative –signaling higher taxes, a constraining regulatory environment and a cumbersome bureaucracy. For others, the same measurement may indicate an improvement in public services. -->
+<!-- #### How are we doing? {-} -->
+<!-- In 2015, there were approximately 87.4 government workers per 1,000 residents. This data includes employees in the education sector, which represents a large majority of these employment numbers. -->
 <hr />
 </div>
 </div>
-<div id="average-salaries-in-santa-barbara-county" class="section level3 unnumbered">
-<h3>Average Salaries in Santa Barbara County</h3>
-<div id="what-is-the-measure-31" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>Average salary by industry in Santa Barbara County is compared for 2010 and 2015. These two snapshots of Santa Barbara County average salary data, sorted by industry, are derived from California Employment Development Department data sources. This measure is inflation-adjusted and presented in 2009 dollars.</p>
 </div>
-<div id="why-is-it-important-31" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>While a number of factors contribute to quality employment – such as job satisfaction, the quality of the workplace and co-workers – the level of pay is an important aspect of job quality and the easiest to measure.</p>
-</div>
-<div id="how-are-we-doing-37" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Average salaries in most sectors in Santa Barbara County have been on the rise since 2010. The sectors with the largest growth in average salaries are information (35 percent), agriculture (25 percent), and financial activities (10 percent). The only industry that declined was education and health services (a less than 1 percent loss).</p>
-<div style="margin-bottom:100px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/salaries-1.png" width="100%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
+<div id="housing-affordability" class="section level2 unnumbered hasAnchor">
+<h2>Housing Affordability<a href="economic.html#housing-affordability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <hr />
-</div>
-</div>
-<div id="job-and-population-growth-rates-vary" class="section level3 unnumbered">
-<h3>Job and Population Growth Rates Vary</h3>
-<div id="what-is-the-measure-32" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>These indicators measure the difference between the the job growth rate and the population growth rate for both North County and South Coast.</p>
-</div>
-<div id="why-is-it-important-32" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>When the rate of job creation exceeds the rate of population growth, with no change in labor force participation, the net result is a reduction in unemployment. Job creation reflects economic expansion and the health of local firms and is a measure of the vitality of the local economy. Job creation and population growth also puts pressure on the housing market and may lead to longer commute, perhaps from outside the region.</p>
-</div>
-<div id="how-are-we-doing-38" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Job growth trends often mirror population growth trends. While South Coast patterns tend to be somewhat correlated, a large discrepancy in population and employment trends has not been seen in recent years. In 2015, the job growth exceeded population growth. For North County, job growth has exceeded population growth recently.</p>
-<div class="column-left">
-<div style="margin-bottom:20px;">
+<!-- ### Santa Barbara County has Least Affordable Housing {-} -->
+<!-- <div class="column-right"> -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- ```{r houseafford, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- par(mar=c(4.5, 4, 4, 1), family = 'serif') -->
+<!-- barplot( -->
+<!--        height = t(as.matrix(ha[,c('X2005','X2010','X2016')])), -->
+<!--        col = EFPcolors[1:3], -->
+<!--        names.arg=c("Santa \n Barbara", "San Luis \n Obispo", "Ventura", "California", "United States"), -->
+<!--        ylim = c(0,100), -->
+<!--        las = 1, -->
+<!--        axes = FALSE, -->
+<!--        beside=TRUE, -->
+<!--        legend=gsub('X','',rownames(t(as.matrix(ha[,c('X2005','X2010','X2016')])))) -->
+<!-- ) -->
+<!-- axis(2,  -->
+<!--        at = seq(0,100,10), -->
+<!--        lab = paste(seq(0,100,10),"%"), -->
+<!--        col = 'black', -->
+<!--        las = 1, -->
+<!--        cex.axis=1.3 -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- mtext('Comparison of Housing Affordability',  -->
+<!--        side = 3, -->
+<!--        line = 2, -->
+<!--        cex = 1.5, -->
+<!--        font = 2, -->
+<!--        adj = 0 -->
+<!-- ) -->
+<!-- mtext('Third Quarter Values',  -->
+<!--        side = 3, -->
+<!--        line = 1, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext("Source: California Association of Realtors",  -->
+<!--        side = 1, -->
+<!--        line = 3.5, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- #### What is the measure? {-} -->
+<!-- This measure is an estimate of the percentage of households that can afford to own a median-priced home. This index uses data from the California Association of Realtors, and uses a different methodology in estimating affordability. We have chosen to highlight affordability indices between neighboring counties, California, and the United States. -->
+<!-- #### Why is it important? {-} -->
+<!-- Comparing this index with those of other counties, the state, and the nation provides some sense of just how different the Santa Barbara County housing market is from Ventura County, San Luis Obispo County, the state as a whole, and the United States. -->
+<!-- #### How are we doing? {-} -->
+<!-- Almost without exception, Santa Barbara County has had the least affordable housing of the regions shown for the last ten years. Affordability in 2016 has followed this trend with only 20 percent of households able to afford a median-priced home. The 2010 spike up in affordability was a result of the large decline in housing prices just after the Great Recession. -->
+<!-- *** -->
+<div id="rental-rates-soar-post-pandemic" class="section level3 unnumbered hasAnchor">
+<h3>Rental Rates Soar Post-pandemic<a href="economic.html#rental-rates-soar-post-pandemic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="column-center">
+<div style="margin-bottom:10px;">
 
 </div>
-<p><img src="cip_2020_files/figure-html/unnamed-chunk-2-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
-</div>
-<div class="column-right">
-<div style="margin-bottom:20px;">
-
-</div>
-<img src="cip_2020_files/figure-html/unnamed-chunk-3-1.png" width="95%" />
-<div style="margin-bottom:100px;">
-
-</div>
-</div>
-<div style="margin-bottom:100px;">
-
-</div>
-<hr />
-</div>
-</div>
-<div id="wholesale-trade-sector-sees-most-growth" class="section level3 unnumbered">
-<h3>Wholesale Trade Sector Sees Most Growth</h3>
-<div class="column-right">
-<div style="margin-bottom:100px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/industrygrowth-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
-</div>
-<div id="what-is-the-measure-33" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>Job growth by industry from 2010 to 2018 in Santa Barbara County. Employment figures are derived from the UCSB Economic Forecast Project using data from the California Employment Development Department.</p>
-</div>
-<div id="why-is-it-important-33" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>While job creation is generally indicative of a healthy economy, growth can occur in only a few industries while others stagnate or decline. The job growth rate by industry reflects changes in employment patterns over time. It provides some insight into changes in economic diversity in Santa Barbara County.</p>
-</div>
-<div id="how-are-we-doing-39" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Most industries in Santa Barbara County experienced job growth between the years of 2010 and 2018. The wholesale trade sector showed the most growth (33 percent) in the last eight years. The governement sector has had the least growth in employment since 2010.</p>
-<hr />
-</div>
-</div>
-<div id="government-to-population-ratio-stable" class="section level3 unnumbered">
-<h3>Government to Population Ratio Stable</h3>
-<div class="column-right">
-<div style="margin-bottom:100px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/govtopop-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
+<img src="cip_2022_files/figure-html/rent_rate-1.png" width="95%" /><img src="cip_2022_files/figure-html/rent_rate-2.png" width="95%" />
+<div style="margin-bottom:10px;">
 
 </div>
 </div>
-<div id="what-is-the-measure-34" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>The ratio of federal, state, and local government workers per 1,000 Santa Barbara County residents.</p>
+<div id="what-is-the-measure-12" class="section level4 unnumbered hasAnchor">
+<h4>What is the measure?<a href="economic.html#what-is-the-measure-12" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Average apartment rental rates from Zillow’s Observed Rent Index (ZORI) data for Santa Barbara County. The data displays median asking rent while controlling for differences in available rental stock. Percent growth in rent rate is by month.</p>
 </div>
-<div id="why-is-it-important-34" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>The public sector plays a central role in our society, providing important services such as police, fire, and environmental protection, education and social services. An increase in the proportion of government workers in the population may be seen by some as negative –signaling higher taxes, a constraining regulatory environment and a cumbersome bureaucracy. For others, the same measurement may indicate an improvement in public services.</p>
-</div>
-<div id="how-are-we-doing-40" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>In 2015, there were approximately 87.4 government workers per 1,000 residents. This data includes employees in the education sector, which represents a large majority of these employment numbers.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="housing-affordability" class="section level2 unnumbered">
-<h2>Housing Affordability</h2>
-<hr />
-<div id="santa-barbara-county-has-least-affordable-housing" class="section level3 unnumbered">
-<h3>Santa Barbara County has Least Affordable Housing</h3>
-<div class="column-right">
-<div style="margin-bottom:100px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/houseafford-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
-</div>
-<div id="what-is-the-measure-35" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>This measure is an estimate of the percentage of households that can afford to own a median-priced home. This index uses data from the California Association of Realtors, and uses a different methodology in estimating affordability. We have chosen to highlight affordability indices between neighboring counties, California, and the United States.</p>
-</div>
-<div id="why-is-it-important-35" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>Comparing this index with those of other counties, the state, and the nation provides some sense of just how different the Santa Barbara County housing market is from Ventura County, San Luis Obispo County, the state as a whole, and the United States.</p>
-</div>
-<div id="how-are-we-doing-41" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Almost without exception, Santa Barbara County has had the least affordable housing of the regions shown for the last ten years. Affordability in 2016 has followed this trend with only 20 percent of households able to afford a median-priced home. The 2010 spike up in affordability was a result of the large decline in housing prices just after the Great Recession.</p>
-<hr />
-</div>
-</div>
-<div id="rental-rates-experience-slow-growth-but-continue-to-remain-high" class="section level3 unnumbered">
-<h3>Rental Rates Experience Slow Growth, but Continue to Remain High</h3>
-<div class="column-right">
-<div style="margin-bottom:100px;">
-
-</div>
-<img src="cip_2020_files/figure-html/rent_rate-1.png" width="95%" />
-<div style="margin-bottom:150px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/rent_growth-1.png" width="95%" /></p>
-<div style="margin-bottom:200px;">
-
-</div>
-</div>
-<div id="what-is-the-measure-36" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>Average apartment rental rates in Goleta Valley, Isla Vista, Carpinteria, and Santa Barbara City market areas, as well as the South Coast as a whole. Including, the percentages at which rents are increasing based on survey estimates. The values are not adjusted for inflation.</p>
-</div>
-<div id="why-is-it-important-36" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
+<div id="why-is-it-important-13" class="section level4 unnumbered hasAnchor">
+<h4>Why is it important?<a href="economic.html#why-is-it-important-13" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Similar to the housing affordability index, the cost of renting apartments is a major component of the cost of living in Santa Barbara County. The percentage change in apartment rental rates can be compared against measures of family income to determine if wages are keeping pace with rising rents.</p>
 </div>
-<div id="how-are-we-doing-42" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>Rental rates throughout the South Coast rose slightly at 0.1 percent from October 2015 to April 2016, which is a sharp decrease from the 2.8 percent growth rate six months before. With the exception of Goleta Valley Market Area, all regions showed an increase in rents from October 2015 to April 2016. However, Goleta Valley Market Area remains with the highest average rental rate at $2005 per month. While most of the average rents in the South Coast are increasing, the year over year growth has slowed significantly from April 2015 to April 2016, respectively.</p>
-<p><br /></p>
-<p><br /></p>
-<hr />
-</div>
-</div>
-</div>
-<div id="business-vitality" class="section level2 unnumbered">
-<h2>Business Vitality</h2>
-<hr />
-<div id="total-available-space-increases-slightly-as-gross-lease-rates-reach-record-highs" class="section level3 unnumbered">
-<h3>Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs</h3>
-<div class="column-right">
-<div style="margin-bottom:100px;">
-
-</div>
-<img src="cip_2020_files/figure-html/availablespace-1.png" width="95%" />
-<div style="margin-bottom:150px;">
-
-</div>
-<p><img src="cip_2020_files/figure-html/grosslease-1.png" width="95%" /></p>
-<div style="margin-bottom:100px;">
-
-</div>
-</div>
-<div id="what-is-the-measure-37" class="section level4 unnumbered">
-<h4>What is the measure?</h4>
-<p>Available space for office, industrial, and retail space. The data are updated twice a year through a survey of all listed properties from conventionally advertised sources, including brokers’ offices.</p>
-</div>
-<div id="why-is-it-important-37" class="section level4 unnumbered">
-<h4>Why is it important?</h4>
-<p>The direction of available commercial space reflects the overall business climate and rate of commercial development. Inadequate space coupled with higher costs of leasing may act as a constraint on economic expansion.</p>
-</div>
-<div id="how-are-we-doing-43" class="section level4 unnumbered">
-<h4>How are we doing?</h4>
-<p>In 2016, vacant office space increased to 646,000 square feet after two years of decline, which still remains only 66 percent of 2010 levels. Industrial vacancies decreased 19 percent from the prior year to 212,000 square feet. Retail space available grew slightly to 163,000 square feet, but still follows a declining trend. In 2016, the gross lease rates for each type of space increased. The high demands for office space has alowed the rates to rise to $2.44 per square foot, which is the highest it’s been for the past decade. Similarily, gross lease rates for the industrial and retail space also reached record highs in 2016, at $1.63 and $3.97 per square foot, respectively.</p>
+<div id="how-are-we-doing-16" class="section level4 unnumbered hasAnchor">
+<h4>How are we doing?<a href="economic.html#how-are-we-doing-16" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Rental rates throughout Santa Barbara County had the sharpest increase in August of 2021 at 4.16% , the highest growth rate increase in one month of all three counties observed since 2015. The sharpest decline in rental price for Santa Barbara County was in September of 2022 at -0.94%. Since the onset of the COVID-19 pandemic in March of 2020, median rent grew from $2566.20 to $3619.75 by October of 2022, a 41% increase.</p>
+<!-- *** -->
+<!-- ## Business Vitality {-} -->
+<!-- *** -->
+<!-- ### Total Available Space Increases Slightly as Gross Lease Rates Reach Record Highs {-} -->
+<!-- <div class="column-right"> -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- ```{r availablespace, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- layout(matrix(c(1,2), ncol=1, byrow=TRUE), heights=c(4,1)) -->
+<!-- par(mar=c(1.5,3.5, 4, 0.5), family = 'serif') -->
+<!-- plot( -->
+<!--        x = vacancy$Year, -->
+<!--        y = vacancy$Office, -->
+<!--        type = 'l' , -->
+<!--        col = 'orange2',  -->
+<!--        lwd = 3.5,  -->
+<!--        ylim = c(0,1000), -->
+<!--        xlim = c(2009,2016), -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        frame.plot = FALSE, -->
+<!--        las = 1, -->
+<!--        yaxt = "n" -->
+<!-- ) -->
+<!-- axis(2, -->
+<!--        at = seq(0,1000,100), -->
+<!--        lab = seq(0,1000,100), -->
+<!--        las = TRUE -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- par(new = TRUE) -->
+<!-- plot( -->
+<!--        x = vacancy$Year, -->
+<!--        y = vacancy$Industrial, -->
+<!--        type = 'l' , -->
+<!--        col = 'darkslateblue',  -->
+<!--        axes = FALSE, -->
+<!--        lwd = 3.5,  -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        xlim = c(2009,2016), -->
+<!--        ylim = c(0,1000) -->
+<!-- ) -->
+<!-- par(new = TRUE) -->
+<!-- plot( -->
+<!--        x = vacancy$Year, -->
+<!--        y = vacancy$Retail, -->
+<!--        type = 'l' , -->
+<!--        col = 'deeppink3',  -->
+<!--        axes = FALSE, -->
+<!--        lwd = 3.5,  -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        xlim = c(2009,2016), -->
+<!--        ylim = c(0,1000) -->
+<!-- ) -->
+<!-- mtext('Available Space by Type',  -->
+<!--        side = 3, -->
+<!--        font = 2, -->
+<!--        line = 2.2, -->
+<!--        cex = 1.5, -->
+<!--        adj = 0, -->
+<!--        lwd = 2 -->
+<!-- ) -->
+<!-- mtext('South Coast',  -->
+<!--        side = 3, -->
+<!--        line = 1, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font=3 -->
+<!-- ) -->
+<!-- mtext('Note: Retail only includes Santa Barbara*',  -->
+<!--        side = 1, -->
+<!--        line = 4.5, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext('Source: Radius Group',  -->
+<!--        side = 1, -->
+<!--        line =5.25, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- par(mai=c(0,0,0,0)) -->
+<!-- plot.new() -->
+<!-- legend("center",  -->
+<!--        legend = c("Office","Industrial","Retail"), -->
+<!--        pch = c(15,15,15), -->
+<!--        cex = 1, -->
+<!--        pt.cex = 2, -->
+<!--        text.width=.14, -->
+<!--        x.intersp=.9, -->
+<!--        bty = 'n', -->
+<!--        col=c('orange2','darkslateblue','deeppink3'), -->
+<!--        horiz = TRUE, -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:150px;"> -->
+<!-- </div> -->
+<!-- ```{r grosslease, fig.margin = TRUE, echo= FALSE, out.width= '95%', eval=FALSE} -->
+<!-- layout(matrix(c(1,2), ncol=1, byrow=TRUE), heights=c(4,1)) -->
+<!-- par(mar=c(1.5,3.5, 4, 0.5), family = 'serif') -->
+<!-- plot( -->
+<!--        x = lease$Year, -->
+<!--        y = lease$Office, -->
+<!--        type = 'l' , -->
+<!--        col = 'orange2',  -->
+<!--        lwd = 3.5,  -->
+<!--        ylim = c(0,4), -->
+<!--        xlim = c(2009,2016), -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        frame.plot = FALSE, -->
+<!--        las = 1, -->
+<!--        yaxt = "n" -->
+<!-- ) -->
+<!-- axis(2, -->
+<!--        at = seq(0,4,.5), -->
+<!--        lab = seq(0,4,.5), -->
+<!--        las = TRUE -->
+<!-- ) -->
+<!-- box(bty="L") -->
+<!-- par(new = TRUE) -->
+<!-- plot( -->
+<!--        x = lease$Year, -->
+<!--        y = lease$Industrial, -->
+<!--        type = 'l' , -->
+<!--        col = 'darkslateblue',  -->
+<!--        axes = FALSE, -->
+<!--        lwd = 3.5,  -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        xlim = c(2009,2016), -->
+<!--        ylim = c(0,4) -->
+<!-- ) -->
+<!-- par(new = TRUE) -->
+<!-- plot( -->
+<!--        x = lease$Year, -->
+<!--        y = lease$Retail, -->
+<!--        type = 'l' , -->
+<!--        col = 'deeppink3',  -->
+<!--        axes = FALSE, -->
+<!--        lwd = 3.5,  -->
+<!--        xlab = '', -->
+<!--        ylab = '', -->
+<!--        xlim = c(2009,2016), -->
+<!--        ylim = c(0,4) -->
+<!-- ) -->
+<!-- mtext('Gross Lease Rates by Type',  -->
+<!--        side = 3, -->
+<!--        font = 2, -->
+<!--        line = 1.9, -->
+<!--        cex = 1.5, -->
+<!--        adj = 0, -->
+<!--        lwd = 2 -->
+<!-- ) -->
+<!-- mtext('South Coast',  -->
+<!--        side = 3, -->
+<!--        line = 1, -->
+<!--        cex = 1.25, -->
+<!--        adj = 0, -->
+<!--        font=3 -->
+<!-- ) -->
+<!-- mtext('Note: Retail only includes Santa Barbara*',  -->
+<!--        side = 1, -->
+<!--        line = 4.5, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- mtext('Source: Radius Group',  -->
+<!--        side = 1, -->
+<!--        line =5.25, -->
+<!--        cex = 1, -->
+<!--        adj = 0, -->
+<!--        font = 3 -->
+<!-- ) -->
+<!-- par(mai=c(0,0,0,0)) -->
+<!-- plot.new() -->
+<!-- legend("center",  -->
+<!--        legend = c("Office","Industrial","Retail"), -->
+<!--        pch = c(15,15,15), -->
+<!--        cex = 1, -->
+<!--        pt.cex = 2, -->
+<!--        text.width=.14, -->
+<!--        x.intersp=.9, -->
+<!--        bty = 'n', -->
+<!--        col=c('orange2','darkslateblue','deeppink3'), -->
+<!--        horiz = TRUE, -->
+<!-- ) -->
+<!-- ``` -->
+<!-- <div style="margin-bottom:100px;"> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- #### What is the measure? {-} -->
+<!-- Available space for office, industrial, and retail space. The data are updated twice a year through a survey of all listed properties from conventionally advertised sources, including brokers’ offices. -->
+<!-- #### Why is it important? {-} -->
+<!-- The direction of available commercial space reflects the overall business climate and rate of commercial development. Inadequate space coupled with higher costs of leasing may act as a constraint on economic expansion. -->
+<!-- #### How are we doing? {-} -->
+<!-- In 2016, vacant office space increased to 646,000 square feet after two years of decline, which still remains only 66 percent of 2010 levels. Industrial vacancies decreased 19 percent from the prior year to 212,000 square feet. Retail space available grew slightly to 163,000 square feet, but still follows a declining trend. In 2016, the gross lease rates for each type of space increased. The high demands for office space has allowed the rates to rise to \$2.44 per square foot, which is the highest it’s been for the past decade. Similarly, gross lease rates for the industrial and retail space also reached record highs in 2016, at \$1.63 and \$3.97 per square foot, respectively. -->
 
 </div>
 </div>
@@ -573,11 +825,10 @@
         </div>
       </div>
 <a href="environmental.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="non-profit.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="acknowledgments.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -596,6 +847,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
@@ -616,10 +868,13 @@ gitbook.start({
 "text": null
 },
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
-},
-"search": true
+}
 });
 });
 </script>
@@ -627,7 +882,3 @@ gitbook.start({
 </body>
 
 </html>
-
-
-
-
