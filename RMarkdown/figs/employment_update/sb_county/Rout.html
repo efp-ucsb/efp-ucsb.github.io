@@ -1,0 +1,6091 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Rout.html</title>
+<meta name="keywords"  content="seasonal adjustment, X-13ARIMA-SEATS, regARIMA modeling">  
+<meta name="description"  content="X-13ARIMA-SEATS Output File (Rout.html)">  
+<meta name="generator"  content="X-13ARIMA-SEATS">  
+<meta name="author"  content="Time Series Research Staff, CSRM, US Census Bureau">  
+<meta http-equiv="Content-Type"  content="text/html; charset=ISO-8859-1">  
+<style type="text/css">
+  #rightnavigation {
+   position : absolute;
+   top : 0px;
+   right : 0;
+   width : 300px;
+   margin-left : 10px;
+   margin-top : 20px;
+   color : #000000;
+   padding : 3px;
+      background-color: #CCFFFF;
+   border: 1px solid #666;
+  }
+  #content{
+   top : 0px;
+    margin : 0px 350px 0px 0;
+    padding : 3px;
+    color : #000000;
+  }
+  p,ul,h1,h2,h3,h4,h5 {margin-left : 5%; margin-right : 5%;}
+  .indent {  margin-left : 7.5%;  margin-right : 7.5%;  }
+  .indentnav {  margin-left : 7.5%;  margin-right : 7.5%; font-size: 75%; }
+  .bold {   font-weight: bold;   }
+  .em {   font-style:italic;   }
+  .center { text-align : center; }
+  .left {   text-align: left;    }
+  .right {   text-align: right;    }
+  pre {margin-left : 5%; margin-right : 5%;}
+  ul.nob { list-style:none }
+  .ub {text-decoration:underline; font-weight: bold; }
+  table {
+    border-width: thin thin thin thin;
+    border-spacing: 0px;
+    border-color: black black black black;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 80%;
+  }
+  th {
+    border-width: thin thin thin thin;
+    padding: 3px 3px 3px 3px;
+    border-style: inset inset inset inset;
+    border-color: gray gray gray gray;
+    background-color: #BDBDBD;
+  }
+  td {
+    border-width: thin thin thin thin;
+    padding: 3px 3px 3px 3px;
+    border-style: inset inset inset inset;
+    border-color: gray gray gray gray;
+    background-color: white;
+    text-align: right;
+  }
+  table.x11 {
+    margin-left : 7.5%;
+    margin-right : 7.5%;
+    width : 85%;
+  }
+  td.nowrap {  white-space: nowrap;  }
+  td.nowrapcenter {
+    white-space: nowrap;
+    text-align : center;
+  }
+  td.head {
+    background-color: #BDBDBD;
+    text-align : center;
+    font-weight: bold;
+  }
+  td.headleft {
+    background-color: #BDBDBD;
+    text-align : left;
+    font-weight: bold;
+  }
+  table td:hover,th:hover {
+    background:#FFCC99; cursor: crosshair;
+    font-weight:bold; font-size:1.5em;
+  }
+ .w65 {  margin-left : 17.5%;  margin-right : 17.5%;  width : 65%  }
+  th.iter {  width : 35%;  text-align: left;  }
+ .w90 {  margin-left : 5%;  margin-right : 5%;  width : 90%  }
+ .w80 {  margin-left : 10%;  margin-right : 10%;  width : 80%  }
+ .w70 {  margin-left : 15%;  margin-right : 15%;  width : 70%  }
+ .w60 {  margin-left : 20%;  margin-right : 20%;  width : 60%  }
+ .w50 {  margin-left : 25%;  margin-right : 25%;  width : 50%  }
+ .w40 {  margin-left : 30%;  margin-right : 30%;  width : 40%  }
+ .w30 {  margin-left : 35%;  margin-right : 35%;  width : 30%  }
+ .w20 {  margin-left : 40%;  margin-right : 40%;  width : 20%  }
+  a.skiplinks {color: #FFFFFF; font-size: xx-small;}
+  a.longdesc {
+    position : absolute; left : -1010em; 
+    width : 900em; font-size : 10%;
+  }
+  dl#content-footnotes {
+    position : absolute; left : -9999px;
+  }
+  dt {
+    clear : both; padding : .5em 0 0 0;
+    margin : 0; font-weight : bold; 
+    font-size : 10%; 
+  }
+  dd {
+    padding : 0; margin : 0; font-size : 10%; 
+  }
+</style>
+</head>
+<body>
+
+<div id="content">
+  <p>Reading input spec file from <em>Rout.spc</em></p>
+  <p>Reading data from <em>Rout.dat</em></p>
+
+<a name="pos00001"></a>
+
+<p class="right"><a href="#skip00001" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00000">Previous Table</a> | <a href="#index00001">Index</a> | <a href="#pos00002">Next Table</a></p>
+
+<a name="skip00001"></a>
+
+<h1 class="center">U. S. Department of Commerce, U. S. Census Bureau</h1>
+
+<h2 class="center">              X-13ARIMA-SEATS monthly seasonal adjustment Method, <br> 
+  Release Version 1.1 Build 57</h2>
+<p class="center">This software application provides an enhanced version of
+ <br> Statistics Canada's X-11-ARIMA extension (Dagum, 1980)
+ <br> of the X-11 variant of the Census Method II of
+ <br> Shiskin, Young and Musgrave (1967).</p>
+
+<p class="center">It also provides an ARIMA model-based method following
+ <br> Hillmer and Tiao (1982) and Burman (1980) that is very similar
+ <br> to the update of the method of SEATS (<span lang="es">G&oacute;mez</span> and Maravall, 1996)
+ <br> produced at the Bank of Spain by G. Caporello and
+ <br> A. Maravall for TSW (Caporello and Maravall, 2004).
+ <br> The present application includes additional enhancements.</p>
+
+<p class="center">X-13ARIMA-SEATS includes an automatic ARIMA model selection procedure
+ <br> based largely on the procedure of <span lang="es">G&oacute;mez</span> and <span lang="es">Maravall</span> (1998)
+ <br> as implemented in TRAMO (1996) and subsequent revisions.</p>
+
+<p class="center">Primary Programmers: Brian Monsell, Mark Otto and,
+ <br> for the ARIMA model-based signal extraction,
+ <br> <span lang="it">Gianluca Caporello</span> and 
+<span lang="es">V&iacute;ctor G&oacute;mez</span></p>
+
+ <p><strong>Series Title-</strong> R Output for x12a <br> 
+ <strong>Series Name-</strong> Rout <br> 
+ May 22, 2023  00.34.09 </p>
+<ul class="indent">
+<li>Period covered-  1st month,2010 to  4th month,2023</li>
+<li>Type of run - auto-mode seasonal adjustment</li>
+<li>Sigma limits for graduating extreme values are  1.5 and  2.5 .</li>
+<li>3x3 moving average used in section 1 of each iteration, 
+3x5 moving average in section 2 of iterations B and C,
+moving average for final seasonal factors chosen by Global MSR.</li>
+</ul>
+
+ <h3>FILE SAVE REQUESTS (* indicates file exists and will be overwritten)</h3>
+
+<p class="indent">
+  Rout.a1   time series data (for the span analyzed) <br> 
+  Rout.b1   original series (prior adjusted) <br> 
+  Rout.ftr  point forecasts and standard errors for the transformed data <br> 
+  Rout.d10  final seasonal factors <br> 
+  Rout.d11  final seasonally adjusted data <br> 
+  Rout.d12  final trend cycle <br> 
+  Rout.html* program output file <br> 
+  Rout_err.html* program error file <br> 
+  Rout.udg  seasonal adjustment and model diagnostics file <br> 
+  Rout.gmt  graphics metafile <br> 
+</p>
+
+<p>&nbsp;</p>
+
+<h3>LINKS TO OTHER HTML FILES</h3>
+<ul class="indent">
+<li><a href="Rout_err.html">Error file for Rout</a></li>
+<li><a href="Rout_log.html#pos00001">Log entry for Rout</a></li>
+</ul>
+
+<a name="pos00002"></a>
+
+<p class="right"><a href="#skip00002" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00001">Previous Table</a> | <a href="#index00002">Index</a> | <a href="#pos00003">Next Table</a></p>
+
+<a name="skip00002"></a>
+
+<p class="right"><a href="#pos00003" title="Skip CONTENTS OF INPUT SPECIFICATION FILE" class="skiplinks">&nbsp;</a></p>
+
+<p>Contents of spc file Rout.spc</p>
+<pre>
+ Line #
+ ------
+      1: series{
+      2: save=(a1 b1)
+      3: title="R Output for x12a"
+      4: start=2010.1
+      5: period=12
+      6: DECIMALS=5
+      7: file = "Rout.dat"
+      8: }
+      9: transform{
+     10: function=auto
+     11: }
+     12: automdl{
+     13: acceptdefault=no
+     14: balanced=yes
+     15: maxorder=(3,2)
+     16: maxdiff=(1,1)
+     17: savelog=(adf amd b5m mu)
+     18: }
+     19: forecast {
+     20: save=ftr
+     21: maxlead=12
+     22: }
+     23: x11{
+     24: save=(d10 d11 d12)
+     25: sigmalim=(1.5,2.5)
+     26: final=(user)
+     27: appendfcst=yes
+     28: savelog=all
+     29: }
+</pre>
+
+<a name="pos00003"></a>
+
+<p class="right"><a href="#skip00003" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00002">Previous Table</a> | <a href="#index00003">Index</a> | <a href="#pos00004">Next Table</a></p>
+
+<a name="skip00003"></a>
+
+<h3> Likelihood statistics for model fit to untransformed series.</h3>
+<div id="lkhd001">
+<table class="w60"
+  summary ="Likelihood Statistics" >
+<caption><strong>Likelihood Statistics</strong></caption>
+<tr><th scope="row">Number of observations (nobs)</th><td>   160</td></tr>
+<tr><th scope="row">Effective number of observations (nefobs)</th><td>   147</td></tr>
+<tr><th scope="row">Number of parameters estimated (np)</th><td>     3</td></tr>
+<tr><th scope="row"> Log likelihood (L)</th><td>                               -236.9506</td></tr>
+<tr><th scope="row"> <abbr title="Akaike information criterion">AIC</abbr></th><td>                                479.9012  </td></tr>
+<tr><th scope="row"> <abbr title="corrected Akaike information criterion">AICC</abbr> (F-corrected-<abbr title="Akaike information criterion">AIC</abbr>)</th><td>                                480.0690  </td></tr>
+<tr><th scope="row"> Hannan Quinn </th><td>                                483.5463  </td></tr>
+<tr><th scope="row"> <abbr title="Bayesian information criterion">BIC</abbr> </th><td>                                488.8725  </td></tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<h3> Likelihood statistics for model fit to log transformed series.</h3>
+<div id="lkhd002">
+<table class="w60"
+  summary ="Likelihood Statistics" >
+<caption><strong>Likelihood Statistics</strong></caption>
+<tr><th scope="row">Number of observations (nobs)</th><td>   160</td></tr>
+<tr><th scope="row">Effective number of observations (nefobs)</th><td>   147</td></tr>
+<tr><th scope="row">Number of parameters estimated (np)</th><td>     3</td></tr>
+<tr><th scope="row"> Log likelihood</th><td>                                 68.6219</td></tr>
+<tr><th scope="row"> Transformation Adjustment</th><td>                               -253.2795</td></tr>
+<tr><th scope="row"> Adjusted Log likelihood (L)</th><td>                               -184.6575</td></tr>
+<tr><th scope="row"> <abbr title="Akaike information criterion">AIC</abbr></th><td>                                375.3151  </td></tr>
+<tr><th scope="row"> <abbr title="corrected Akaike information criterion">AICC</abbr> (F-corrected-<abbr title="Akaike information criterion">AIC</abbr>)</th><td>                                375.4829  </td></tr>
+<tr><th scope="row"> Hannan Quinn </th><td>                                378.9602  </td></tr>
+<tr><th scope="row"> <abbr title="Bayesian information criterion">BIC</abbr> </th><td>                                384.2864  </td></tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<p class="center">***** <abbr title="corrected Akaike information criterion">AICC</abbr>
+ (with aicdiff=-2.00) prefers <strong>log transformation</strong> *****</p>
+
+
+<p class="center">***** Multiplicative seasonal adjustment will be performed. ****</p>
+
+<p>&nbsp;</p>
+
+<a name="pos00004"></a>
+
+<p class="right"><a href="#skip00004" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00003">Previous Table</a> | <a href="#index00004">Index</a> | <a href="#pos00005">Next Table</a></p>
+
+<a name="skip00004"></a>
+
+<h3>A 1  Time series data (for the span analyzed)</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="a1">
+<table class="x11"
+  summary ="A 1  Time series data (for the span analyzed)" >
+<caption><strong>A 1  Time series data (for the span analyzed)</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col">TOTAL</th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>    4.80000</td>
+<td>    4.70000</td>
+<td>    4.70000</td>
+<td>    4.00000</td>
+<td>    3.80000</td>
+<td>    4.00000</td>
+<td>    4.20000</td>
+<td>    4.10000</td>
+<td>    4.10000</td>
+<td>    4.10000</td>
+<td>    4.30000</td>
+<td>    4.50000</td>
+<td>   51.30000</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>   13.50000</td>
+<td>   13.00000</td>
+<td>   12.80000</td>
+<td>   11.40000</td>
+<td>   10.80000</td>
+<td>   11.90000</td>
+<td>   11.80000</td>
+<td>   11.60000</td>
+<td>   11.50000</td>
+<td>   11.50000</td>
+<td>   11.20000</td>
+<td>   11.80000</td>
+<td>  142.80000</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>   12.90000</td>
+<td>   12.70000</td>
+<td>   12.30000</td>
+<td>   10.80000</td>
+<td>   10.40000</td>
+<td>   11.20000</td>
+<td>   11.40000</td>
+<td>   10.90000</td>
+<td>   10.10000</td>
+<td>   10.20000</td>
+<td>   10.20000</td>
+<td>   10.90000</td>
+<td>  134.00000</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>   10.70000</td>
+<td>   10.00000</td>
+<td>    9.40000</td>
+<td>    8.10000</td>
+<td>    7.80000</td>
+<td>    8.80000</td>
+<td>    8.80000</td>
+<td>    8.40000</td>
+<td>    8.00000</td>
+<td>    8.10000</td>
+<td>    8.10000</td>
+<td>    8.20000</td>
+<td>  104.40000</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    8.30000</td>
+<td>    8.10000</td>
+<td>    7.60000</td>
+<td>    6.10000</td>
+<td>    5.90000</td>
+<td>    6.40000</td>
+<td>    6.90000</td>
+<td>    6.70000</td>
+<td>    6.20000</td>
+<td>    6.20000</td>
+<td>    6.50000</td>
+<td>    6.60000</td>
+<td>   81.50000</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>    7.30000</td>
+<td>    6.70000</td>
+<td>    6.20000</td>
+<td>    5.30000</td>
+<td>    5.10000</td>
+<td>    5.50000</td>
+<td>    5.70000</td>
+<td>    5.40000</td>
+<td>    4.90000</td>
+<td>    5.30000</td>
+<td>    5.70000</td>
+<td>    6.00000</td>
+<td>   69.10000</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>    4.90000</td>
+<td>    4.80000</td>
+<td>    4.60000</td>
+<td>    3.80000</td>
+<td>    3.30000</td>
+<td>    4.00000</td>
+<td>    4.00000</td>
+<td>    3.90000</td>
+<td>    3.70000</td>
+<td>    3.80000</td>
+<td>    3.90000</td>
+<td>    4.60000</td>
+<td>   49.30000</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    5.50000</td>
+<td>    5.30000</td>
+<td>    4.80000</td>
+<td>    3.80000</td>
+<td>    3.40000</td>
+<td>    3.80000</td>
+<td>    4.00000</td>
+<td>    3.80000</td>
+<td>    3.40000</td>
+<td>    3.40000</td>
+<td>    3.50000</td>
+<td>    3.90000</td>
+<td>   48.60000</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    4.00000</td>
+<td>    3.70000</td>
+<td>    3.50000</td>
+<td>    2.80000</td>
+<td>    2.30000</td>
+<td>    2.90000</td>
+<td>    2.90000</td>
+<td>    2.80000</td>
+<td>    2.50000</td>
+<td>    2.60000</td>
+<td>    2.60000</td>
+<td>    3.20000</td>
+<td>   35.80000</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    4.70000</td>
+<td>    4.20000</td>
+<td>    4.10000</td>
+<td>    3.00000</td>
+<td>    2.60000</td>
+<td>    3.00000</td>
+<td>    3.20000</td>
+<td>    3.00000</td>
+<td>    2.70000</td>
+<td>    2.80000</td>
+<td>    2.90000</td>
+<td>    3.30000</td>
+<td>   39.50000</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>    5.10000</td>
+<td>    4.80000</td>
+<td>    6.70000</td>
+<td>   15.00000</td>
+<td>   14.10000</td>
+<td>   11.80000</td>
+<td>   10.80000</td>
+<td>    8.80000</td>
+<td>    8.10000</td>
+<td>    7.20000</td>
+<td>    7.30000</td>
+<td>    8.30000</td>
+<td>  108.00000</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>    9.20000</td>
+<td>    8.70000</td>
+<td>    8.00000</td>
+<td>    7.00000</td>
+<td>    6.20000</td>
+<td>    6.80000</td>
+<td>    6.30000</td>
+<td>    5.90000</td>
+<td>    4.90000</td>
+<td>    4.70000</td>
+<td>    4.30000</td>
+<td>    4.30000</td>
+<td>   76.30000</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>    5.30000</td>
+<td>    4.70000</td>
+<td>    3.90000</td>
+<td>    3.10000</td>
+<td>    2.70000</td>
+<td>    3.10000</td>
+<td>    3.10000</td>
+<td>    3.20000</td>
+<td>    3.00000</td>
+<td>    3.10000</td>
+<td>    3.50000</td>
+<td>    2.70000</td>
+<td>   41.40000</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>    3.60000</td>
+<td>    3.60000</td>
+<td>    3.60000</td>
+<td>    2.90000</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   13.70000</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>      7.12857</td>
+<td>      6.78571</td>
+<td>      6.58571</td>
+<td>      6.22143</td>
+<td>      6.03077</td>
+<td>      6.40000</td>
+<td>      6.39231</td>
+<td>      6.03846</td>
+<td>      5.62308</td>
+<td>      5.61538</td>
+<td>      5.69231</td>
+<td>      6.02308</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               995.70000 &nbsp;&nbsp;&nbsp; Mean-                      6.22312 &nbsp;&nbsp;&nbsp; Standard Deviation-        3.13688  <br> 
+Minimum-                   2.30000 &nbsp;&nbsp;&nbsp; Maximum-                  15.00000 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00005"></a>
+
+<p class="right"><a href="#skip00005" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00004">Previous Table</a> | <a href="#index00005">Index</a> | <a href="#pos00006">Next Table</a></p>
+
+<a name="skip00005"></a>
+
+<h3>Automatic ARIMA Model Selection</h3>
+
+<p class="center">Procedure based closely on TRAMO ,method of Gomez and Maravall (2000) <br> 
+"Automatic Modeling Methods for Univariate Series", <br> 
+A Course in Time Series (Edited by D. Pena, G. C. Tiao, R. S. Tsay), <br> 
+New York : J. Wiley and Sons</p>
+
+<p><strong>Maximum order for regular <abbr title="autoregressive moving average">ARMA</abbr> parameters :</strong>   3</p>
+<p><strong>Maximum order for seasonal <abbr title="autoregressive moving average">ARMA</abbr> parameters :</strong>   2</p>
+<p><strong>Maximum order for regular differencing :</strong>   1</p>
+<p><strong>Maximum order for seasonal differencing :</strong>   1</p>
+
+<p>Results of Unit Root Test for identifying orders of differencing:</p>
+
+<p class="indent">
+Regular difference order :   1
+Seasonal difference order :   0
+</p>
+
+<p>Mean is not significant.</p>
+
+<p class="center">Preliminary model choice : (0 1 0)(1 0 1)</p>
+ <p>Model changed to 
+   ( 0, 1, 1) ( 0, 1, 1)
+</p>
+
+<p>&nbsp;</p>
+
+<p>Final Checks for Identified Model</p>
+
+<p>&nbsp;</p>
+
+<p>Checking for Unit Roots.</p>
+
+<p>No unit root found.</p>
+
+<p>&nbsp;</p>
+
+<p>Checking for nonseasonal overdifferencing.</p>
+<p>Nonseasonal <abbr title="moving average">MA</abbr> not within  0.001 of 1.0 - model passes test.</p>
+
+<p>&nbsp;</p>
+
+<p> Checking for insignificant <abbr title="autoregressive moving average">ARMA</abbr> coefficients.</p>
+
+<p class="center"><strong>Final automatic model choice :</strong> (0 1 1)(0 1 1)</p>
+
+<p>End of automatic model selection procedure.</p>
+
+<p>Average absolute percentage error in within-sample forecasts:</p>
+
+<p class="indent">
+ Last year:   7.69 <br>  Last-1 year:  62.38 <br>      Last-2 year: 139.74 <br> 
+  Last three years:   69.94</p>
+
+<p>Estimation converged in    21 <abbr title="autoregressive moving average">ARMA</abbr> iterations,    64 function evaluations.</p>
+
+<a name="pos00006"></a>
+
+<p class="right"><a href="#skip00006" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00005">Previous Table</a> | <a href="#index00006">Index</a> | <a href="#pos00007">Next Table</a></p>
+
+<a name="skip00006"></a>
+
+<h3>ARIMA Model</h3>
+
+<p>ARIMA Model:  (0 1 1)(0 1 1)</p>
+
+<p class="indent">
+   Nonseasonal differences: 1
+ <br> 
+   Seasonal differences:    1
+</p>
+<div id="mdl001.arma">
+<table class="w70"
+  summary ="ARIMA Model" >
+<caption><strong>ARIMA Model</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th id="pe0001">Estimate</th>
+<th id="se0001">Standard Error</th>
+</tr>
+<tr>
+<th colspan="2" id="gr0001" class="left">Nonseasonal MA</th>
+<td class="head"> &nbsp;</td>
+</tr>
+<tr>
+<th id="vl0001">Lag  1</th>
+<td headers="gr0001 vl0001 pe0001" class="right">        -0.16004</td>
+<td headers="gr0001 vl0001 se0001" class="right">         0.07384</td>
+</tr>
+<tr>
+<th colspan="2" id="gr0002" class="left">Seasonal MA</th>
+<td class="head"> &nbsp;</td>
+</tr>
+<tr>
+<th id="vl0002">Lag 12</th>
+<td headers="gr0002 vl0002 pe0001" class="right">         0.99962</td>
+<td headers="gr0002 vl0002 se0001" class="right">         0.05959</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+<div id="mdl001.var">
+<table class="w60"
+  summary ="Innovation Variance of the regARIMA model" >
+<caption><strong>Model Innovation Variance</strong></caption>
+<tr><th scope="row"> Variance </th><td>                      0.18645E-01</td></tr>
+<tr><th scope="row"> Standard Error of Variance </th><td>                      0.21747E-02</td></tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00007"></a>
+
+<p class="right"><a href="#skip00007" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00006">Previous Table</a> | <a href="#index00007">Index</a> | <a href="#pos00008">Next Table</a></p>
+
+<a name="skip00007"></a>
+<div id="lkhd003">
+<table class="w60"
+  summary ="Likelihood Statistics" >
+<caption><strong>Likelihood Statistics</strong></caption>
+<tr><th scope="row">Number of observations (nobs)</th><td>   160</td></tr>
+<tr><th scope="row">Effective number of observations (nefobs)</th><td>   147</td></tr>
+<tr><th scope="row">Number of parameters estimated (np)</th><td>     3</td></tr>
+<tr><th scope="row"> Log likelihood</th><td>                                 68.6219</td></tr>
+<tr><th scope="row"> Transformation Adjustment</th><td>                               -253.2795</td></tr>
+<tr><th scope="row"> Adjusted Log likelihood (L)</th><td>                               -184.6575</td></tr>
+<tr><th scope="row"> <abbr title="Akaike information criterion">AIC</abbr></th><td>                                375.3151  </td></tr>
+<tr><th scope="row"> <abbr title="corrected Akaike information criterion">AICC</abbr> (F-corrected-<abbr title="Akaike information criterion">AIC</abbr>)</th><td>                                375.4829  </td></tr>
+<tr><th scope="row"> Hannan Quinn </th><td>                                378.9602  </td></tr>
+<tr><th scope="row"> <abbr title="Bayesian information criterion">BIC</abbr> </th><td>                                384.2864  </td></tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00008"></a>
+
+<p class="right"><a href="#skip00008" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00007">Previous Table</a> | <a href="#index00008">Index</a> | <a href="#pos00009">Next Table</a></p>
+
+<a name="skip00008"></a>
+
+<h3>Durbin-Watson Statistic for regARIMA Model Residuals</h3>
+<p> dw =     1.853697</p>
+
+<a name="pos00009"></a>
+
+<p class="right"><a href="#skip00009" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00008">Previous Table</a> | <a href="#index00009">Index</a> | <a href="#pos00010">Next Table</a></p>
+
+<a name="skip00009"></a>
+
+<h3>Friedman Non-Parametric Test for regARIMA Model Residuals</h3>
+<p> ken =    19.602564 ( Asymptotically distributed as Chi-Square(11), P-Value =     0.051098 ) </p>
+
+<a name="pos00010"></a>
+
+<p class="right"><a href="#skip00010" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00009">Previous Table</a> | <a href="#index00010">Index</a> | <a href="#pos00011">Next Table</a></p>
+
+<a name="skip00010"></a>
+
+<h3>QS Statistic for regARIMA Model Residuals</h3>
+
+ <p>QS Statistic for regARIMA Model Residuals (full series):              0.15  (P-Value =     0.9273)</p>
+
+ <p>QS Statistic for regARIMA Model Residuals (starting 2015.May):              0.00  (P-Value =     1.0000)</p>
+
+<a name="pos00011"></a>
+
+<p class="right"><a href="#skip00011" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00010">Previous Table</a> | <a href="#index00011">Index</a> | <a href="#pos00012">Next Table</a></p>
+
+<a name="skip00011"></a>
+
+<p class="right"><a href="#pos00012" title="Skip ASCII plot of Table      10*LOG(SPECTRUM) of the regARIMA model residuals" class="skiplinks">&nbsp;</a></p>
+
+<h3>     10*LOG(SPECTRUM) of the regARIMA model residuals</h3>
+
+<h3 class="indent">     Spectrum estimated from 2015.May to 2023.Apr.</h3>
+<pre>
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -12.26I        *                                                    I    -12.26
+           I        *                                                    I
+           I        *                                                    I
+           I        *                                                    I
+     -13.01I        *                                                    I    -13.01
+           I        *                                                    I
+           I        *                                                    I
+           I        *        *                                           I
+     -13.76I        *        *                     *                     I    -13.76
+           I        *        *                     *                     I
+           I        *        *                     *                     I
+           I        *        *                     *       *             I
+     -14.52I        *        *                     *       *             I    -14.52
+           I        *       **                    **       *             I
+           I   *    *       **                    **       *             I
+           I   *    *       **                    **       *             I
+     -15.27I   *    *       **                    **       *             I    -15.27
+           I   *    *       **      *   *     *   **       *             I
+           I   *    *       **      *   *     *   **       *             I
+           I   *    *       **     **   *     *   **       *             I
+     -16.02I   *   **       **     **   *    **   **       *             I    -16.02
+           I   *   **       **     **   **   **   **       *             I
+           I   *   **       **     **   **   **   **       *             I
+           I   *   **       **     **   **   **   **       *             I
+     -16.78I   *   ***      **     **   **   **   **       *             I    -16.78
+           I   *   ***      **     **   **   **   **       *             I
+           I   *   ***      **     **  ***   **   **       *             I
+           I  **   ***      **     **  ***   ***  **      **        *    I
+     -17.53I  **   ***  ** ***     **  ***  ****  **      ***       *   SI    -17.53
+           I  **   ***  ** ***     **  ***S ****  **      ***       *   SI
+           I  **   ***  ** ****    *** ***S ****  **      ***       *   SI
+           I  **   ***  *******    *** ***S ****  **      ***       *   SI
+     -18.28I  **   ***  *******    *** ***S***** ***      ***       *   SI    -18.28
+           I  **   ***  *******    *******S***** ***    * ***       *   SI
+           I  ***  ***  *******    *******S***** ***S   * ***       *   SI
+           I  ***  *** ********    *******S*********S   * ***       *   SI
+     -19.03I  ***  *** ********    *******S*********S  ******      **   SI    -19.03
+           I  ***  ***S********    *******S*********S  ******      **   SI
+           I  ***  ***S********    *******S*********S  ******   T  **   SI
+           I  ***  ***S********   ********S*********S  ******  *T  **   SI
+     -19.79I  *** ****S********   ********S*********S  ******  *T  **  *SI    -19.79
+           I  *** ****S********   ********S*********S  ******  *T  **  *SI
+           I  *** ****S********   ********S*********S  ******  *T  **  *SI
+           I  *** ****S********   ********S*********S  ******  *T  *** *SI
+     -20.54I  ********S********   ********S*********S*T******* *T  *** *SI    -20.54
+           I  ********S********   ********S*********S*T*******S*T  *** *SI
+           I *********S*********  ********S*********S*T*******S*T  *** *SI
+           I *********S*********  ********S*********S*T*******S*T  *** *SI
+     -21.29I *********S*********  ********S*********S*T*******S*T  *** *SI    -21.29
+           I *********S*********  ********S*********S*T*******S*T* *****SI
+           I *********S********* *********S*********S*T*******S*T*******SI
+           I *********S********* *********S*********S*T*******S*T*******SI
+     -22.05I**********S*********S*********S*********S*T*******S*T*******SI    -22.05
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+</pre>
+
+<p>&nbsp;</p>
+
+<a name="pos00012"></a>
+
+<p class="right"><a href="#skip00012" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00011">Previous Table</a> | <a href="#index00012">Index</a> | <a href="#pos00013">Next Table</a></p>
+
+<a name="skip00012"></a>
+
+<h2>FORECASTING</h2>
+
+<p class="indent">
+  Origin : 2023.Apr <br> 
+  Number :         12
+</p>
+
+<div id="ftr">
+<table class="w70">
+<caption><strong>Forecasts and Standard Errors of the Transformed Data</strong></caption>
+<tr>
+<th scope="col">Date</th>
+<th scope="col">Forecast</th>
+<th scope="col">Standard <br> Error</th>
+</tr>
+<tr>
+<th scope="row">2023.May</th>
+ <td> 0.957588    </td><td> 0.136545    </td>
+</tr>
+<tr>
+<th scope="row">2023.Jun</th>
+ <td>  1.05227    </td><td> 0.209127    </td>
+</tr>
+<tr>
+<th scope="row">2023.Jul</th>
+ <td>  1.06149    </td><td> 0.262343    </td>
+</tr>
+<tr>
+<th scope="row">2023.Aug</th>
+ <td>  1.01296    </td><td> 0.306453    </td>
+</tr>
+<tr>
+<th scope="row">2023.Sep</th>
+ <td> 0.934179    </td><td> 0.344969    </td>
+</tr>
+<tr>
+<th scope="row">2023.Oct</th>
+ <td> 0.940051    </td><td> 0.379596    </td>
+</tr>
+<tr>
+<th scope="row">2023.Nov</th>
+ <td> 0.961395    </td><td> 0.411318    </td>
+</tr>
+<tr>
+<th scope="row">2023.Dec</th>
+ <td>  1.01692    </td><td> 0.440764    </td>
+</tr>
+<tr>
+<th scope="row">2024.Jan</th>
+ <td>  1.22517    </td><td> 0.468361    </td>
+</tr>
+<tr>
+<th scope="row">2024.Feb</th>
+ <td>  1.17253    </td><td> 0.494421    </td>
+</tr>
+<tr>
+<th scope="row">2024.Mar</th>
+ <td>  1.14332    </td><td> 0.519174    </td>
+</tr>
+<tr>
+<th scope="row">2024.Apr</th>
+ <td>  1.02430    </td><td> 0.542800    </td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<div id="fct">
+<table class="w70"
+  summary ="Confidence intervals with coverage probability ( 0.95000)" >
+<caption><strong>Confidence intervals with coverage probability ( 0.95000) <br> On the Original Scale</strong></caption>
+<tr>
+<th scope="col">Date</th>
+<th scope="col">Lower</th>
+<th scope="col">Forecast</th>
+<th scope="col">Upper</th>
+</tr>
+<tr>
+<th scope="row">2023.May</th>
+ <td>  1.99364    </td>
+ <td>  2.60540    </td>
+ <td>  3.40488    </td>
+</tr>
+<tr>
+<th scope="row">2023.Jun</th>
+ <td>  1.90101    </td>
+ <td>  2.86413    </td>
+ <td>  4.31522    </td>
+</tr>
+<tr>
+<th scope="row">2023.Jul</th>
+ <td>  1.72859    </td>
+ <td>  2.89067    </td>
+ <td>  4.83399    </td>
+</tr>
+<tr>
+<th scope="row">2023.Aug</th>
+ <td>  1.51032    </td>
+ <td>  2.75373    </td>
+ <td>  5.02082    </td>
+</tr>
+<tr>
+<th scope="row">2023.Sep</th>
+ <td>  1.29441    </td>
+ <td>  2.54512    </td>
+ <td>  5.00434    </td>
+</tr>
+<tr>
+<th scope="row">2023.Oct</th>
+ <td>  1.21660    </td>
+ <td>  2.56011    </td>
+ <td>  5.38731    </td>
+</tr>
+<tr>
+<th scope="row">2023.Nov</th>
+ <td>  1.16792    </td>
+ <td>  2.61534    </td>
+ <td>  5.85657    </td>
+</tr>
+<tr>
+<th scope="row">2023.Dec</th>
+ <td>  1.16537    </td>
+ <td>  2.76467    </td>
+ <td>  6.55877    </td>
+</tr>
+<tr>
+<th scope="row">2024.Jan</th>
+ <td>  1.35961    </td>
+ <td>  3.40474    </td>
+ <td>  8.52616    </td>
+</tr>
+<tr>
+<th scope="row">2024.Feb</th>
+ <td>  1.22566    </td>
+ <td>  3.23014    </td>
+ <td>  8.51282    </td>
+</tr>
+<tr>
+<th scope="row">2024.Mar</th>
+ <td>  1.13400    </td>
+ <td>  3.13715    </td>
+ <td>  8.67876    </td>
+</tr>
+<tr>
+<th scope="row">2024.Apr</th>
+ <td> 0.961201    </td>
+ <td>  2.78513    </td>
+ <td>  8.07008    </td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00013"></a>
+
+<p class="right"><a href="#skip00013" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00012">Previous Table</a> | <a href="#index00013">Index</a> | <a href="#pos00014">Next Table</a></p>
+
+<a name="skip00013"></a>
+
+<h3>B 1  Original series (prior adjusted)</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="b1">
+<table class="x11"
+  summary ="B 1  Original series (prior adjusted)" >
+<caption><strong>B 1  Original series (prior adjusted)</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col">TOTAL</th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>    4.80000</td>
+<td>    4.70000</td>
+<td>    4.70000</td>
+<td>    4.00000</td>
+<td>    3.80000</td>
+<td>    4.00000</td>
+<td>    4.20000</td>
+<td>    4.10000</td>
+<td>    4.10000</td>
+<td>    4.10000</td>
+<td>    4.30000</td>
+<td>    4.50000</td>
+<td>   51.30000</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>   13.50000</td>
+<td>   13.00000</td>
+<td>   12.80000</td>
+<td>   11.40000</td>
+<td>   10.80000</td>
+<td>   11.90000</td>
+<td>   11.80000</td>
+<td>   11.60000</td>
+<td>   11.50000</td>
+<td>   11.50000</td>
+<td>   11.20000</td>
+<td>   11.80000</td>
+<td>  142.80000</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>   12.90000</td>
+<td>   12.70000</td>
+<td>   12.30000</td>
+<td>   10.80000</td>
+<td>   10.40000</td>
+<td>   11.20000</td>
+<td>   11.40000</td>
+<td>   10.90000</td>
+<td>   10.10000</td>
+<td>   10.20000</td>
+<td>   10.20000</td>
+<td>   10.90000</td>
+<td>  134.00000</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>   10.70000</td>
+<td>   10.00000</td>
+<td>    9.40000</td>
+<td>    8.10000</td>
+<td>    7.80000</td>
+<td>    8.80000</td>
+<td>    8.80000</td>
+<td>    8.40000</td>
+<td>    8.00000</td>
+<td>    8.10000</td>
+<td>    8.10000</td>
+<td>    8.20000</td>
+<td>  104.40000</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    8.30000</td>
+<td>    8.10000</td>
+<td>    7.60000</td>
+<td>    6.10000</td>
+<td>    5.90000</td>
+<td>    6.40000</td>
+<td>    6.90000</td>
+<td>    6.70000</td>
+<td>    6.20000</td>
+<td>    6.20000</td>
+<td>    6.50000</td>
+<td>    6.60000</td>
+<td>   81.50000</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>    7.30000</td>
+<td>    6.70000</td>
+<td>    6.20000</td>
+<td>    5.30000</td>
+<td>    5.10000</td>
+<td>    5.50000</td>
+<td>    5.70000</td>
+<td>    5.40000</td>
+<td>    4.90000</td>
+<td>    5.30000</td>
+<td>    5.70000</td>
+<td>    6.00000</td>
+<td>   69.10000</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>    4.90000</td>
+<td>    4.80000</td>
+<td>    4.60000</td>
+<td>    3.80000</td>
+<td>    3.30000</td>
+<td>    4.00000</td>
+<td>    4.00000</td>
+<td>    3.90000</td>
+<td>    3.70000</td>
+<td>    3.80000</td>
+<td>    3.90000</td>
+<td>    4.60000</td>
+<td>   49.30000</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    5.50000</td>
+<td>    5.30000</td>
+<td>    4.80000</td>
+<td>    3.80000</td>
+<td>    3.40000</td>
+<td>    3.80000</td>
+<td>    4.00000</td>
+<td>    3.80000</td>
+<td>    3.40000</td>
+<td>    3.40000</td>
+<td>    3.50000</td>
+<td>    3.90000</td>
+<td>   48.60000</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    4.00000</td>
+<td>    3.70000</td>
+<td>    3.50000</td>
+<td>    2.80000</td>
+<td>    2.30000</td>
+<td>    2.90000</td>
+<td>    2.90000</td>
+<td>    2.80000</td>
+<td>    2.50000</td>
+<td>    2.60000</td>
+<td>    2.60000</td>
+<td>    3.20000</td>
+<td>   35.80000</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    4.70000</td>
+<td>    4.20000</td>
+<td>    4.10000</td>
+<td>    3.00000</td>
+<td>    2.60000</td>
+<td>    3.00000</td>
+<td>    3.20000</td>
+<td>    3.00000</td>
+<td>    2.70000</td>
+<td>    2.80000</td>
+<td>    2.90000</td>
+<td>    3.30000</td>
+<td>   39.50000</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>    5.10000</td>
+<td>    4.80000</td>
+<td>    6.70000</td>
+<td>   15.00000</td>
+<td>   14.10000</td>
+<td>   11.80000</td>
+<td>   10.80000</td>
+<td>    8.80000</td>
+<td>    8.10000</td>
+<td>    7.20000</td>
+<td>    7.30000</td>
+<td>    8.30000</td>
+<td>  108.00000</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>    9.20000</td>
+<td>    8.70000</td>
+<td>    8.00000</td>
+<td>    7.00000</td>
+<td>    6.20000</td>
+<td>    6.80000</td>
+<td>    6.30000</td>
+<td>    5.90000</td>
+<td>    4.90000</td>
+<td>    4.70000</td>
+<td>    4.30000</td>
+<td>    4.30000</td>
+<td>   76.30000</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>    5.30000</td>
+<td>    4.70000</td>
+<td>    3.90000</td>
+<td>    3.10000</td>
+<td>    2.70000</td>
+<td>    3.10000</td>
+<td>    3.10000</td>
+<td>    3.20000</td>
+<td>    3.00000</td>
+<td>    3.10000</td>
+<td>    3.50000</td>
+<td>    2.70000</td>
+<td>   41.40000</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>    3.60000</td>
+<td>    3.60000</td>
+<td>    3.60000</td>
+<td>    2.90000</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   13.70000</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>      7.12857</td>
+<td>      6.78571</td>
+<td>      6.58571</td>
+<td>      6.22143</td>
+<td>      6.03077</td>
+<td>      6.40000</td>
+<td>      6.39231</td>
+<td>      6.03846</td>
+<td>      5.62308</td>
+<td>      5.61538</td>
+<td>      5.69231</td>
+<td>      6.02308</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               995.70000 &nbsp;&nbsp;&nbsp; Mean-                      6.22312 &nbsp;&nbsp;&nbsp; Standard Deviation-        3.13688  <br> 
+Minimum-                   2.30000 &nbsp;&nbsp;&nbsp; Maximum-                  15.00000 </p>
+
+<p>&nbsp;</p>
+
+<h3>B 1.A  Forecasts of (prior adjusted) original series</h3>
+ <p>From  2023.May to 2024.Apr <br> 
+  Observations         12</p>
+
+<div id="b1.fct">
+<table class="x11"
+  summary ="B 1.A  Forecasts of (prior adjusted) original series" >
+<caption><strong>B 1.A  Forecasts of (prior adjusted) original series</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col">TOTAL</th>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    2.60540</td>
+<td class="nowrap">    2.86413</td>
+<td class="nowrap">    2.89067</td>
+<td class="nowrap">    2.75373</td>
+<td class="nowrap">    2.54512</td>
+<td class="nowrap">    2.56011</td>
+<td class="nowrap">    2.61534</td>
+<td class="nowrap">    2.76467</td>
+<td class="nowrap">   21.59919</td>
+</tr>
+<tr>
+<th scope="row">2024</th>
+<td>    3.40474</td>
+<td>    3.23014</td>
+<td>    3.13715</td>
+<td>    2.78513</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   12.55717</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00014"></a>
+
+<p class="right"><a href="#skip00014" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00013">Previous Table</a> | <a href="#index00014">Index</a> | <a href="#pos00015">Next Table</a></p>
+
+<a name="skip00014"></a>
+
+<h3>C 17  Final weights for irregular component</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+<p>Lower sigma limit :  1.50 <br> 
+  Upper sigma limit :  2.50</p>
+
+<div id="c17">
+<table class="x11"
+  summary ="C 17  Final weights for irregular component" >
+<caption><strong>C 17  Final weights for irregular component</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Moving 5-year standard deviation"> S.D.</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>    3.52684</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    3.52684</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    3.52684</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    3.21309</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    0.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   76.72286</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   89.30344</td>
+<td>  100.00000</td>
+<td>    2.58138</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   81.09064</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>    3.10698</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>    0.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   99.40227</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    3.34774</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>   99.68269</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   91.05107</td>
+<td>    4.31070</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   64.44923</td>
+<td>  100.00000</td>
+<td>    5.02304</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    0.00000</td>
+<td>  100.00000</td>
+<td>   90.09905</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   10.19763</td>
+<td>    4.95376</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   73.32614</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>   58.67873</td>
+<td>  100.00000</td>
+<td>   83.60057</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    5.81704</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    5.83540</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>    0.00000</td>
+<td>   52.88645</td>
+<td>    5.65488</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td>  100.00000</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    5.65488</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00015"></a>
+
+<p class="right"><a href="#skip00015" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00014">Previous Table</a> | <a href="#index00015">Index</a> | <a href="#pos00016">Next Table</a></p>
+
+<a name="skip00015"></a>
+
+<h3>D 8  Final unmodified SI ratios</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="d8">
+<table class="x11"
+  summary ="D 8  Final unmodified SI ratios" >
+<caption><strong>D 8  Final unmodified SI ratios</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  116.60189</td>
+<td>  114.89732</td>
+<td>  115.99276</td>
+<td>   99.66502</td>
+<td>   94.66059</td>
+<td>   97.65787</td>
+<td>   99.10303</td>
+<td>   91.89630</td>
+<td>   84.73503</td>
+<td>   74.82043</td>
+<td>   67.04589</td>
+<td>   59.23308</td>
+<td>   93.02577</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  152.42479</td>
+<td>  130.19570</td>
+<td>  118.27795</td>
+<td>  100.52106</td>
+<td>   92.87078</td>
+<td>  100.23681</td>
+<td>   96.71968</td>
+<td>   92.39519</td>
+<td>   90.57700</td>
+<td>   92.03761</td>
+<td>   92.90106</td>
+<td>  101.82194</td>
+<td>  105.08163</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  114.42573</td>
+<td>  113.60220</td>
+<td>  109.76722</td>
+<td>   95.87347</td>
+<td>   91.71956</td>
+<td>   98.29715</td>
+<td>  100.22604</td>
+<td>   96.96798</td>
+<td>   91.32419</td>
+<td>   94.31826</td>
+<td>   97.31791</td>
+<td>  108.31815</td>
+<td>  101.01316</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  111.55080</td>
+<td>  109.07940</td>
+<td>  105.37376</td>
+<td>   91.41547</td>
+<td>   87.89186</td>
+<td>   99.60724</td>
+<td>  100.78755</td>
+<td>   97.90569</td>
+<td>   95.20614</td>
+<td>   98.46798</td>
+<td>  100.56505</td>
+<td>  104.02525</td>
+<td>  100.15635</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>  107.69385</td>
+<td>  107.76306</td>
+<td>  104.36609</td>
+<td>   86.73557</td>
+<td>   86.27752</td>
+<td>   94.82439</td>
+<td>  102.87281</td>
+<td>  100.49653</td>
+<td>   94.15281</td>
+<td>   95.83350</td>
+<td>  102.35581</td>
+<td>  105.58918</td>
+<td>   99.08009</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  118.65431</td>
+<td>  110.29693</td>
+<td>  102.92566</td>
+<td>   88.54557</td>
+<td>   86.21416</td>
+<td>   94.96414</td>
+<td>  101.07224</td>
+<td>   98.17220</td>
+<td>   90.83920</td>
+<td>  100.31490</td>
+<td>  111.70025</td>
+<td>  123.50980</td>
+<td>  102.26745</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>  106.40606</td>
+<td>  109.19127</td>
+<td>  107.83335</td>
+<td>   90.82208</td>
+<td>   80.03959</td>
+<td>   98.24500</td>
+<td>   98.99615</td>
+<td>   96.66169</td>
+<td>   91.64733</td>
+<td>   93.49406</td>
+<td>   93.89574</td>
+<td>  107.52934</td>
+<td>   97.89680</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  125.41854</td>
+<td>  119.76651</td>
+<td>  109.95730</td>
+<td>   89.58308</td>
+<td>   82.56661</td>
+<td>   94.34976</td>
+<td>  100.99773</td>
+<td>   97.23484</td>
+<td>   87.55922</td>
+<td>   88.15510</td>
+<td>   92.78426</td>
+<td>  108.02106</td>
+<td>   99.69950</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  117.89810</td>
+<td>  116.98904</td>
+<td>  117.48278</td>
+<td>   97.58151</td>
+<td>   81.59946</td>
+<td>  103.40727</td>
+<td>  102.45166</td>
+<td>   96.73554</td>
+<td>   84.01153</td>
+<td>   84.60001</td>
+<td>   81.31342</td>
+<td>   96.11465</td>
+<td>   98.34875</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  137.63048</td>
+<td>  123.66113</td>
+<td>  125.86574</td>
+<td>   98.01572</td>
+<td>   89.24340</td>
+<td>  104.10132</td>
+<td>  108.09976</td>
+<td>   96.97600</td>
+<td>   83.52053</td>
+<td>   83.15255</td>
+<td>   80.51432</td>
+<td>   79.91921</td>
+<td>  100.89168</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>  100.34786</td>
+<td>   74.76836</td>
+<td>   84.54086</td>
+<td>  161.99668</td>
+<td>  139.56224</td>
+<td>  113.60525</td>
+<td>  105.66567</td>
+<td>   89.80762</td>
+<td>   86.13070</td>
+<td>   78.55099</td>
+<td>   81.26280</td>
+<td>   96.03150</td>
+<td>  101.02254</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  113.45301</td>
+<td>  115.68545</td>
+<td>  113.70531</td>
+<td>  103.64346</td>
+<td>   93.99891</td>
+<td>  106.06571</td>
+<td>  102.13969</td>
+<td>  100.03511</td>
+<td>   87.26822</td>
+<td>   88.37883</td>
+<td>   85.64340</td>
+<td>   91.29125</td>
+<td>  100.10903</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  121.73136</td>
+<td>  119.21588</td>
+<td>  110.09534</td>
+<td>   96.06067</td>
+<td>   88.21693</td>
+<td>  101.82002</td>
+<td>   99.58295</td>
+<td>   99.69188</td>
+<td>   91.58970</td>
+<td>   95.07040</td>
+<td>  110.47241</td>
+<td>   87.97684</td>
+<td>  101.79370</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  118.84772</td>
+<td>  117.71474</td>
+<td>  115.88994</td>
+<td>   93.06654</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.37974</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>    118.79175</td>
+<td>    113.05907</td>
+<td>    110.14815</td>
+<td>     99.53756</td>
+<td>     91.91243</td>
+<td>    100.55246</td>
+<td>    101.43961</td>
+<td>     96.53666</td>
+<td>     89.12012</td>
+<td>     89.78420</td>
+<td>     92.13633</td>
+<td>     97.64471</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-             16050.15633 &nbsp;&nbsp;&nbsp; Mean-                    100.31348 &nbsp;&nbsp;&nbsp; Standard Deviation-       14.32753  <br> 
+Minimum-                  59.23308 &nbsp;&nbsp;&nbsp; Maximum-                 161.99668 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00016"></a>
+
+<p class="right"><a href="#skip00016" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00015">Previous Table</a> | <a href="#index00016">Index</a> | <a href="#pos00017">Next Table</a></p>
+
+<a name="skip00016"></a>
+
+<h3>D 8.B  Final unmodified SI ratios, with labels for outliers and extreme values</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+<table class="x11"
+  summary ="D 8.B  Final unmodified SI ratios, with labels for outliers and extreme values" >
+<caption><strong>D 8.B  Final unmodified SI ratios, with labels for outliers and extreme values</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  116.60189</td>
+<td>  114.89732</td>
+<td>  115.99276</td>
+<td>   99.66502</td>
+<td>   94.66059</td>
+<td>   97.65787</td>
+<td>   99.10303</td>
+<td>   91.89630</td>
+<td>   84.73503</td>
+<td class="nowrap">
+   74.82043 &nbsp; * <a href="#footnote0001" class="longdesc">Link to definition of * </a>
+<a name="foot0001"></a></td>
+<td class="nowrap">
+   67.04589 &nbsp; * <a href="#footnote0002" class="longdesc">Link to definition of * </a>
+<a name="foot0002"></a></td>
+<td class="nowrap">
+   59.23308 &nbsp; * <a href="#footnote0003" class="longdesc">Link to definition of * </a>
+<a name="foot0003"></a></td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td class="nowrap">
+  152.42479 &nbsp; * <a href="#footnote0004" class="longdesc">Link to definition of * </a>
+<a name="foot0004"></a></td>
+<td class="nowrap">
+  130.19570 &nbsp; * <a href="#footnote0005" class="longdesc">Link to definition of * </a>
+<a name="foot0005"></a></td>
+<td>  118.27795</td>
+<td>  100.52106</td>
+<td>   92.87078</td>
+<td>  100.23681</td>
+<td>   96.71968</td>
+<td>   92.39519</td>
+<td>   90.57700</td>
+<td>   92.03761</td>
+<td>   92.90106</td>
+<td>  101.82194</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  114.42573</td>
+<td>  113.60220</td>
+<td>  109.76722</td>
+<td>   95.87347</td>
+<td>   91.71956</td>
+<td>   98.29715</td>
+<td>  100.22604</td>
+<td>   96.96798</td>
+<td>   91.32419</td>
+<td>   94.31826</td>
+<td>   97.31791</td>
+<td>  108.31815</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  111.55080</td>
+<td>  109.07940</td>
+<td>  105.37376</td>
+<td>   91.41547</td>
+<td>   87.89186</td>
+<td>   99.60724</td>
+<td>  100.78755</td>
+<td>   97.90569</td>
+<td>   95.20614</td>
+<td>   98.46798</td>
+<td>  100.56505</td>
+<td>  104.02525</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td class="nowrap">
+  107.69385 &nbsp; * <a href="#footnote0006" class="longdesc">Link to definition of * </a>
+<a name="foot0006"></a></td>
+<td>  107.76306</td>
+<td>  104.36609</td>
+<td class="nowrap">
+   86.73557 &nbsp; * <a href="#footnote0007" class="longdesc">Link to definition of * </a>
+<a name="foot0007"></a></td>
+<td>   86.27752</td>
+<td>   94.82439</td>
+<td>  102.87281</td>
+<td>  100.49653</td>
+<td>   94.15281</td>
+<td>   95.83350</td>
+<td class="nowrap">
+  102.35581 &nbsp; * <a href="#footnote0008" class="longdesc">Link to definition of * </a>
+<a name="foot0008"></a></td>
+<td>  105.58918</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  118.65431</td>
+<td>  110.29693</td>
+<td>  102.92566</td>
+<td>   88.54557</td>
+<td>   86.21416</td>
+<td>   94.96414</td>
+<td>  101.07224</td>
+<td>   98.17220</td>
+<td>   90.83920</td>
+<td class="nowrap">
+  100.31490 &nbsp; * <a href="#footnote0009" class="longdesc">Link to definition of * </a>
+<a name="foot0009"></a></td>
+<td class="nowrap">
+  111.70025 &nbsp; * <a href="#footnote0010" class="longdesc">Link to definition of * </a>
+<a name="foot0010"></a></td>
+<td class="nowrap">
+  123.50980 &nbsp; * <a href="#footnote0011" class="longdesc">Link to definition of * </a>
+<a name="foot0011"></a></td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="nowrap">
+  106.40606 &nbsp; * <a href="#footnote0012" class="longdesc">Link to definition of * </a>
+<a name="foot0012"></a></td>
+<td>  109.19127</td>
+<td>  107.83335</td>
+<td>   90.82208</td>
+<td class="nowrap">
+   80.03959 &nbsp; * <a href="#footnote0013" class="longdesc">Link to definition of * </a>
+<a name="foot0013"></a></td>
+<td>   98.24500</td>
+<td>   98.99615</td>
+<td>   96.66169</td>
+<td>   91.64733</td>
+<td>   93.49406</td>
+<td>   93.89574</td>
+<td>  107.52934</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td class="nowrap">
+  125.41854 &nbsp; * <a href="#footnote0014" class="longdesc">Link to definition of * </a>
+<a name="foot0014"></a></td>
+<td>  119.76651</td>
+<td>  109.95730</td>
+<td>   89.58308</td>
+<td>   82.56661</td>
+<td>   94.34976</td>
+<td>  100.99773</td>
+<td>   97.23484</td>
+<td>   87.55922</td>
+<td>   88.15510</td>
+<td>   92.78426</td>
+<td class="nowrap">
+  108.02106 &nbsp; * <a href="#footnote0015" class="longdesc">Link to definition of * </a>
+<a name="foot0015"></a></td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  117.89810</td>
+<td>  116.98904</td>
+<td>  117.48278</td>
+<td>   97.58151</td>
+<td>   81.59946</td>
+<td>  103.40727</td>
+<td>  102.45166</td>
+<td>   96.73554</td>
+<td>   84.01153</td>
+<td>   84.60001</td>
+<td class="nowrap">
+   81.31342 &nbsp; * <a href="#footnote0016" class="longdesc">Link to definition of * </a>
+<a name="foot0016"></a></td>
+<td>   96.11465</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td class="nowrap">
+  137.63048 &nbsp; * <a href="#footnote0017" class="longdesc">Link to definition of * </a>
+<a name="foot0017"></a></td>
+<td>  123.66113</td>
+<td class="nowrap">
+  125.86574 &nbsp; * <a href="#footnote0018" class="longdesc">Link to definition of * </a>
+<a name="foot0018"></a></td>
+<td>   98.01572</td>
+<td>   89.24340</td>
+<td>  104.10132</td>
+<td>  108.09976</td>
+<td>   96.97600</td>
+<td>   83.52053</td>
+<td>   83.15255</td>
+<td>   80.51432</td>
+<td class="nowrap">
+   79.91921 &nbsp; * <a href="#footnote0019" class="longdesc">Link to definition of * </a>
+<a name="foot0019"></a></td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td class="nowrap">
+  100.34786 &nbsp; * <a href="#footnote0020" class="longdesc">Link to definition of * </a>
+<a name="foot0020"></a></td>
+<td class="nowrap">
+   74.76836 &nbsp; * <a href="#footnote0021" class="longdesc">Link to definition of * </a>
+<a name="foot0021"></a></td>
+<td class="nowrap">
+   84.54086 &nbsp; * <a href="#footnote0022" class="longdesc">Link to definition of * </a>
+<a name="foot0022"></a></td>
+<td class="nowrap">
+  161.99668 &nbsp; * <a href="#footnote0023" class="longdesc">Link to definition of * </a>
+<a name="foot0023"></a></td>
+<td class="nowrap">
+  139.56224 &nbsp; * <a href="#footnote0024" class="longdesc">Link to definition of * </a>
+<a name="foot0024"></a></td>
+<td>  113.60525</td>
+<td>  105.66567</td>
+<td class="nowrap">
+   89.80762 &nbsp; * <a href="#footnote0025" class="longdesc">Link to definition of * </a>
+<a name="foot0025"></a></td>
+<td>   86.13070</td>
+<td class="nowrap">
+   78.55099 &nbsp; * <a href="#footnote0026" class="longdesc">Link to definition of * </a>
+<a name="foot0026"></a></td>
+<td>   81.26280</td>
+<td>   96.03150</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  113.45301</td>
+<td>  115.68545</td>
+<td>  113.70531</td>
+<td>  103.64346</td>
+<td>   93.99891</td>
+<td>  106.06571</td>
+<td>  102.13969</td>
+<td>  100.03511</td>
+<td>   87.26822</td>
+<td>   88.37883</td>
+<td>   85.64340</td>
+<td>   91.29125</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  121.73136</td>
+<td>  119.21588</td>
+<td>  110.09534</td>
+<td>   96.06067</td>
+<td>   88.21693</td>
+<td>  101.82002</td>
+<td>   99.58295</td>
+<td>   99.69188</td>
+<td>   91.58970</td>
+<td>   95.07040</td>
+<td class="nowrap">
+  110.47241 &nbsp; * <a href="#footnote0027" class="longdesc">Link to definition of * </a>
+<a name="foot0027"></a></td>
+<td class="nowrap">
+   87.97684 &nbsp; * <a href="#footnote0028" class="longdesc">Link to definition of * </a>
+<a name="foot0028"></a></td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  118.84772</td>
+<td>  117.71474</td>
+<td>  115.88994</td>
+<td>   93.06654</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+<table class="x11"
+  summary ="Key to symbols for Table D8.B" >
+<caption><strong>Key to symbols:</strong></caption>
+<tr><td class="head">*</td><td>extreme value as determined by X-11 extreme value procedure</td></tr>
+</table>
+
+<p>&nbsp;</p>
+
+<a name="pos00017"></a>
+
+<p class="right"><a href="#skip00017" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00016">Previous Table</a> | <a href="#index00017">Index</a> | <a href="#pos00018">Next Table</a></p>
+
+<a name="skip00017"></a>
+
+<h3>D 9  Final replacement values for SI ratios</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="d9">
+<table class="x11"
+  summary ="D 9  Final replacement values for SI ratios" >
+<caption><strong>D 9  Final replacement values for SI ratios</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   83.95234</td>
+<td class="nowrap">   90.36399</td>
+<td class="nowrap">  102.97157</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  116.83273</td>
+<td>  114.00275</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>  116.83695</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   87.68092</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  101.91973</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   99.36906</td>
+<td class="nowrap">   98.71827</td>
+<td class="nowrap">  108.01292</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>  121.00177</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   80.06499</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  125.39433</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  107.40119</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   84.28462</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  117.49021</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  124.95107</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   89.59418</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>  103.41382</td>
+<td>  120.19890</td>
+<td>  122.92279</td>
+<td>  105.65593</td>
+<td>   95.04067</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   94.45484</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   79.93153</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   90.66576</td>
+<td class="nowrap">   93.17655</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00018"></a>
+
+<p class="right"><a href="#skip00018" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00017">Previous Table</a> | <a href="#index00018">Index</a> | <a href="#pos00019">Next Table</a></p>
+
+<a name="skip00018"></a>
+
+<h3>D 9.A  Moving seasonality ratio</h3>
+<table class="x11"
+  summary ="D 9.A  Moving seasonality ratio" >
+<caption><strong>D 9.A  Moving seasonality ratio</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+</tr>
+<tr>
+<th scope="row">  I  </th>
+<td>      4.266</td>
+<td>      2.803</td>
+<td>      3.669</td>
+<td>      3.606</td>
+<td>      3.333</td>
+<td>      3.992</td>
+<td>      2.639</td>
+<td>      1.859</td>
+<td>      2.701</td>
+<td>      4.458</td>
+<td>      3.368</td>
+<td>      3.915</td>
+</tr>
+<tr>
+<th scope="row">  S  </th>
+<td>      0.475</td>
+<td>      0.823</td>
+<td>      1.201</td>
+<td>      1.173</td>
+<td>      1.517</td>
+<td>      1.015</td>
+<td>      0.447</td>
+<td>      0.446</td>
+<td>      0.765</td>
+<td>      1.157</td>
+<td>      1.450</td>
+<td>      1.358</td>
+</tr>
+<tr>
+<th scope="row">RATIO</th>
+<td>      8.972</td>
+<td>      3.406</td>
+<td>      3.055</td>
+<td>      3.075</td>
+<td>      2.197</td>
+<td>      3.933</td>
+<td>      5.904</td>
+<td>      4.165</td>
+<td>      3.528</td>
+<td>      3.853</td>
+<td>      2.323</td>
+<td>      2.882</td>
+</tr>
+</table>
+
+<p>&nbsp;</p>
+
+<a name="pos00019"></a>
+
+<p class="right"><a href="#skip00019" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00018">Previous Table</a> | <a href="#index00019">Index</a> | <a href="#pos00020">Next Table</a></p>
+
+<a name="skip00019"></a>
+
+<h3>D 10  Final seasonal factors</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<p>Seasonal filter : 3 x 3 moving average</p>
+
+<div id="d10">
+<table class="x11"
+  summary ="D 10  Final seasonal factors" >
+<caption><strong>D 10  Final seasonal factors</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  116.04390</td>
+<td>  114.04826</td>
+<td>  115.52296</td>
+<td>   99.09895</td>
+<td>   93.18678</td>
+<td>   98.61529</td>
+<td>   98.12940</td>
+<td>   92.89512</td>
+<td>   88.28838</td>
+<td>   89.22838</td>
+<td>   92.83282</td>
+<td>  103.68977</td>
+<td>  100.13167</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  115.75586</td>
+<td>  113.70871</td>
+<td>  114.05360</td>
+<td>   97.94616</td>
+<td>   92.21510</td>
+<td>   98.62200</td>
+<td>   98.33351</td>
+<td>   93.79875</td>
+<td>   89.69184</td>
+<td>   91.39278</td>
+<td>   94.55970</td>
+<td>  104.49242</td>
+<td>  100.38087</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  115.29142</td>
+<td>  112.49096</td>
+<td>  110.90548</td>
+<td>   95.36758</td>
+<td>   90.59982</td>
+<td>   98.15035</td>
+<td>   99.28755</td>
+<td>   95.62370</td>
+<td>   91.45174</td>
+<td>   93.85480</td>
+<td>   97.11746</td>
+<td>  105.49715</td>
+<td>  100.46983</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  115.24812</td>
+<td>  110.83929</td>
+<td>  107.49825</td>
+<td>   92.29188</td>
+<td>   88.59200</td>
+<td>   97.51933</td>
+<td>  100.32502</td>
+<td>   97.30192</td>
+<td>   92.85832</td>
+<td>   96.25932</td>
+<td>   99.18525</td>
+<td>  105.77608</td>
+<td>  100.30790</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>  116.56405</td>
+<td>  109.64390</td>
+<td>  105.42761</td>
+<td>   90.09532</td>
+<td>   86.63394</td>
+<td>   96.74497</td>
+<td>  101.21117</td>
+<td>   98.37348</td>
+<td>   92.81417</td>
+<td>   96.54435</td>
+<td>   99.37172</td>
+<td>  106.26645</td>
+<td>   99.97426</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  118.73923</td>
+<td>  110.44333</td>
+<td>  105.49431</td>
+<td>   89.45776</td>
+<td>   84.88525</td>
+<td>   96.42705</td>
+<td>  101.19975</td>
+<td>   98.27727</td>
+<td>   91.75412</td>
+<td>   95.65879</td>
+<td>   97.65155</td>
+<td>  106.62739</td>
+<td>   99.71798</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>  120.36671</td>
+<td>  112.27457</td>
+<td>  107.80464</td>
+<td>   90.54753</td>
+<td>   83.16629</td>
+<td>   97.38233</td>
+<td>  101.28784</td>
+<td>   97.94118</td>
+<td>   90.04698</td>
+<td>   92.70656</td>
+<td>   94.27986</td>
+<td>  105.75621</td>
+<td>   99.46339</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  120.58016</td>
+<td>  115.63446</td>
+<td>  111.64982</td>
+<td>   92.36517</td>
+<td>   83.12819</td>
+<td>   98.89782</td>
+<td>  102.46747</td>
+<td>   97.85126</td>
+<td>   88.02619</td>
+<td>   89.36107</td>
+<td>   90.35279</td>
+<td>  102.67312</td>
+<td>   99.41563</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  117.55688</td>
+<td>  117.86420</td>
+<td>  116.40555</td>
+<td>   95.77609</td>
+<td>   84.88177</td>
+<td>  102.54590</td>
+<td>  104.14434</td>
+<td>   97.44887</td>
+<td>   86.33329</td>
+<td>   85.87232</td>
+<td>   86.15047</td>
+<td>   98.24600</td>
+<td>   99.43547</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  114.44632</td>
+<td>  119.55545</td>
+<td>  119.42135</td>
+<td>   98.98438</td>
+<td>   88.48960</td>
+<td>  105.32037</td>
+<td>  105.25323</td>
+<td>   97.22504</td>
+<td>   85.55310</td>
+<td>   84.30963</td>
+<td>   83.69276</td>
+<td>   94.72295</td>
+<td>   99.74785</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>  112.43445</td>
+<td>  119.52257</td>
+<td>  119.24607</td>
+<td>  101.42401</td>
+<td>   91.12671</td>
+<td>  107.27016</td>
+<td>  104.27527</td>
+<td>   96.95233</td>
+<td>   86.18700</td>
+<td>   84.87176</td>
+<td>   83.62242</td>
+<td>   93.49978</td>
+<td>  100.03604</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  114.59283</td>
+<td>  119.10741</td>
+<td>  116.80637</td>
+<td>  100.70607</td>
+<td>   91.29504</td>
+<td>  105.22884</td>
+<td>  102.46503</td>
+<td>   97.77621</td>
+<td>   87.85240</td>
+<td>   87.73719</td>
+<td>   86.06169</td>
+<td>   93.50669</td>
+<td>  100.26131</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  117.63032</td>
+<td>  118.31731</td>
+<td>  114.14181</td>
+<td>   98.41024</td>
+<td>   89.57164</td>
+<td>  102.53464</td>
+<td>  100.80402</td>
+<td>   98.48818</td>
+<td>   89.71244</td>
+<td>   90.64970</td>
+<td>   88.75141</td>
+<td>   94.18705</td>
+<td>  100.26656</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  119.73720</td>
+<td>  117.44395</td>
+<td>  113.06364</td>
+<td>   96.06855</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.57833</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>    116.78482</td>
+<td>    115.06388</td>
+<td>    112.67439</td>
+<td>     95.60998</td>
+<td>     88.29016</td>
+<td>    100.40454</td>
+<td>    101.47566</td>
+<td>     96.91949</td>
+<td>     89.27461</td>
+<td>     90.64974</td>
+<td>     91.81769</td>
+<td>    101.14931</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-             16041.61866 &nbsp;&nbsp;&nbsp; Mean-                    100.26012 &nbsp;&nbsp;&nbsp; Standard Deviation-       10.39363  <br> 
+Minimum-                  83.12819 &nbsp;&nbsp;&nbsp; Maximum-                 120.58016 </p>
+
+<p>&nbsp;</p>
+
+<h3>D 10.A  Final seasonal component forecasts</h3>
+ <p>From  2023.May to 2024.Apr <br> 
+  Observations         12</p>
+
+<div id="d10.fct">
+<table class="x11"
+  summary ="D 10.A  Final seasonal component forecasts" >
+<caption><strong>D 10.A  Final seasonal component forecasts</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   87.89314</td>
+<td class="nowrap">  100.12703</td>
+<td class="nowrap">  100.21705</td>
+<td class="nowrap">   99.07504</td>
+<td class="nowrap">   90.88023</td>
+<td class="nowrap">   92.43534</td>
+<td class="nowrap">   90.36770</td>
+<td class="nowrap">   94.38347</td>
+<td class="nowrap">   94.42237</td>
+</tr>
+<tr>
+<th scope="row">2024</th>
+<td>  119.91438</td>
+<td>  116.66711</td>
+<td>  112.60481</td>
+<td>   95.01204</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.04958</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00020"></a>
+
+<p class="right"><a href="#skip00020" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00019">Previous Table</a> | <a href="#index00020">Index</a> | <a href="#pos00021">Next Table</a></p>
+
+<a name="skip00020"></a>
+
+<h3>D 11  Final seasonally adjusted data</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="d11">
+<table class="x11"
+  summary ="D 11  Final seasonally adjusted data" >
+<caption><strong>D 11  Final seasonally adjusted data</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col">TOTAL</th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>    4.13637</td>
+<td>    4.12106</td>
+<td>    4.06846</td>
+<td>    4.03637</td>
+<td>    4.07783</td>
+<td>    4.05617</td>
+<td>    4.28006</td>
+<td>    4.41358</td>
+<td>    4.64387</td>
+<td>    4.59495</td>
+<td>    4.63198</td>
+<td>    4.33987</td>
+<td>   51.40057</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>   11.66248</td>
+<td>   11.43272</td>
+<td>   11.22279</td>
+<td>   11.63905</td>
+<td>   11.71175</td>
+<td>   12.06627</td>
+<td>   11.99998</td>
+<td>   12.36690</td>
+<td>   12.82168</td>
+<td>   12.58305</td>
+<td>   11.84437</td>
+<td>   11.29269</td>
+<td>  142.64372</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>   11.18904</td>
+<td>   11.28980</td>
+<td>   11.09053</td>
+<td>   11.32460</td>
+<td>   11.47905</td>
+<td>   11.41106</td>
+<td>   11.48180</td>
+<td>   11.39885</td>
+<td>   11.04408</td>
+<td>   10.86785</td>
+<td>   10.50275</td>
+<td>   10.33203</td>
+<td>  133.41143</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>    9.28432</td>
+<td>    9.02207</td>
+<td>    8.74433</td>
+<td>    8.77650</td>
+<td>    8.80441</td>
+<td>    9.02385</td>
+<td>    8.77149</td>
+<td>    8.63292</td>
+<td>    8.61528</td>
+<td>    8.41477</td>
+<td>    8.16654</td>
+<td>    7.75222</td>
+<td>  104.00870</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    7.12055</td>
+<td>    7.38755</td>
+<td>    7.20874</td>
+<td>    6.77061</td>
+<td>    6.81026</td>
+<td>    6.61533</td>
+<td>    6.81743</td>
+<td>    6.81078</td>
+<td>    6.68001</td>
+<td>    6.42192</td>
+<td>    6.54110</td>
+<td>    6.21080</td>
+<td>   81.39508</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>    6.14793</td>
+<td>    6.06646</td>
+<td>    5.87709</td>
+<td>    5.92458</td>
+<td>    6.00811</td>
+<td>    5.70379</td>
+<td>    5.63242</td>
+<td>    5.49466</td>
+<td>    5.34036</td>
+<td>    5.54053</td>
+<td>    5.83708</td>
+<td>    5.62707</td>
+<td>   69.20009</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>    4.07089</td>
+<td>    4.27523</td>
+<td>    4.26698</td>
+<td>    4.19669</td>
+<td>    3.96795</td>
+<td>    4.10752</td>
+<td>    3.94914</td>
+<td>    3.98198</td>
+<td>    4.10897</td>
+<td>    4.09895</td>
+<td>    4.13662</td>
+<td>    4.34963</td>
+<td>   49.51056</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    4.56128</td>
+<td>    4.58341</td>
+<td>    4.29916</td>
+<td>    4.11411</td>
+<td>    4.09007</td>
+<td>    3.84235</td>
+<td>    3.90368</td>
+<td>    3.88344</td>
+<td>    3.86249</td>
+<td>    3.80479</td>
+<td>    3.87370</td>
+<td>    3.79846</td>
+<td>   48.61693</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    3.40261</td>
+<td>    3.13921</td>
+<td>    3.00673</td>
+<td>    2.92349</td>
+<td>    2.70965</td>
+<td>    2.82800</td>
+<td>    2.78460</td>
+<td>    2.87330</td>
+<td>    2.89575</td>
+<td>    3.02775</td>
+<td>    3.01798</td>
+<td>    3.25713</td>
+<td>   35.86619</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    4.10673</td>
+<td>    3.51301</td>
+<td>    3.43322</td>
+<td>    3.03078</td>
+<td>    2.93820</td>
+<td>    2.84845</td>
+<td>    3.04029</td>
+<td>    3.08562</td>
+<td>    3.15593</td>
+<td>    3.32109</td>
+<td>    3.46505</td>
+<td>    3.48384</td>
+<td>   39.42223</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>    4.53598</td>
+<td>    4.01598</td>
+<td>    5.61863</td>
+<td>   14.78940</td>
+<td>   15.47296</td>
+<td>   11.00026</td>
+<td>   10.35720</td>
+<td>    9.07663</td>
+<td>    9.39817</td>
+<td>    8.48339</td>
+<td>    8.72972</td>
+<td>    8.87703</td>
+<td>  110.35533</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>    8.02843</td>
+<td>    7.30433</td>
+<td>    6.84894</td>
+<td>    6.95092</td>
+<td>    6.79117</td>
+<td>    6.46211</td>
+<td>    6.14844</td>
+<td>    6.03419</td>
+<td>    5.57754</td>
+<td>    5.35691</td>
+<td>    4.99642</td>
+<td>    4.59860</td>
+<td>   75.09798</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>    4.50564</td>
+<td>    3.97237</td>
+<td>    3.41680</td>
+<td>    3.15008</td>
+<td>    3.01435</td>
+<td>    3.02337</td>
+<td>    3.07527</td>
+<td>    3.24912</td>
+<td>    3.34402</td>
+<td>    3.41976</td>
+<td>    3.94360</td>
+<td>    2.86664</td>
+<td>   40.98101</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>    3.00658</td>
+<td>    3.06529</td>
+<td>    3.18405</td>
+<td>    3.01868</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   12.27460</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>      6.12563</td>
+<td>      5.94204</td>
+<td>      5.87760</td>
+<td>      6.47470</td>
+<td>      6.75967</td>
+<td>      6.38373</td>
+<td>      6.32629</td>
+<td>      6.25400</td>
+<td>      6.26832</td>
+<td>      6.14890</td>
+<td>      6.12976</td>
+<td>      5.90662</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               994.18445 &nbsp;&nbsp;&nbsp; Mean-                      6.21365 &nbsp;&nbsp;&nbsp; Standard Deviation-        3.09966  <br> 
+Minimum-                   2.70965 &nbsp;&nbsp;&nbsp; Maximum-                  15.47296 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00021"></a>
+
+<p class="right"><a href="#skip00021" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00020">Previous Table</a> | <a href="#index00021">Index</a> | <a href="#pos00022">Next Table</a></p>
+
+<a name="skip00021"></a>
+
+<h3>D 12  Final trend cycle</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+<p>Trend filter :   9-term Henderson moving average <br> 
+  I/C ratio :   0.58</p>
+
+<div id="d12">
+<table class="x11"
+  summary ="D 12  Final trend cycle" >
+<caption><strong>D 12  Final trend cycle</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col">TOTAL</th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>    4.12977</td>
+<td>    4.10380</td>
+<td>    4.07506</td>
+<td>    4.05089</td>
+<td>    4.05468</td>
+<td>    4.10827</td>
+<td>    4.19755</td>
+<td>    4.35807</td>
+<td>    4.69057</td>
+<td>    5.32254</td>
+<td>    6.28807</td>
+<td>    7.53160</td>
+<td>   56.91089</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>    8.87690</td>
+<td>   10.08335</td>
+<td>   10.99721</td>
+<td>   11.56538</td>
+<td>   11.84112</td>
+<td>   12.00263</td>
+<td>   12.21445</td>
+<td>   12.46533</td>
+<td>   12.55796</td>
+<td>   12.36451</td>
+<td>   11.95704</td>
+<td>   11.50649</td>
+<td>  138.43238</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>   11.21609</td>
+<td>   11.14934</td>
+<td>   11.21194</td>
+<td>   11.30756</td>
+<td>   11.40624</td>
+<td>   11.47020</td>
+<td>   11.45207</td>
+<td>   11.31946</td>
+<td>   11.13675</td>
+<td>   10.87955</td>
+<td>   10.51186</td>
+<td>   10.03510</td>
+<td>  133.09615</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>    9.51132</td>
+<td>    9.05633</td>
+<td>    8.80688</td>
+<td>    8.77130</td>
+<td>    8.83215</td>
+<td>    8.85414</td>
+<td>    8.81643</td>
+<td>    8.71855</td>
+<td>    8.56492</td>
+<td>    8.36972</td>
+<td>    8.14058</td>
+<td>    7.88866</td>
+<td>  104.33098</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    7.63636</td>
+<td>    7.39634</td>
+<td>    7.15067</td>
+<td>    6.92560</td>
+<td>    6.77780</td>
+<td>    6.74139</td>
+<td>    6.74475</td>
+<td>    6.73448</td>
+<td>    6.66423</td>
+<td>    6.54151</td>
+<td>    6.39975</td>
+<td>    6.26845</td>
+<td>   81.98133</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>    6.13769</td>
+<td>    6.03445</td>
+<td>    5.97031</td>
+<td>    5.93137</td>
+<td>    5.87069</td>
+<td>    5.76315</td>
+<td>    5.63250</td>
+<td>    5.51837</td>
+<td>    5.43631</td>
+<td>    5.34223</td>
+<td>    5.16443</td>
+<td>    4.90577</td>
+<td>   67.70728</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>    4.62619</td>
+<td>    4.38634</td>
+<td>    4.22984</td>
+<td>    4.13095</td>
+<td>    4.06389</td>
+<td>    4.01606</td>
+<td>    3.99692</td>
+<td>    4.01069</td>
+<td>    4.04174</td>
+<td>    4.10435</td>
+<td>    4.22842</td>
+<td>    4.37447</td>
+<td>   50.20986</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    4.47570</td>
+<td>    4.47740</td>
+<td>    4.35851</td>
+<td>    4.17790</td>
+<td>    4.02042</td>
+<td>    3.92843</td>
+<td>    3.88315</td>
+<td>    3.86208</td>
+<td>    3.86941</td>
+<td>    3.87310</td>
+<td>    3.81357</td>
+<td>    3.66779</td>
+<td>   48.40745</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    3.45127</td>
+<td>    3.20663</td>
+<td>    2.99946</td>
+<td>    2.86686</td>
+<td>    2.80062</td>
+<td>    2.77832</td>
+<td>    2.79729</td>
+<td>    2.85000</td>
+<td>    2.91917</td>
+<td>    3.01429</td>
+<td>    3.15431</td>
+<td>    3.31912</td>
+<td>   36.15731</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    3.44251</td>
+<td>    3.45202</td>
+<td>    3.32484</td>
+<td>    3.12602</td>
+<td>    2.96763</td>
+<td>    2.91833</td>
+<td>    2.96788</td>
+<td>    3.05863</td>
+<td>    3.14679</td>
+<td>    3.23778</td>
+<td>    3.45071</td>
+<td>    3.99099</td>
+<td>   39.08413</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>    5.00263</td>
+<td>    6.44554</td>
+<td>    8.08939</td>
+<td>    9.55229</td>
+<td>   10.45633</td>
+<td>   10.69788</td>
+<td>   10.39956</td>
+<td>    9.80844</td>
+<td>    9.26672</td>
+<td>    8.94633</td>
+<td>    8.75550</td>
+<td>    8.46233</td>
+<td>  105.88294</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>    8.00424</td>
+<td>    7.49161</td>
+<td>    7.06613</td>
+<td>    6.82129</td>
+<td>    6.67818</td>
+<td>    6.48905</td>
+<td>    6.22838</td>
+<td>    5.93728</td>
+<td>    5.63440</td>
+<td>    5.32199</td>
+<td>    5.01445</td>
+<td>    4.69804</td>
+<td>   75.38505</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>    4.33948</td>
+<td>    3.92481</td>
+<td>    3.51691</td>
+<td>    3.19173</td>
+<td>    3.02190</td>
+<td>    3.01472</td>
+<td>    3.10778</td>
+<td>    3.23670</td>
+<td>    3.32771</td>
+<td>    3.32312</td>
+<td>    3.22770</td>
+<td>    3.11810</td>
+<td>   40.35066</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>    3.06214</td>
+<td>    3.06552</td>
+<td>    3.07597</td>
+<td>    3.04552</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   12.24916</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>      5.99374</td>
+<td>      6.01953</td>
+<td>      6.06237</td>
+<td>      6.10462</td>
+<td>      6.36859</td>
+<td>      6.36789</td>
+<td>      6.34144</td>
+<td>      6.29831</td>
+<td>      6.25051</td>
+<td>      6.20315</td>
+<td>      6.16203</td>
+<td>      6.13592</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               990.18559 &nbsp;&nbsp;&nbsp; Mean-                      6.18866 &nbsp;&nbsp;&nbsp; Standard Deviation-        2.92372  <br> 
+Minimum-                   2.77832 &nbsp;&nbsp;&nbsp; Maximum-                  12.55796 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00022"></a>
+
+<p class="right"><a href="#skip00022" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00021">Previous Table</a> | <a href="#index00022">Index</a> | <a href="#pos00023">Next Table</a></p>
+
+<a name="skip00022"></a>
+
+<h3>D 13  Final irregular component</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="d13">
+<table class="x11"
+  summary ="D 13  Final irregular component" >
+<caption><strong>D 13  Final irregular component</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Standard deviation              "> S.D.</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  100.15965</td>
+<td>  100.42059</td>
+<td>   99.83789</td>
+<td>   99.64153</td>
+<td>  100.57110</td>
+<td>   98.73165</td>
+<td>  101.96562</td>
+<td>  101.27364</td>
+<td>   99.00441</td>
+<td>   86.33007</td>
+<td>   73.66299</td>
+<td>   57.62214</td>
+<td>   14.95871</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  131.38005</td>
+<td>  113.38213</td>
+<td>  102.05129</td>
+<td>  100.63696</td>
+<td>   98.90741</td>
+<td>  100.53021</td>
+<td>   98.24411</td>
+<td>   99.21042</td>
+<td>  102.10001</td>
+<td>  101.76747</td>
+<td>   99.05772</td>
+<td>   98.14184</td>
+<td>    9.93923</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>   99.75880</td>
+<td>  101.25978</td>
+<td>   98.91707</td>
+<td>  100.15073</td>
+<td>  100.63833</td>
+<td>   99.48444</td>
+<td>  100.25963</td>
+<td>  100.70137</td>
+<td>   99.16784</td>
+<td>   99.89247</td>
+<td>   99.91333</td>
+<td>  102.95898</td>
+<td>    1.06225</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>   97.61330</td>
+<td>   99.62172</td>
+<td>   99.28975</td>
+<td>  100.05937</td>
+<td>   99.68589</td>
+<td>  101.91673</td>
+<td>   99.49028</td>
+<td>   99.01784</td>
+<td>  100.58798</td>
+<td>  100.53829</td>
+<td>  100.31879</td>
+<td>   98.27044</td>
+<td>    1.12075</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>   93.24532</td>
+<td>   99.88122</td>
+<td>  100.81203</td>
+<td>   97.76205</td>
+<td>  100.47891</td>
+<td>   98.13013</td>
+<td>  101.07759</td>
+<td>  101.13297</td>
+<td>  100.23686</td>
+<td>   98.17178</td>
+<td>  102.20865</td>
+<td>   99.08034</td>
+<td>    2.35586</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  100.16681</td>
+<td>  100.53046</td>
+<td>   98.43866</td>
+<td>   99.88555</td>
+<td>  102.34076</td>
+<td>   98.97002</td>
+<td>   99.99867</td>
+<td>   99.57027</td>
+<td>   98.23495</td>
+<td>  103.71181</td>
+<td>  113.02471</td>
+<td>  114.70318</td>
+<td>    5.86092</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>   87.99663</td>
+<td>   97.46692</td>
+<td>  100.87806</td>
+<td>  101.59142</td>
+<td>   97.63920</td>
+<td>  102.27742</td>
+<td>   98.80453</td>
+<td>   99.28419</td>
+<td>  101.66340</td>
+<td>   99.86859</td>
+<td>   97.82901</td>
+<td>   99.43212</td>
+<td>    3.81141</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  101.91224</td>
+<td>  102.36762</td>
+<td>   98.63812</td>
+<td>   98.47300</td>
+<td>  101.73244</td>
+<td>   97.80869</td>
+<td>  100.52857</td>
+<td>  100.55330</td>
+<td>   99.82112</td>
+<td>   98.23640</td>
+<td>  101.57687</td>
+<td>  103.56280</td>
+<td>    1.82938</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>   98.59013</td>
+<td>   97.89747</td>
+<td>  100.24235</td>
+<td>  101.97517</td>
+<td>   96.75198</td>
+<td>  101.78813</td>
+<td>   99.54628</td>
+<td>  100.81772</td>
+<td>   99.19797</td>
+<td>  100.44668</td>
+<td>   95.67795</td>
+<td>   98.13242</td>
+<td>    2.00001</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  119.29450</td>
+<td>  101.76700</td>
+<td>  103.25982</td>
+<td>   96.95333</td>
+<td>   99.00833</td>
+<td>   97.60542</td>
+<td>  102.43965</td>
+<td>  100.88259</td>
+<td>  100.29047</td>
+<td>  102.57316</td>
+<td>  100.41574</td>
+<td>   87.29267</td>
+<td>    6.93489</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   90.67182</td>
+<td>   62.30629</td>
+<td>   69.45685</td>
+<td>  154.82573</td>
+<td>  147.97702</td>
+<td>  102.82656</td>
+<td>   99.59267</td>
+<td>   92.53889</td>
+<td>  101.41854</td>
+<td>   94.82533</td>
+<td>   99.70552</td>
+<td>  104.90047</td>
+<td>   25.60124</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  100.30215</td>
+<td>   97.50015</td>
+<td>   96.92631</td>
+<td>  101.90036</td>
+<td>  101.69185</td>
+<td>   99.58483</td>
+<td>   98.71644</td>
+<td>  101.63221</td>
+<td>   98.99081</td>
+<td>  100.65605</td>
+<td>   99.64039</td>
+<td>   97.88343</td>
+<td>    1.65338</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  103.82909</td>
+<td>  101.21173</td>
+<td>   97.15358</td>
+<td>   98.69492</td>
+<td>   99.75019</td>
+<td>  100.28699</td>
+<td>   98.95396</td>
+<td>  100.38379</td>
+<td>  100.48993</td>
+<td>  102.90805</td>
+<td>  122.17970</td>
+<td>   91.93547</td>
+<td>    7.02966</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>   98.18568</td>
+<td>   99.99243</td>
+<td>  103.51353</td>
+<td>   99.11856</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    2.02569</td>
+</tr>
+<tr>
+<th scope="row"> S.D.</th>
+<td>     10.89956</td>
+<td>     10.78816</td>
+<td>      8.38833</td>
+<td>     14.72506</td>
+<td>     13.39507</td>
+<td>      1.69957</td>
+<td>      1.21558</td>
+<td>      2.25177</td>
+<td>      1.12346</td>
+<td>      4.41174</td>
+<td>     10.33055</td>
+<td>     13.30015</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-             16013.78554 &nbsp;&nbsp;&nbsp; Mean-                    100.08616 &nbsp;&nbsp;&nbsp; Standard Deviation-        9.26179  <br> 
+Minimum-                  57.62214 &nbsp;&nbsp;&nbsp; Maximum-                 154.82573 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00023"></a>
+
+<p class="right"><a href="#skip00023" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00022">Previous Table</a> | <a href="#index00023">Index</a> | <a href="#pos00024">Next Table</a></p>
+
+<a name="skip00023"></a>
+
+<h3>D 16  Combined adjustment factors</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="d16">
+<table class="x11"
+  summary ="D 16  Combined adjustment factors" >
+<caption><strong>D 16  Combined adjustment factors</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  116.04390</td>
+<td>  114.04826</td>
+<td>  115.52296</td>
+<td>   99.09895</td>
+<td>   93.18678</td>
+<td>   98.61529</td>
+<td>   98.12940</td>
+<td>   92.89512</td>
+<td>   88.28838</td>
+<td>   89.22838</td>
+<td>   92.83282</td>
+<td>  103.68977</td>
+<td>  100.13167</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  115.75586</td>
+<td>  113.70871</td>
+<td>  114.05360</td>
+<td>   97.94616</td>
+<td>   92.21510</td>
+<td>   98.62200</td>
+<td>   98.33351</td>
+<td>   93.79875</td>
+<td>   89.69184</td>
+<td>   91.39278</td>
+<td>   94.55970</td>
+<td>  104.49242</td>
+<td>  100.38087</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  115.29142</td>
+<td>  112.49096</td>
+<td>  110.90548</td>
+<td>   95.36758</td>
+<td>   90.59982</td>
+<td>   98.15035</td>
+<td>   99.28755</td>
+<td>   95.62370</td>
+<td>   91.45174</td>
+<td>   93.85480</td>
+<td>   97.11746</td>
+<td>  105.49715</td>
+<td>  100.46983</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  115.24812</td>
+<td>  110.83929</td>
+<td>  107.49825</td>
+<td>   92.29188</td>
+<td>   88.59200</td>
+<td>   97.51933</td>
+<td>  100.32502</td>
+<td>   97.30192</td>
+<td>   92.85832</td>
+<td>   96.25932</td>
+<td>   99.18525</td>
+<td>  105.77608</td>
+<td>  100.30790</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>  116.56405</td>
+<td>  109.64390</td>
+<td>  105.42761</td>
+<td>   90.09532</td>
+<td>   86.63394</td>
+<td>   96.74497</td>
+<td>  101.21117</td>
+<td>   98.37348</td>
+<td>   92.81417</td>
+<td>   96.54435</td>
+<td>   99.37172</td>
+<td>  106.26645</td>
+<td>   99.97426</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  118.73923</td>
+<td>  110.44333</td>
+<td>  105.49431</td>
+<td>   89.45776</td>
+<td>   84.88525</td>
+<td>   96.42705</td>
+<td>  101.19975</td>
+<td>   98.27727</td>
+<td>   91.75412</td>
+<td>   95.65879</td>
+<td>   97.65155</td>
+<td>  106.62739</td>
+<td>   99.71798</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>  120.36671</td>
+<td>  112.27457</td>
+<td>  107.80464</td>
+<td>   90.54753</td>
+<td>   83.16629</td>
+<td>   97.38233</td>
+<td>  101.28784</td>
+<td>   97.94118</td>
+<td>   90.04698</td>
+<td>   92.70656</td>
+<td>   94.27986</td>
+<td>  105.75621</td>
+<td>   99.46339</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  120.58016</td>
+<td>  115.63446</td>
+<td>  111.64982</td>
+<td>   92.36517</td>
+<td>   83.12819</td>
+<td>   98.89782</td>
+<td>  102.46747</td>
+<td>   97.85126</td>
+<td>   88.02619</td>
+<td>   89.36107</td>
+<td>   90.35279</td>
+<td>  102.67312</td>
+<td>   99.41563</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  117.55688</td>
+<td>  117.86420</td>
+<td>  116.40555</td>
+<td>   95.77609</td>
+<td>   84.88177</td>
+<td>  102.54590</td>
+<td>  104.14434</td>
+<td>   97.44887</td>
+<td>   86.33329</td>
+<td>   85.87232</td>
+<td>   86.15047</td>
+<td>   98.24600</td>
+<td>   99.43547</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  114.44632</td>
+<td>  119.55545</td>
+<td>  119.42135</td>
+<td>   98.98438</td>
+<td>   88.48960</td>
+<td>  105.32037</td>
+<td>  105.25323</td>
+<td>   97.22504</td>
+<td>   85.55310</td>
+<td>   84.30963</td>
+<td>   83.69276</td>
+<td>   94.72295</td>
+<td>   99.74785</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>  112.43445</td>
+<td>  119.52257</td>
+<td>  119.24607</td>
+<td>  101.42401</td>
+<td>   91.12671</td>
+<td>  107.27016</td>
+<td>  104.27527</td>
+<td>   96.95233</td>
+<td>   86.18700</td>
+<td>   84.87176</td>
+<td>   83.62242</td>
+<td>   93.49978</td>
+<td>  100.03604</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  114.59283</td>
+<td>  119.10741</td>
+<td>  116.80637</td>
+<td>  100.70607</td>
+<td>   91.29504</td>
+<td>  105.22884</td>
+<td>  102.46503</td>
+<td>   97.77621</td>
+<td>   87.85240</td>
+<td>   87.73719</td>
+<td>   86.06169</td>
+<td>   93.50669</td>
+<td>  100.26131</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  117.63032</td>
+<td>  118.31731</td>
+<td>  114.14181</td>
+<td>   98.41024</td>
+<td>   89.57164</td>
+<td>  102.53464</td>
+<td>  100.80402</td>
+<td>   98.48818</td>
+<td>   89.71244</td>
+<td>   90.64970</td>
+<td>   88.75141</td>
+<td>   94.18705</td>
+<td>  100.26656</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  119.73720</td>
+<td>  117.44395</td>
+<td>  113.06364</td>
+<td>   96.06855</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.57833</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>    116.78482</td>
+<td>    115.06388</td>
+<td>    112.67439</td>
+<td>     95.60998</td>
+<td>     88.29016</td>
+<td>    100.40454</td>
+<td>    101.47566</td>
+<td>     96.91949</td>
+<td>     89.27461</td>
+<td>     90.64974</td>
+<td>     91.81769</td>
+<td>    101.14931</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-             16041.61866 &nbsp;&nbsp;&nbsp; Mean-                    100.26012 &nbsp;&nbsp;&nbsp; Standard Deviation-       10.39363  <br> 
+Minimum-                  83.12819 &nbsp;&nbsp;&nbsp; Maximum-                 120.58016 </p>
+
+<p>&nbsp;</p>
+
+<h3>D 16.A  Combined adjustment component forecasts</h3>
+ <p>From  2023.May to 2024.Apr <br> 
+  Observations         12</p>
+
+<div id="d16.fct">
+<table class="x11"
+  summary ="D 16.A  Combined adjustment component forecasts" >
+<caption><strong>D 16.A  Combined adjustment component forecasts</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   87.89314</td>
+<td class="nowrap">  100.12703</td>
+<td class="nowrap">  100.21705</td>
+<td class="nowrap">   99.07504</td>
+<td class="nowrap">   90.88023</td>
+<td class="nowrap">   92.43534</td>
+<td class="nowrap">   90.36770</td>
+<td class="nowrap">   94.38347</td>
+<td class="nowrap">   94.42237</td>
+</tr>
+<tr>
+<th scope="row">2024</th>
+<td>  119.91438</td>
+<td>  116.66711</td>
+<td>  112.60481</td>
+<td>   95.01204</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.04958</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00024"></a>
+
+<p class="right"><a href="#skip00024" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00023">Previous Table</a> | <a href="#index00024">Index</a> | <a href="#pos00025">Next Table</a></p>
+
+<a name="skip00024"></a>
+
+<h3>E 4  Ratios of annual totals</h3>
+ <p>From          2010 to 2022 <br> 
+  Observations         13</p>
+
+<div id="e4">
+<table class="w50"
+  summary ="E 4  Ratios of annual totals" >
+<caption><strong>E 4  Ratios of annual totals</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col">           Unmodified <br>                 (D11)</th>
+<th scope="col">             Modified <br>                  (E3)</th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="center">    99.80434                  </td>
+<td class="center">    99.68431                  </td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td class="center">   100.10956                  </td>
+<td class="center">    99.66241                  </td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td class="center">   100.44117                  </td>
+<td class="center">   100.44117                  </td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="center">   100.37622                  </td>
+<td class="center">   100.37622                  </td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td class="center">   100.12890                  </td>
+<td class="center">   100.23240                  </td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td class="center">    99.85536                  </td>
+<td class="center">    99.80518                  </td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="center">    99.57471                  </td>
+<td class="center">    99.80533                  </td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td class="center">    99.96517                  </td>
+<td class="center">    99.96517                  </td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td class="center">    99.81545                  </td>
+<td class="center">    99.81545                  </td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td class="center">   100.19727                  </td>
+<td class="center">    99.95307                  </td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td class="center">    97.86568                  </td>
+<td class="center">    99.01437                  </td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td class="center">   101.60060                  </td>
+<td class="center">   101.60060                  </td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td class="center">   101.02239                  </td>
+<td class="center">   101.24057                  </td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00025"></a>
+
+<p class="right"><a href="#skip00025" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00024">Previous Table</a> | <a href="#index00025">Index</a> | <a href="#pos00026">Next Table</a></p>
+
+<a name="skip00025"></a>
+
+<h3>E 5  Month-to-month percent change in the original series</h3>
+ <p>From  2010.Feb to 2023.Apr <br> 
+  Observations        159</p>
+
+<div id="e5">
+<table class="x11"
+  summary ="E 5  Month-to-month percent change in the original series" >
+<caption><strong>E 5  Month-to-month percent change in the original series</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   -2.08333</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">  -14.89362</td>
+<td class="nowrap">   -5.00000</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">    5.00000</td>
+<td class="nowrap">   -2.38095</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    4.87805</td>
+<td class="nowrap">    4.65116</td>
+<td class="nowrap">   -0.41505</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  200.00000</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">   -1.53846</td>
+<td class="nowrap">  -10.93750</td>
+<td class="nowrap">   -5.26316</td>
+<td class="nowrap">   10.18519</td>
+<td class="nowrap">   -0.84034</td>
+<td class="nowrap">   -1.69492</td>
+<td class="nowrap">   -0.86207</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -2.60870</td>
+<td class="nowrap">    5.35714</td>
+<td class="nowrap">   15.67446</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>    9.32203</td>
+<td class="nowrap">   -1.55039</td>
+<td class="nowrap">   -3.14961</td>
+<td class="nowrap">  -12.19512</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">    7.69231</td>
+<td class="nowrap">    1.78571</td>
+<td class="nowrap">   -4.38596</td>
+<td class="nowrap">   -7.33945</td>
+<td class="nowrap">    0.99010</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    6.86275</td>
+<td class="nowrap">   -0.47261</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="nowrap">   -1.83486</td>
+<td class="nowrap">   -6.54206</td>
+<td class="nowrap">   -6.00000</td>
+<td class="nowrap">  -13.82979</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">   12.82051</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -4.54545</td>
+<td class="nowrap">   -4.76190</td>
+<td class="nowrap">    1.25000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    1.23457</td>
+<td class="nowrap">   -2.15939</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    1.21951</td>
+<td class="nowrap">   -2.40964</td>
+<td class="nowrap">   -6.17284</td>
+<td class="nowrap">  -19.73684</td>
+<td class="nowrap">   -3.27869</td>
+<td class="nowrap">    8.47458</td>
+<td class="nowrap">    7.81250</td>
+<td class="nowrap">   -2.89855</td>
+<td class="nowrap">   -7.46269</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    4.83871</td>
+<td class="nowrap">    1.53846</td>
+<td class="nowrap">   -1.50629</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>   10.60606</td>
+<td class="nowrap">   -8.21918</td>
+<td class="nowrap">   -7.46269</td>
+<td class="nowrap">  -14.51613</td>
+<td class="nowrap">   -3.77358</td>
+<td class="nowrap">    7.84314</td>
+<td class="nowrap">    3.63636</td>
+<td class="nowrap">   -5.26316</td>
+<td class="nowrap">   -9.25926</td>
+<td class="nowrap">    8.16327</td>
+<td class="nowrap">    7.54717</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">   -0.45290</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="nowrap">  -18.33333</td>
+<td class="nowrap">   -2.04082</td>
+<td class="nowrap">   -4.16667</td>
+<td class="nowrap">  -17.39130</td>
+<td class="nowrap">  -13.15789</td>
+<td class="nowrap">   21.21212</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -2.50000</td>
+<td class="nowrap">   -5.12821</td>
+<td class="nowrap">    2.70270</td>
+<td class="nowrap">    2.63158</td>
+<td class="nowrap">   17.94872</td>
+<td class="nowrap">   -1.51859</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>   19.56522</td>
+<td class="nowrap">   -3.63636</td>
+<td class="nowrap">   -9.43396</td>
+<td class="nowrap">  -20.83333</td>
+<td class="nowrap">  -10.52632</td>
+<td class="nowrap">   11.76471</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">   -5.00000</td>
+<td class="nowrap">  -10.52632</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    2.94118</td>
+<td class="nowrap">   11.42857</td>
+<td class="nowrap">   -0.74946</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    2.56410</td>
+<td class="nowrap">   -7.50000</td>
+<td class="nowrap">   -5.40541</td>
+<td class="nowrap">  -20.00000</td>
+<td class="nowrap">  -17.85714</td>
+<td class="nowrap">   26.08696</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -3.44828</td>
+<td class="nowrap">  -10.71429</td>
+<td class="nowrap">    4.00000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   23.07692</td>
+<td class="nowrap">   -0.76643</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>   46.87500</td>
+<td class="nowrap">  -10.63830</td>
+<td class="nowrap">   -2.38095</td>
+<td class="nowrap">  -26.82927</td>
+<td class="nowrap">  -13.33333</td>
+<td class="nowrap">   15.38462</td>
+<td class="nowrap">    6.66667</td>
+<td class="nowrap">   -6.25000</td>
+<td class="nowrap">  -10.00000</td>
+<td class="nowrap">    3.70370</td>
+<td class="nowrap">    3.57143</td>
+<td class="nowrap">   13.79310</td>
+<td class="nowrap">    1.71356</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   54.54545</td>
+<td class="nowrap">   -5.88235</td>
+<td class="nowrap">   39.58333</td>
+<td class="nowrap">  123.88060</td>
+<td class="nowrap">   -6.00000</td>
+<td class="nowrap">  -16.31206</td>
+<td class="nowrap">   -8.47458</td>
+<td class="nowrap">  -18.51852</td>
+<td class="nowrap">   -7.95455</td>
+<td class="nowrap">  -11.11111</td>
+<td class="nowrap">    1.38889</td>
+<td class="nowrap">   13.69863</td>
+<td class="nowrap">   13.23698</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>   10.84337</td>
+<td class="nowrap">   -5.43478</td>
+<td class="nowrap">   -8.04598</td>
+<td class="nowrap">  -12.50000</td>
+<td class="nowrap">  -11.42857</td>
+<td class="nowrap">    9.67742</td>
+<td class="nowrap">   -7.35294</td>
+<td class="nowrap">   -6.34921</td>
+<td class="nowrap">  -16.94915</td>
+<td class="nowrap">   -4.08163</td>
+<td class="nowrap">   -8.51064</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -5.01101</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>   23.25581</td>
+<td class="nowrap">  -11.32075</td>
+<td class="nowrap">  -17.02128</td>
+<td class="nowrap">  -20.51282</td>
+<td class="nowrap">  -12.90323</td>
+<td class="nowrap">   14.81481</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    3.22581</td>
+<td class="nowrap">   -6.25000</td>
+<td class="nowrap">    3.33333</td>
+<td class="nowrap">   12.90323</td>
+<td class="nowrap">  -22.85714</td>
+<td class="nowrap">   -2.77769</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>   33.33333</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td class="nowrap">  -19.44444</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    3.47222</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>     30.15090</td>
+<td class="nowrap">     -5.06869</td>
+<td class="nowrap">     -2.22818</td>
+<td class="nowrap">     -7.12426</td>
+<td class="nowrap">     -8.45610</td>
+<td class="nowrap">     10.37750</td>
+<td class="nowrap">      1.03820</td>
+<td class="nowrap">     -4.61609</td>
+<td class="nowrap">     -7.47753</td>
+<td class="nowrap">      0.68849</td>
+<td class="nowrap">      2.27545</td>
+<td class="nowrap">      6.30739</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               191.85088 &nbsp;&nbsp;&nbsp; Mean-                      1.20661 &nbsp;&nbsp;&nbsp; Standard Deviation-       22.19094  <br> 
+Minimum-                 -26.82927 &nbsp;&nbsp;&nbsp; Maximum-                 200.00000 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00026"></a>
+
+<p class="right"><a href="#skip00026" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00025">Previous Table</a> | <a href="#index00026">Index</a> | <a href="#pos00027">Next Table</a></p>
+
+<a name="skip00026"></a>
+
+<h3>E 6  Month-to-month percent change in seasonally adjusted series (D11)</h3>
+ <p>From  2010.Feb to 2023.Apr <br> 
+  Observations        159</p>
+
+<div id="e6">
+<table class="x11"
+  summary ="E 6  Month-to-month percent change in seasonally adjusted series (D11)" >
+<caption><strong>E 6  Month-to-month percent change in seasonally adjusted series (D11)</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   -0.36997</td>
+<td class="nowrap">   -1.27654</td>
+<td class="nowrap">   -0.78865</td>
+<td class="nowrap">    1.02721</td>
+<td class="nowrap">   -0.53130</td>
+<td class="nowrap">    5.51991</td>
+<td class="nowrap">    3.11949</td>
+<td class="nowrap">    5.21784</td>
+<td class="nowrap">   -1.05348</td>
+<td class="nowrap">    0.80593</td>
+<td class="nowrap">   -6.30645</td>
+<td class="nowrap">    0.48764</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  168.72877</td>
+<td class="nowrap">   -1.97004</td>
+<td class="nowrap">   -1.83620</td>
+<td class="nowrap">    3.70901</td>
+<td class="nowrap">    0.62462</td>
+<td class="nowrap">    3.02709</td>
+<td class="nowrap">   -0.54943</td>
+<td class="nowrap">    3.05771</td>
+<td class="nowrap">    3.67737</td>
+<td class="nowrap">   -1.86113</td>
+<td class="nowrap">   -5.87045</td>
+<td class="nowrap">   -4.65778</td>
+<td class="nowrap">   13.83996</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td class="nowrap">   -0.91783</td>
+<td class="nowrap">    0.90051</td>
+<td class="nowrap">   -1.76505</td>
+<td class="nowrap">    2.11061</td>
+<td class="nowrap">    1.36382</td>
+<td class="nowrap">   -0.59227</td>
+<td class="nowrap">    0.61991</td>
+<td class="nowrap">   -0.72249</td>
+<td class="nowrap">   -3.11234</td>
+<td class="nowrap">   -1.59565</td>
+<td class="nowrap">   -3.35950</td>
+<td class="nowrap">   -1.62541</td>
+<td class="nowrap">   -0.72464</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="nowrap">  -10.14047</td>
+<td class="nowrap">   -2.82460</td>
+<td class="nowrap">   -3.07849</td>
+<td class="nowrap">    0.36796</td>
+<td class="nowrap">    0.31793</td>
+<td class="nowrap">    2.49245</td>
+<td class="nowrap">   -2.79660</td>
+<td class="nowrap">   -1.57975</td>
+<td class="nowrap">   -0.20442</td>
+<td class="nowrap">   -2.32733</td>
+<td class="nowrap">   -2.94997</td>
+<td class="nowrap">   -5.07328</td>
+<td class="nowrap">   -2.31638</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td class="nowrap">   -8.14832</td>
+<td class="nowrap">    3.74976</td>
+<td class="nowrap">   -2.42048</td>
+<td class="nowrap">   -6.07777</td>
+<td class="nowrap">    0.58572</td>
+<td class="nowrap">   -2.86233</td>
+<td class="nowrap">    3.05500</td>
+<td class="nowrap">   -0.09755</td>
+<td class="nowrap">   -1.91996</td>
+<td class="nowrap">   -3.86370</td>
+<td class="nowrap">    1.85579</td>
+<td class="nowrap">   -5.04951</td>
+<td class="nowrap">   -1.76611</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td class="nowrap">   -1.01238</td>
+<td class="nowrap">   -1.32510</td>
+<td class="nowrap">   -3.12152</td>
+<td class="nowrap">    0.80805</td>
+<td class="nowrap">    1.40983</td>
+<td class="nowrap">   -5.06511</td>
+<td class="nowrap">   -1.25125</td>
+<td class="nowrap">   -2.44595</td>
+<td class="nowrap">   -2.80816</td>
+<td class="nowrap">    3.74817</td>
+<td class="nowrap">    5.35247</td>
+<td class="nowrap">   -3.59784</td>
+<td class="nowrap">   -0.77573</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="nowrap">  -27.65522</td>
+<td class="nowrap">    5.01955</td>
+<td class="nowrap">   -0.19310</td>
+<td class="nowrap">   -1.64723</td>
+<td class="nowrap">   -5.45041</td>
+<td class="nowrap">    3.51736</td>
+<td class="nowrap">   -3.85585</td>
+<td class="nowrap">    0.83158</td>
+<td class="nowrap">    3.18898</td>
+<td class="nowrap">   -0.24366</td>
+<td class="nowrap">    0.91892</td>
+<td class="nowrap">    5.14927</td>
+<td class="nowrap">   -1.70165</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    4.86604</td>
+<td>    0.48512</td>
+<td class="nowrap">   -6.20177</td>
+<td class="nowrap">   -4.30436</td>
+<td class="nowrap">   -0.58425</td>
+<td class="nowrap">   -6.05659</td>
+<td class="nowrap">    1.59612</td>
+<td class="nowrap">   -0.51831</td>
+<td class="nowrap">   -0.53968</td>
+<td class="nowrap">   -1.49380</td>
+<td class="nowrap">    1.81129</td>
+<td class="nowrap">   -1.94238</td>
+<td class="nowrap">   -1.07355</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td class="nowrap">  -10.42143</td>
+<td class="nowrap">   -7.74118</td>
+<td class="nowrap">   -4.22007</td>
+<td class="nowrap">   -2.76859</td>
+<td class="nowrap">   -7.31435</td>
+<td class="nowrap">    4.36775</td>
+<td class="nowrap">   -1.53483</td>
+<td class="nowrap">    3.18555</td>
+<td class="nowrap">    0.78143</td>
+<td class="nowrap">    4.55827</td>
+<td class="nowrap">   -0.32286</td>
+<td class="nowrap">    7.92434</td>
+<td class="nowrap">   -1.12550</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>   26.08427</td>
+<td class="nowrap">  -14.45712</td>
+<td class="nowrap">   -2.27133</td>
+<td class="nowrap">  -11.72196</td>
+<td class="nowrap">   -3.05475</td>
+<td class="nowrap">   -3.05447</td>
+<td class="nowrap">    6.73470</td>
+<td class="nowrap">    1.49125</td>
+<td class="nowrap">    2.27863</td>
+<td class="nowrap">    5.23321</td>
+<td class="nowrap">    4.33482</td>
+<td class="nowrap">    0.54225</td>
+<td class="nowrap">    1.01163</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   30.20032</td>
+<td class="nowrap">  -11.46387</td>
+<td class="nowrap">   39.90699</td>
+<td class="nowrap">  163.22053</td>
+<td class="nowrap">    4.62198</td>
+<td class="nowrap">  -28.90654</td>
+<td class="nowrap">   -5.84588</td>
+<td class="nowrap">  -12.36411</td>
+<td class="nowrap">    3.54254</td>
+<td class="nowrap">   -9.73361</td>
+<td class="nowrap">    2.90367</td>
+<td class="nowrap">    1.68745</td>
+<td class="nowrap">   14.81412</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td class="nowrap">   -9.55951</td>
+<td class="nowrap">   -9.01914</td>
+<td class="nowrap">   -6.23451</td>
+<td class="nowrap">    1.48899</td>
+<td class="nowrap">   -2.29830</td>
+<td class="nowrap">   -4.84543</td>
+<td class="nowrap">   -4.85396</td>
+<td class="nowrap">   -1.85822</td>
+<td class="nowrap">   -7.56772</td>
+<td class="nowrap">   -3.95568</td>
+<td class="nowrap">   -6.72947</td>
+<td class="nowrap">   -7.96200</td>
+<td class="nowrap">   -5.28291</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td class="nowrap">   -2.02148</td>
+<td class="nowrap">  -11.83566</td>
+<td class="nowrap">  -13.98577</td>
+<td class="nowrap">   -7.80623</td>
+<td class="nowrap">   -4.30883</td>
+<td class="nowrap">    0.29928</td>
+<td class="nowrap">    1.71682</td>
+<td class="nowrap">    5.65305</td>
+<td class="nowrap">    2.92070</td>
+<td class="nowrap">    2.26493</td>
+<td class="nowrap">   15.31809</td>
+<td class="nowrap">  -27.30914</td>
+<td class="nowrap">   -3.25786</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>    4.88198</td>
+<td>    1.95263</td>
+<td>    3.87419</td>
+<td class="nowrap">   -5.19369</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    1.37878</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>     12.68344</td>
+<td class="nowrap">     -3.49279</td>
+<td class="nowrap">     -0.20169</td>
+<td class="nowrap">      9.38548</td>
+<td class="nowrap">     -1.00460</td>
+<td class="nowrap">     -2.93924</td>
+<td class="nowrap">     -0.11118</td>
+<td class="nowrap">     -0.17290</td>
+<td class="nowrap">      0.41963</td>
+<td class="nowrap">     -0.79411</td>
+<td class="nowrap">      1.08221</td>
+<td class="nowrap">     -3.70927</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               150.57563 &nbsp;&nbsp;&nbsp; Mean-                      0.94702 &nbsp;&nbsp;&nbsp; Standard Deviation-       20.08657  <br> 
+Minimum-                 -28.90654 &nbsp;&nbsp;&nbsp; Maximum-                 168.72877 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00027"></a>
+
+<p class="right"><a href="#skip00027" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00026">Previous Table</a> | <a href="#index00027">Index</a> | <a href="#pos00028">Next Table</a></p>
+
+<a name="skip00027"></a>
+
+<h3>E 7  Month-to-month percent change in final trend cycle (D12)</h3>
+ <p>From  2010.Feb to 2023.Apr <br> 
+  Observations        159</p>
+
+<div id="e7">
+<table class="x11"
+  summary ="E 7  Month-to-month percent change in final trend cycle (D12)" >
+<caption><strong>E 7  Month-to-month percent change in final trend cycle (D12)</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   -0.62886</td>
+<td class="nowrap">   -0.70034</td>
+<td class="nowrap">   -0.59314</td>
+<td class="nowrap">    0.09343</td>
+<td class="nowrap">    1.32188</td>
+<td class="nowrap">    2.17321</td>
+<td class="nowrap">    3.82409</td>
+<td class="nowrap">    7.62949</td>
+<td class="nowrap">   13.47310</td>
+<td class="nowrap">   18.14051</td>
+<td class="nowrap">   19.77595</td>
+<td class="nowrap">    5.86448</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>   17.86208</td>
+<td>   13.59094</td>
+<td>    9.06300</td>
+<td>    5.16652</td>
+<td>    2.38420</td>
+<td>    1.36399</td>
+<td>    1.76474</td>
+<td>    2.05393</td>
+<td>    0.74313</td>
+<td class="nowrap">   -1.54044</td>
+<td class="nowrap">   -3.29551</td>
+<td class="nowrap">   -3.76803</td>
+<td class="nowrap">    3.78238</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td class="nowrap">   -2.52382</td>
+<td class="nowrap">   -0.59515</td>
+<td class="nowrap">    0.56150</td>
+<td class="nowrap">    0.85281</td>
+<td class="nowrap">    0.87271</td>
+<td class="nowrap">    0.56073</td>
+<td class="nowrap">   -0.15806</td>
+<td class="nowrap">   -1.15798</td>
+<td class="nowrap">   -1.61408</td>
+<td class="nowrap">   -2.30949</td>
+<td class="nowrap">   -3.37968</td>
+<td class="nowrap">   -4.53545</td>
+<td class="nowrap">   -1.11883</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="nowrap">   -5.21941</td>
+<td class="nowrap">   -4.78371</td>
+<td class="nowrap">   -2.75444</td>
+<td class="nowrap">   -0.40403</td>
+<td class="nowrap">    0.69377</td>
+<td class="nowrap">    0.24901</td>
+<td class="nowrap">   -0.42592</td>
+<td class="nowrap">   -1.11016</td>
+<td class="nowrap">   -1.76220</td>
+<td class="nowrap">   -2.27906</td>
+<td class="nowrap">   -2.73762</td>
+<td class="nowrap">   -3.09462</td>
+<td class="nowrap">   -1.96903</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td class="nowrap">   -3.19831</td>
+<td class="nowrap">   -3.14316</td>
+<td class="nowrap">   -3.32145</td>
+<td class="nowrap">   -3.14759</td>
+<td class="nowrap">   -2.13403</td>
+<td class="nowrap">   -0.53730</td>
+<td class="nowrap">    0.04987</td>
+<td class="nowrap">   -0.15225</td>
+<td class="nowrap">   -1.04314</td>
+<td class="nowrap">   -1.84143</td>
+<td class="nowrap">   -2.16714</td>
+<td class="nowrap">   -2.05159</td>
+<td class="nowrap">   -1.89063</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td class="nowrap">   -2.08606</td>
+<td class="nowrap">   -1.68204</td>
+<td class="nowrap">   -1.06287</td>
+<td class="nowrap">   -0.65220</td>
+<td class="nowrap">   -1.02304</td>
+<td class="nowrap">   -1.83180</td>
+<td class="nowrap">   -2.26704</td>
+<td class="nowrap">   -2.02623</td>
+<td class="nowrap">   -1.48702</td>
+<td class="nowrap">   -1.73060</td>
+<td class="nowrap">   -3.32826</td>
+<td class="nowrap">   -5.00851</td>
+<td class="nowrap">   -2.01547</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="nowrap">   -5.69893</td>
+<td class="nowrap">   -5.18458</td>
+<td class="nowrap">   -3.56803</td>
+<td class="nowrap">   -2.33785</td>
+<td class="nowrap">   -1.62325</td>
+<td class="nowrap">   -1.17709</td>
+<td class="nowrap">   -0.47647</td>
+<td class="nowrap">    0.34444</td>
+<td class="nowrap">    0.77407</td>
+<td class="nowrap">    1.54914</td>
+<td class="nowrap">    3.02291</td>
+<td class="nowrap">    3.45399</td>
+<td class="nowrap">   -0.91014</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>    2.31404</td>
+<td>    0.03811</td>
+<td class="nowrap">   -2.65526</td>
+<td class="nowrap">   -4.14390</td>
+<td class="nowrap">   -3.76947</td>
+<td class="nowrap">   -2.28790</td>
+<td class="nowrap">   -1.15264</td>
+<td class="nowrap">   -0.54278</td>
+<td class="nowrap">    0.18986</td>
+<td class="nowrap">    0.09527</td>
+<td class="nowrap">   -1.53689</td>
+<td class="nowrap">   -3.82274</td>
+<td class="nowrap">   -1.43953</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td class="nowrap">   -5.90329</td>
+<td class="nowrap">   -7.08842</td>
+<td class="nowrap">   -6.46055</td>
+<td class="nowrap">   -4.42081</td>
+<td class="nowrap">   -2.31069</td>
+<td class="nowrap">   -0.79603</td>
+<td class="nowrap">    0.68267</td>
+<td class="nowrap">    1.88424</td>
+<td class="nowrap">    2.42704</td>
+<td class="nowrap">    3.25845</td>
+<td class="nowrap">    4.64520</td>
+<td class="nowrap">    5.22495</td>
+<td class="nowrap">   -0.73810</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>    3.71773</td>
+<td>    0.27608</td>
+<td class="nowrap">   -3.68419</td>
+<td class="nowrap">   -5.97976</td>
+<td class="nowrap">   -5.06693</td>
+<td class="nowrap">   -1.66104</td>
+<td class="nowrap">    1.69779</td>
+<td class="nowrap">    3.05769</td>
+<td class="nowrap">    2.88250</td>
+<td class="nowrap">    2.89132</td>
+<td class="nowrap">    6.57644</td>
+<td class="nowrap">   15.65719</td>
+<td class="nowrap">    1.69707</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   25.34803</td>
+<td>   28.84303</td>
+<td>   25.50362</td>
+<td>   18.08417</td>
+<td>    9.46412</td>
+<td>    2.31013</td>
+<td class="nowrap">   -2.78858</td>
+<td class="nowrap">   -5.68407</td>
+<td class="nowrap">   -5.52308</td>
+<td class="nowrap">   -3.45739</td>
+<td class="nowrap">   -2.13306</td>
+<td class="nowrap">   -3.34839</td>
+<td class="nowrap">    7.21821</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td class="nowrap">   -5.41329</td>
+<td class="nowrap">   -6.40449</td>
+<td class="nowrap">   -5.67939</td>
+<td class="nowrap">   -3.46498</td>
+<td class="nowrap">   -2.09798</td>
+<td class="nowrap">   -2.83214</td>
+<td class="nowrap">   -4.01698</td>
+<td class="nowrap">   -4.67385</td>
+<td class="nowrap">   -5.10132</td>
+<td class="nowrap">   -5.54462</td>
+<td class="nowrap">   -5.77875</td>
+<td class="nowrap">   -6.30996</td>
+<td class="nowrap">   -4.77648</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td class="nowrap">   -7.63212</td>
+<td class="nowrap">   -9.55571</td>
+<td class="nowrap">  -10.39292</td>
+<td class="nowrap">   -9.24604</td>
+<td class="nowrap">   -5.32117</td>
+<td class="nowrap">   -0.23759</td>
+<td class="nowrap">    3.08707</td>
+<td class="nowrap">    4.14816</td>
+<td class="nowrap">    2.81200</td>
+<td class="nowrap">   -0.13809</td>
+<td class="nowrap">   -2.87126</td>
+<td class="nowrap">   -3.39587</td>
+<td class="nowrap">   -3.22863</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">   -1.79449</td>
+<td class="nowrap">    0.11047</td>
+<td class="nowrap">    0.34082</td>
+<td class="nowrap">   -0.98992</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   -0.58328</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>      0.75170</td>
+<td>      0.27089</td>
+<td class="nowrap">     -0.34361</td>
+<td class="nowrap">     -0.80548</td>
+<td class="nowrap">     -0.75679</td>
+<td class="nowrap">     -0.42732</td>
+<td class="nowrap">     -0.14080</td>
+<td class="nowrap">     -0.00267</td>
+<td class="nowrap">      0.07133</td>
+<td class="nowrap">      0.18663</td>
+<td class="nowrap">      0.39668</td>
+<td class="nowrap">      0.67515</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-                -2.49390 &nbsp;&nbsp;&nbsp; Mean-                     -0.01568 &nbsp;&nbsp;&nbsp; Standard Deviation-        6.17906  <br> 
+Minimum-                 -10.39292 &nbsp;&nbsp;&nbsp; Maximum-                  28.84303 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00028"></a>
+
+<p class="right"><a href="#skip00028" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00027">Previous Table</a> | <a href="#index00028">Index</a> | <a href="#pos00029">Next Table</a></p>
+
+<a name="skip00028"></a>
+
+<h3>E 8  Month-to-month percent change in original series adjusted for calendar factors (A18)</h3>
+ <p>From  2010.Feb to 2023.Apr <br> 
+  Observations        159</p>
+
+<div id="e8">
+<table class="x11"
+  summary ="E 8  Month-to-month percent change in original series adjusted for calendar factors (A18)" >
+<caption><strong>E 8  Month-to-month percent change in original series adjusted for calendar factors (A18)</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   -2.08333</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">  -14.89362</td>
+<td class="nowrap">   -5.00000</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">    5.00000</td>
+<td class="nowrap">   -2.38095</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    4.87805</td>
+<td class="nowrap">    4.65116</td>
+<td class="nowrap">   -0.41505</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  200.00000</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">   -1.53846</td>
+<td class="nowrap">  -10.93750</td>
+<td class="nowrap">   -5.26316</td>
+<td class="nowrap">   10.18519</td>
+<td class="nowrap">   -0.84034</td>
+<td class="nowrap">   -1.69492</td>
+<td class="nowrap">   -0.86207</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -2.60870</td>
+<td class="nowrap">    5.35714</td>
+<td class="nowrap">   15.67446</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>    9.32203</td>
+<td class="nowrap">   -1.55039</td>
+<td class="nowrap">   -3.14961</td>
+<td class="nowrap">  -12.19512</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">    7.69231</td>
+<td class="nowrap">    1.78571</td>
+<td class="nowrap">   -4.38596</td>
+<td class="nowrap">   -7.33945</td>
+<td class="nowrap">    0.99010</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    6.86275</td>
+<td class="nowrap">   -0.47261</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td class="nowrap">   -1.83486</td>
+<td class="nowrap">   -6.54206</td>
+<td class="nowrap">   -6.00000</td>
+<td class="nowrap">  -13.82979</td>
+<td class="nowrap">   -3.70370</td>
+<td class="nowrap">   12.82051</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -4.54545</td>
+<td class="nowrap">   -4.76190</td>
+<td class="nowrap">    1.25000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    1.23457</td>
+<td class="nowrap">   -2.15939</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>    1.21951</td>
+<td class="nowrap">   -2.40964</td>
+<td class="nowrap">   -6.17284</td>
+<td class="nowrap">  -19.73684</td>
+<td class="nowrap">   -3.27869</td>
+<td class="nowrap">    8.47458</td>
+<td class="nowrap">    7.81250</td>
+<td class="nowrap">   -2.89855</td>
+<td class="nowrap">   -7.46269</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    4.83871</td>
+<td class="nowrap">    1.53846</td>
+<td class="nowrap">   -1.50629</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>   10.60606</td>
+<td class="nowrap">   -8.21918</td>
+<td class="nowrap">   -7.46269</td>
+<td class="nowrap">  -14.51613</td>
+<td class="nowrap">   -3.77358</td>
+<td class="nowrap">    7.84314</td>
+<td class="nowrap">    3.63636</td>
+<td class="nowrap">   -5.26316</td>
+<td class="nowrap">   -9.25926</td>
+<td class="nowrap">    8.16327</td>
+<td class="nowrap">    7.54717</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">   -0.45290</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td class="nowrap">  -18.33333</td>
+<td class="nowrap">   -2.04082</td>
+<td class="nowrap">   -4.16667</td>
+<td class="nowrap">  -17.39130</td>
+<td class="nowrap">  -13.15789</td>
+<td class="nowrap">   21.21212</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -2.50000</td>
+<td class="nowrap">   -5.12821</td>
+<td class="nowrap">    2.70270</td>
+<td class="nowrap">    2.63158</td>
+<td class="nowrap">   17.94872</td>
+<td class="nowrap">   -1.51859</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>   19.56522</td>
+<td class="nowrap">   -3.63636</td>
+<td class="nowrap">   -9.43396</td>
+<td class="nowrap">  -20.83333</td>
+<td class="nowrap">  -10.52632</td>
+<td class="nowrap">   11.76471</td>
+<td class="nowrap">    5.26316</td>
+<td class="nowrap">   -5.00000</td>
+<td class="nowrap">  -10.52632</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    2.94118</td>
+<td class="nowrap">   11.42857</td>
+<td class="nowrap">   -0.74946</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>    2.56410</td>
+<td class="nowrap">   -7.50000</td>
+<td class="nowrap">   -5.40541</td>
+<td class="nowrap">  -20.00000</td>
+<td class="nowrap">  -17.85714</td>
+<td class="nowrap">   26.08696</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -3.44828</td>
+<td class="nowrap">  -10.71429</td>
+<td class="nowrap">    4.00000</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   23.07692</td>
+<td class="nowrap">   -0.76643</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>   46.87500</td>
+<td class="nowrap">  -10.63830</td>
+<td class="nowrap">   -2.38095</td>
+<td class="nowrap">  -26.82927</td>
+<td class="nowrap">  -13.33333</td>
+<td class="nowrap">   15.38462</td>
+<td class="nowrap">    6.66667</td>
+<td class="nowrap">   -6.25000</td>
+<td class="nowrap">  -10.00000</td>
+<td class="nowrap">    3.70370</td>
+<td class="nowrap">    3.57143</td>
+<td class="nowrap">   13.79310</td>
+<td class="nowrap">    1.71356</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>   54.54545</td>
+<td class="nowrap">   -5.88235</td>
+<td class="nowrap">   39.58333</td>
+<td class="nowrap">  123.88060</td>
+<td class="nowrap">   -6.00000</td>
+<td class="nowrap">  -16.31206</td>
+<td class="nowrap">   -8.47458</td>
+<td class="nowrap">  -18.51852</td>
+<td class="nowrap">   -7.95455</td>
+<td class="nowrap">  -11.11111</td>
+<td class="nowrap">    1.38889</td>
+<td class="nowrap">   13.69863</td>
+<td class="nowrap">   13.23698</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>   10.84337</td>
+<td class="nowrap">   -5.43478</td>
+<td class="nowrap">   -8.04598</td>
+<td class="nowrap">  -12.50000</td>
+<td class="nowrap">  -11.42857</td>
+<td class="nowrap">    9.67742</td>
+<td class="nowrap">   -7.35294</td>
+<td class="nowrap">   -6.34921</td>
+<td class="nowrap">  -16.94915</td>
+<td class="nowrap">   -4.08163</td>
+<td class="nowrap">   -8.51064</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">   -5.01101</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>   23.25581</td>
+<td class="nowrap">  -11.32075</td>
+<td class="nowrap">  -17.02128</td>
+<td class="nowrap">  -20.51282</td>
+<td class="nowrap">  -12.90323</td>
+<td class="nowrap">   14.81481</td>
+<td class="nowrap">    0.00000</td>
+<td class="nowrap">    3.22581</td>
+<td class="nowrap">   -6.25000</td>
+<td class="nowrap">    3.33333</td>
+<td class="nowrap">   12.90323</td>
+<td class="nowrap">  -22.85714</td>
+<td class="nowrap">   -2.77769</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>   33.33333</td>
+<td>    0.00000</td>
+<td>    0.00000</td>
+<td class="nowrap">  -19.44444</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">    3.47222</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>     30.15090</td>
+<td class="nowrap">     -5.06869</td>
+<td class="nowrap">     -2.22818</td>
+<td class="nowrap">     -7.12426</td>
+<td class="nowrap">     -8.45610</td>
+<td class="nowrap">     10.37750</td>
+<td class="nowrap">      1.03820</td>
+<td class="nowrap">     -4.61609</td>
+<td class="nowrap">     -7.47753</td>
+<td class="nowrap">      0.68849</td>
+<td class="nowrap">      2.27545</td>
+<td class="nowrap">      6.30739</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-               191.85088 &nbsp;&nbsp;&nbsp; Mean-                      1.20661 &nbsp;&nbsp;&nbsp; Standard Deviation-       22.19094  <br> 
+Minimum-                 -26.82927 &nbsp;&nbsp;&nbsp; Maximum-                 200.00000 </p>
+
+<p>&nbsp;</p>
+
+<a name="pos00029"></a>
+
+<p class="right"><a href="#skip00029" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00028">Previous Table</a> | <a href="#index00029">Index</a> | <a href="#pos00030">Next Table</a></p>
+
+<a name="skip00029"></a>
+
+<h3>E 18  Final adjustment ratios</h3>
+ <p>From  2010.Jan to 2023.Apr <br> 
+  Observations        160</p>
+
+<div id="e18">
+<table class="x11"
+  summary ="E 18  Final adjustment ratios" >
+<caption><strong>E 18  Final adjustment ratios</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2010</th>
+<td>  116.04390</td>
+<td>  114.04826</td>
+<td>  115.52296</td>
+<td>   99.09895</td>
+<td>   93.18678</td>
+<td>   98.61529</td>
+<td>   98.12940</td>
+<td>   92.89512</td>
+<td>   88.28838</td>
+<td>   89.22838</td>
+<td>   92.83282</td>
+<td>  103.68977</td>
+<td>  100.13167</td>
+</tr>
+<tr>
+<th scope="row">2011</th>
+<td>  115.75586</td>
+<td>  113.70871</td>
+<td>  114.05360</td>
+<td>   97.94616</td>
+<td>   92.21510</td>
+<td>   98.62200</td>
+<td>   98.33351</td>
+<td>   93.79875</td>
+<td>   89.69184</td>
+<td>   91.39278</td>
+<td>   94.55970</td>
+<td>  104.49242</td>
+<td>  100.38087</td>
+</tr>
+<tr>
+<th scope="row">2012</th>
+<td>  115.29142</td>
+<td>  112.49096</td>
+<td>  110.90548</td>
+<td>   95.36758</td>
+<td>   90.59982</td>
+<td>   98.15035</td>
+<td>   99.28755</td>
+<td>   95.62370</td>
+<td>   91.45174</td>
+<td>   93.85480</td>
+<td>   97.11746</td>
+<td>  105.49715</td>
+<td>  100.46983</td>
+</tr>
+<tr>
+<th scope="row">2013</th>
+<td>  115.24812</td>
+<td>  110.83929</td>
+<td>  107.49825</td>
+<td>   92.29188</td>
+<td>   88.59200</td>
+<td>   97.51933</td>
+<td>  100.32502</td>
+<td>   97.30192</td>
+<td>   92.85832</td>
+<td>   96.25932</td>
+<td>   99.18525</td>
+<td>  105.77608</td>
+<td>  100.30790</td>
+</tr>
+<tr>
+<th scope="row">2014</th>
+<td>  116.56405</td>
+<td>  109.64390</td>
+<td>  105.42761</td>
+<td>   90.09532</td>
+<td>   86.63394</td>
+<td>   96.74497</td>
+<td>  101.21117</td>
+<td>   98.37348</td>
+<td>   92.81417</td>
+<td>   96.54435</td>
+<td>   99.37172</td>
+<td>  106.26645</td>
+<td>   99.97426</td>
+</tr>
+<tr>
+<th scope="row">2015</th>
+<td>  118.73923</td>
+<td>  110.44333</td>
+<td>  105.49431</td>
+<td>   89.45776</td>
+<td>   84.88525</td>
+<td>   96.42705</td>
+<td>  101.19975</td>
+<td>   98.27727</td>
+<td>   91.75412</td>
+<td>   95.65879</td>
+<td>   97.65155</td>
+<td>  106.62739</td>
+<td>   99.71798</td>
+</tr>
+<tr>
+<th scope="row">2016</th>
+<td>  120.36671</td>
+<td>  112.27457</td>
+<td>  107.80464</td>
+<td>   90.54753</td>
+<td>   83.16629</td>
+<td>   97.38233</td>
+<td>  101.28784</td>
+<td>   97.94118</td>
+<td>   90.04698</td>
+<td>   92.70656</td>
+<td>   94.27986</td>
+<td>  105.75621</td>
+<td>   99.46339</td>
+</tr>
+<tr>
+<th scope="row">2017</th>
+<td>  120.58016</td>
+<td>  115.63446</td>
+<td>  111.64982</td>
+<td>   92.36517</td>
+<td>   83.12819</td>
+<td>   98.89782</td>
+<td>  102.46747</td>
+<td>   97.85126</td>
+<td>   88.02619</td>
+<td>   89.36107</td>
+<td>   90.35279</td>
+<td>  102.67312</td>
+<td>   99.41563</td>
+</tr>
+<tr>
+<th scope="row">2018</th>
+<td>  117.55688</td>
+<td>  117.86420</td>
+<td>  116.40555</td>
+<td>   95.77609</td>
+<td>   84.88177</td>
+<td>  102.54590</td>
+<td>  104.14434</td>
+<td>   97.44887</td>
+<td>   86.33329</td>
+<td>   85.87232</td>
+<td>   86.15047</td>
+<td>   98.24600</td>
+<td>   99.43547</td>
+</tr>
+<tr>
+<th scope="row">2019</th>
+<td>  114.44632</td>
+<td>  119.55545</td>
+<td>  119.42135</td>
+<td>   98.98438</td>
+<td>   88.48960</td>
+<td>  105.32037</td>
+<td>  105.25323</td>
+<td>   97.22504</td>
+<td>   85.55310</td>
+<td>   84.30963</td>
+<td>   83.69276</td>
+<td>   94.72295</td>
+<td>   99.74785</td>
+</tr>
+<tr>
+<th scope="row">2020</th>
+<td>  112.43445</td>
+<td>  119.52257</td>
+<td>  119.24607</td>
+<td>  101.42401</td>
+<td>   91.12671</td>
+<td>  107.27016</td>
+<td>  104.27527</td>
+<td>   96.95233</td>
+<td>   86.18700</td>
+<td>   84.87176</td>
+<td>   83.62242</td>
+<td>   93.49978</td>
+<td>  100.03604</td>
+</tr>
+<tr>
+<th scope="row">2021</th>
+<td>  114.59283</td>
+<td>  119.10741</td>
+<td>  116.80637</td>
+<td>  100.70607</td>
+<td>   91.29504</td>
+<td>  105.22884</td>
+<td>  102.46503</td>
+<td>   97.77621</td>
+<td>   87.85240</td>
+<td>   87.73719</td>
+<td>   86.06169</td>
+<td>   93.50669</td>
+<td>  100.26131</td>
+</tr>
+<tr>
+<th scope="row">2022</th>
+<td>  117.63032</td>
+<td>  118.31731</td>
+<td>  114.14181</td>
+<td>   98.41024</td>
+<td>   89.57164</td>
+<td>  102.53464</td>
+<td>  100.80402</td>
+<td>   98.48818</td>
+<td>   89.71244</td>
+<td>   90.64970</td>
+<td>   88.75141</td>
+<td>   94.18705</td>
+<td>  100.26656</td>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td>  119.73720</td>
+<td>  117.44395</td>
+<td>  113.06364</td>
+<td>   96.06855</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.57833</td>
+</tr>
+<tr>
+<th scope="row"> AVGE</th>
+<td>    116.78482</td>
+<td>    115.06388</td>
+<td>    112.67439</td>
+<td>     95.60998</td>
+<td>     88.29016</td>
+<td>    100.40454</td>
+<td>    101.47566</td>
+<td>     96.91949</td>
+<td>     89.27461</td>
+<td>     90.64974</td>
+<td>     91.81769</td>
+<td>    101.14931</td>
+<td>&nbsp;</td>
+</tr>
+</table></div>
+
+<p class="center">
+Table Total-             16041.61866 &nbsp;&nbsp;&nbsp; Mean-                    100.26012 &nbsp;&nbsp;&nbsp; Standard Deviation-       10.39363  <br> 
+Minimum-                  83.12819 &nbsp;&nbsp;&nbsp; Maximum-                 120.58016 </p>
+
+<p>&nbsp;</p>
+
+<h3>E 18.A  Final adjustment ratio forecasts</h3>
+ <p>From  2023.May to 2024.Apr <br> 
+  Observations         12</p>
+
+<div id="e18.fct">
+<table class="x11"
+  summary ="E 18.A  Final adjustment ratio forecasts" >
+<caption><strong>E 18.A  Final adjustment ratio forecasts</strong></caption>
+<tr>
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="January">       Jan            </abbr></th>
+<th scope="col"><abbr title="February">       Feb            </abbr></th>
+<th scope="col"><abbr title="March">       Mar            </abbr></th>
+<th scope="col"><abbr title="April">       Apr            </abbr></th>
+<th scope="col">       May            </th>
+<th scope="col"><abbr title="June">       Jun            </abbr></th>
+<th scope="col"><abbr title="July">       Jul            </abbr></th>
+<th scope="col"><abbr title="August">       Aug            </abbr></th>
+<th scope="col"><abbr title="September">       Sep            </abbr></th>
+<th scope="col"><abbr title="October">       Oct            </abbr></th>
+<th scope="col"><abbr title="November">       Nov            </abbr></th>
+<th scope="col"><abbr title="December">       Dec            </abbr></th>
+<th scope="col"><abbr title="Average                         "> AVGE</abbr></th>
+</tr>
+<tr>
+<th scope="row">2023</th>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">   87.89314</td>
+<td class="nowrap">  100.12703</td>
+<td class="nowrap">  100.21705</td>
+<td class="nowrap">   99.07504</td>
+<td class="nowrap">   90.88023</td>
+<td class="nowrap">   92.43534</td>
+<td class="nowrap">   90.36770</td>
+<td class="nowrap">   94.38347</td>
+<td class="nowrap">   94.42237</td>
+</tr>
+<tr>
+<th scope="row">2024</th>
+<td>  119.91438</td>
+<td>  116.66711</td>
+<td>  112.60481</td>
+<td>   95.01204</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">&nbsp;</td>
+<td class="nowrap">  111.04958</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<a name="pos00030"></a>
+
+<p class="right"><a href="#skip00030" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00029">Previous Table</a> | <a href="#index00030">Index</a> | <a href="#pos00031">Next Table</a></p>
+
+<a name="skip00030"></a>
+
+<h3>QS Statistics for seasonality</h3>
+<div id="qs001">
+<table class="w60"
+  summary ="QS Statistics for seasonality (Full series)" >
+<caption><strong>QS statistic for seasonality (Full series)</strong></caption>
+<tr>
+
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="QS seasonality diagnostic">QS</abbr></th>
+<th scope="col">p-value</th>
+</tr>
+<tr><th scope="row">Original Series</th><td>            1.98</td><td>    0.3721</td></tr>
+<tr><th scope="row">Original Series (extreme value adjusted)</th><td>            1.98</td><td>    0.3721</td></tr>
+<tr><th scope="row">Residuals</th><td>            0.15</td><td>    0.9273</td></tr>
+<tr><th scope="row">Seasonally Adjusted Series</th><td>            0.07</td><td>    0.9680</td></tr>
+<tr><th scope="row">Seasonally Adjusted Series (extreme value adjusted)</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Irregular Series</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Irregular Series (extreme value adjusted)</th><td>            0.00</td><td>    1.0000</td></tr>
+</table>
+
+<p>&nbsp;</p>
+<div id="qs002">
+<table class="w60"
+  summary ="QS Statistics for seasonality (Series start in 2015.May)" >
+<caption><strong>QS statistic for seasonality (Series start in 2015.May)</strong></caption>
+<tr>
+
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="QS seasonality diagnostic">QS</abbr></th>
+<th scope="col">p-value</th>
+</tr>
+<tr><th scope="row">Original Series</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Original Series (extreme value adjusted)</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Residuals</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Seasonally Adjusted Series</th><td>            0.05</td><td>    0.9758</td></tr>
+<tr><th scope="row">Seasonally Adjusted Series (extreme value adjusted)</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Irregular Series</th><td>            0.00</td><td>    1.0000</td></tr>
+<tr><th scope="row">Irregular Series (extreme value adjusted)</th><td>            0.00</td><td>    1.0000</td></tr>
+</table>
+
+<p>&nbsp;</p>
+
+<a name="pos00031"></a>
+
+<p class="right"><a href="#skip00031" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00030">Previous Table</a> | <a href="#index00031">Index</a> | <a href="#pos00032">Next Table</a></p>
+
+<a name="skip00031"></a>
+
+<p class="right"><a href="#pos00032" title="Skip ASCII plot of Table G 0  10*LOG(SPECTRUM) of the differenced, transformed  Original Series (Table A1 or B1)" class="skiplinks">&nbsp;</a></p>
+
+<h3>G 0  10*LOG(SPECTRUM) of the differenced, transformed  Original Series (Table A1 or B1)</h3>
+
+<h3 class="indent">     Spectrum estimated from 2015.May to 2023.Apr.</h3>
+<pre>
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+      -9.75I                                                             I     -9.75
+           I                    S                                        I
+           I                    S                                        I
+           I                    S                                        I
+     -10.74I                    S                                        I    -10.74
+           I                    S                                        I
+           I                    S                                        I
+           I        *          *S                                        I
+     -11.72I        *          *S                  *                     I    -11.72
+           I        *          *S                  *                     I
+           I        *          *S                  *                     I
+           I        *          *S                  *                     I
+     -12.71I        **         *S                  *          S          I    -12.71
+           I        **         *S                  *S         S          I
+           I        **      *  *S                  *S         S          I
+           I        **S     *  *S                  *S         S          I
+     -13.69I   *    **S     *  *S                  *S         S          I    -13.69
+           I   *    **S*    *  *S                  *S         S          I
+           I   *    **S*    *  *S                  *S         S          I
+           I   *    **S*    ** *S                  *S         S          I
+     -14.68I   *    **S*    ****S                  *S         S          I    -14.68
+           I   *   ***S*    ****S*                 *S         S          I
+           I   *   ***S*    ****S*                 *S         S          I
+           I   *   ***S*    ****S*      *    *     *S         S          I
+     -15.67I   *   ***S*    ****S*  *   *    *     *S        *S          I    -15.67
+           I   *   ***S*   *****S*  *   *    *     *S        *S*         I
+           I  **   ***S**  *****S*  *   **   *     *S        *S*         I
+           I  **   ***S**  *****S*  *   **  ***   **S        *S*         I
+     -16.65I  **   ***S**  *****S* **   **  ***   **S        *S*         I    -16.65
+           I  **   ***S**  *****S* ***  **  ***   **S        *S*         I
+           I  ***  ***S**  *****S***** ***  ***   **S        *S*         I
+           I  ***  ***S**  *****S***** ***  ***   **S     * **S*         I
+     -17.64I  ***  ***S**  *****S***** ***S****   **S*    ****S*         I    -17.64
+           I  ***  ***S**  *****S***** ***S*****  **S*    ****S*         I
+           I  ***  ***S** ******S*********S*****  **S*    ****S*         I
+           I  *** ****S*********S*********S***** ***S*    ****S*    *    I
+     -18.62I  *** ****S*********S*********S*********S*   *****S*    *    I    -18.62
+           I  *** ****S*********S*********S*********S*   *****S*    *    I
+           I  ********S*********S*********S*********S*   *****S*    *    I
+           I  ********S*********S*********S*********S*   *****S*    *    I
+     -19.61I *********S*********S*********S*********S*   *****S*    *    I    -19.61
+           I *********S*********S*********S*********S*   *****S*    *    I
+           I *********S*********S*********S*********S*   *****S*   ***   I
+           I *********S*********S*********S*********S*   *****S*   ***   I
+     -20.60I *********S*********S*********S*********S*  ******S*T  ***  SI    -20.60
+           I**********S*********S*********S*********S*T ******S*T  ***  SI
+           I**********S*********S*********S*********S*T ******S*T  *** *SI
+           I**********S*********S*********S*********S*T ******S*T  *****SI
+     -21.58I**********S*********S*********S*********S*T ******S*T  *****SI    -21.58
+           I**********S*********S*********S*********S*T*******S*T  *****SI
+           I**********S*********S*********S*********S*T*******S*T  *****SI
+           I**********S*********S*********S*********S*T*******S*T ******SI
+     -22.57I**********S*********S*********S*********S*T*******S*T*******SI    -22.57
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+</pre>
+
+<a name="pos00032"></a>
+
+<p class="right"><a href="#skip00032" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00031">Previous Table</a> | <a href="#index00032">Index</a> | <a href="#pos00033">Next Table</a></p>
+
+<a name="skip00032"></a>
+
+<p class="right"><a href="#pos00033" title="Skip ASCII plot of Table G 1  10*LOG(SPECTRUM) of the differenced, transformed Seasonally Adjusted Data (Table E2)." class="skiplinks">&nbsp;</a></p>
+
+<h3>G 1  10*LOG(SPECTRUM) of the differenced, transformed Seasonally Adjusted Data (Table E2).</h3>
+
+<h3 class="indent">     Spectrum estimated from 2015.May to 2023.Apr.</h3>
+<pre>
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -13.29I                                                             I    -13.29
+           I   *                                                         I
+           I   *                                                         I
+           I   *                                                         I
+     -14.95I   *                                                         I    -14.95
+           I   *   **                                                    I
+           I  **   **        *                                           I
+           I  **   **        *                                           I
+     -16.60I  **   **        *                                           I    -16.60
+           I  **   **        *                                           I
+           I  **   **        *                                           I
+           I  **   **        *                                           I
+     -18.26I  **   **        *                                           I    -18.26
+           I  ***  **        *                                           I
+           I  ***  **        *                                           I
+           I  ***  **        *                                           I
+     -19.92I **** ***        *                                           I    -19.92
+           I **** ***        *                                           I
+           I ********    *  **                                           I
+           I**********   *  **         *                                 I
+     -21.57I**********   *  **         *                                 I    -21.57
+           I**********  **  **         *                                 I
+           I**********  *** **         *        *                        I
+           I**********  *** **         *        *                        I
+     -23.23I**********  ******         *        *                        I    -23.23
+           I**********S*******         *    *   *                        I
+           I**********S*******         *    *   *        **              I
+           I**********S********        *    *   *       ***              I
+     -24.89I**********S********        *    *   *       ***     T        I    -24.89
+           I**********S********       **    *   *       ***     T        I
+           I**********S********       **    **  *       ***     T   *    I
+           I**********S********       **    ** **       ***     T*  *    I
+     -26.55I**********S********    *  **    ** **       ****    T*  *    I    -26.55
+           I**********S********    *  **    ** **       ****    T*  *    I
+           I**********S********    *  **    ** ***      ****    T*  **   I
+           I**********S********   **  **    ******      ****    T*  **   I
+     -28.20I**********S********   **  ***   ******      ****    T* ***   I    -28.20
+           I**********S********   *******  *******      ****    T* ***   I
+           I**********S*********  *******  *******     *****    T*****   I
+           I**********S*********  *******  *******     *****    T*****   I
+     -29.86I**********S*********  *******  *******     *****   *T*****   I    -29.86
+           I**********S********* ********  *******     ******  *T*****   I
+           I**********S*********S********  *******     ******  *T*****   I
+           I**********S*********S********  *******     ******  *T******  I
+     -31.52I**********S*********S*********S*******     ******  *T******  I    -31.52
+           I**********S*********S*********S*******     ****** S*T******  I
+           I**********S*********S*********S********    *******S*T******  I
+           I**********S*********S*********S********   T*******S*T******* I
+     -33.17I**********S*********S*********S********   T*******S*T*******SI    -33.17
+           I**********S*********S*********S********   T*******S*T*******SI
+           I**********S*********S*********S********   T*******S*T*******SI
+           I**********S*********S*********S********* *T*******S*T*******SI
+     -34.83I**********S*********S*********S*********S*T*******S*T*******SI    -34.83
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+</pre>
+
+<a name="pos00033"></a>
+
+<p class="right"><a href="#skip00033" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00032">Previous Table</a> | <a href="#index00033">Index</a> | <a href="#pos00034">Next Table</a></p>
+
+<a name="skip00033"></a>
+
+<p class="right"><a href="#pos00034" title="Skip ASCII plot of Table G 2  10*LOG(SPECTRUM) of the Modified Irregular (Table E3).  " class="skiplinks">&nbsp;</a></p>
+
+<h3>G 2  10*LOG(SPECTRUM) of the Modified Irregular (Table E3).  </h3>
+
+<h3 class="indent">     Spectrum estimated from 2015.May to 2023.Apr.</h3>
+<pre>
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+     -22.95I                 *                                           I    -22.95
+           I                 *                                           I
+           I                 *                                           I
+           I                 *         *                                 I
+     -24.26I                 *         *                                 I    -24.26
+           I                 *         *                                 I
+           I                 *         *                                 I
+           I                 *         *                                 I
+     -25.56I                 *         *                                 I    -25.56
+           I                 *         *        *                        I
+           I                 *         *        *                        I
+           I                 *         *        *                        I
+     -26.87I                 *         *    *   *                        I    -26.87
+           I                 *         *    *   *                        I
+           I                 *         *    *   *                        I
+           I                **         *    *   *                        I
+     -28.17I                **         *    *   *                        I    -28.17
+           I                ***        *    *   *                        I
+           I                ***        *    *   *                        I
+           I                ***        *    *   *                        I
+     -29.48I                ***       **    *   *        **              I    -29.48
+           I                ***       **    **  *       ***              I
+           I             ******       **    **  *       ***              I
+           I             ******       **    ** **       ***              I
+     -30.78I             ******       **    ** **       ***              I    -30.78
+           I             ******       **    ** **       ***     T        I
+           I             ******       **    ** **       ***     T   *    I
+           I             ******    *  ***   ** **       ***     T   *    I
+     -32.09I            *******    *  ***   ******      ****    T*  *    I    -32.09
+           I            *******    ** ***   ******      ****    T*  *    I
+           I  *         *******    ******  *******      ****    T*  *    I
+           I  **        *******    ******  *******      ****    T*  *    I
+     -33.39I  **        ********   ******  *******      ****    T*  *    I    -33.39
+           I  **        ********  *******  *******      ****    T*  *    I
+           I  **       *********  *******  *******      ****    T* ***   I
+           I  **     * *********  *******  *******      ****    T* ***   I
+     -34.70I ***    **S*********  *******  *******     *****    T* ***   I    -34.70
+           I ***    **S*********  *******  *******     *****    T*****   I
+           I ***    **S*********  *******  *******     *****    T*****   I
+           I*****   **S*********S*********S*******     *****   *T*****   I
+     -36.00I*****  ***S*********S*********S*******     ******  *T*****   I    -36.00
+           I*****  ***S*********S*********S*******     ******  *T*****   I
+           I*****  ***S*********S*********S*******     ******  *T*****   I
+           I*****  ***S*********S*********S********    ******  *T*****   I
+     -37.31I**********S*********S*********S********    ******  *T*****   I    -37.31
+           I**********S*********S*********S********    ******  *T******  I
+           I**********S*********S*********S********   T****** S*T******  I
+           I**********S*********S*********S********   T*******S*T******  I
+     -38.61I**********S*********S*********S********   T*******S*T******  I    -38.61
+           I**********S*********S*********S********   T*******S*T******  I
+           I**********S*********S*********S*********  T*******S*T******  I
+           I**********S*********S*********S*********  T*******S*T******* I
+     -39.92I**********S*********S*********S*********S*T*******S*T*******SI    -39.92
+ ++++++++++I+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++I
+            S=SEASONAL FREQUENCIES, T=TRADING DAY FREQUENCIES
+</pre>
+
+<a name="pos00034"></a>
+
+<p class="right"><a href="#skip00034" title="Skip navagation link" class="skiplinks">&nbsp;</a> 
+<a href="#pos00033">Previous Table</a> | <a href="#index00034">Index</a> | <a href="#pos00035">Next Table</a></p>
+
+<a name="skip00034"></a>
+
+<h3>  Peak probabilities for Tukey spectrum estimator</h3>
+
+<p>Tukey spectrum estimated from 2015.May to 2023.Apr.</p>
+<div id="spc0001">
+<table class="w60"
+  summary ="Peak probabilities for Tukey spectrum estimator" >
+<caption><strong>Peak probabilities for Tukey spectrum estimator</strong></caption>
+<tr>
+
+<td class="head">&nbsp;</td>
+<th scope="col"><abbr title="Seasonal Frequency 1">S1</abbr></th>
+<th scope="col"><abbr title="Seasonal Frequency 2">S2</abbr></th>
+<th scope="col"><abbr title="Seasonal Frequency 3">S3</abbr></th>
+<th scope="col"><abbr title="Seasonal Frequency 4">S4</abbr></th>
+<th scope="col"><abbr title="Seasonal Frequency 5">S5</abbr></th>
+<th scope="col"><abbr title="Seasonal Frequency 6">S6</abbr></th>
+<th scope="col"><abbr title="Trading Day">TD</abbr></th>
+</tr>
+<tr>
+<th scope="row"> Model Residuals</th>
+<td class="center"> 0.427</td>
+<td class="center"> 0.304</td>
+<td class="center"> 0.361</td>
+<td class="center"> 0.802</td>
+<td class="center"> 0.587</td>
+<td class="center"> 0.465</td>
+<td class="center"> 0.675</td>
+</tr>
+<tr>
+<th scope="row"> Original Series (Table A1 or B1)</th>
+<td class="center"> 0.316</td>
+<td class="center"> 0.961
+<a href="#footnote0029" class="longdesc">Link to definition of   *   </a>
+<a name="foot0029"></a>  *   </td>
+<td class="center"> 0.122</td>
+<td class="center"> 0.995
+<a href="#footnote0030" class="longdesc">Link to definition of   **  </a>
+<a name="foot0030"></a>  **  </td>
+<td class="center"> 0.981
+<a href="#footnote0031" class="longdesc">Link to definition of   *   </a>
+<a name="foot0031"></a>  *   </td>
+<td class="center"> 0.487</td>
+<td class="center"> 0.501</td>
+</tr>
+<tr>
+<th scope="row"> Seasonally adjusted series (E2)</th>
+<td class="center"> 0.004</td>
+<td class="center"> 0.125</td>
+<td class="center"> 0.466</td>
+<td class="center"> 0.198</td>
+<td class="center"> 0.195</td>
+<td class="center"> 0.412</td>
+<td class="center"> 0.074</td>
+</tr>
+<tr>
+<th scope="row"> Modified Irregular (E3)</th>
+<td class="center"> 0.372</td>
+<td class="center"> 0.112</td>
+<td class="center"> 0.400</td>
+<td class="center"> 0.146</td>
+<td class="center"> 0.183</td>
+<td class="center"> 0.379</td>
+<td class="center"> 0.086</td>
+</tr>
+</table></div>
+
+<p>&nbsp;</p>
+
+<p>&nbsp; ---------- <br> &nbsp; ** - Peak Probability > 0.99, <br> &nbsp; * - 0.90 < Peak Probability < 0.99</p>
+
+<a name="pos00035"></a>
+
+<dl id="content-footnotes">
+<dt id="footnote0001">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0001">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0002">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0002">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0003">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0003">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0004">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0004">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0005">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0005">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0006">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0006">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0007">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0007">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0008">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0008">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0009">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0009">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0010">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0010">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0011">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0011">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0012">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0012">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0013">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0013">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0014">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0014">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0015">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0015">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0016">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0016">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0017">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0017">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0018">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0018">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0019">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0019">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0020">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0020">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0021">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0021">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0022">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0022">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0023">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0023">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0024">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0024">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0025">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0025">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0026">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0026">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0027">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0027">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0028">Definition of *</dt>
+<dd>
+<p>Extreme value as determined by X-11 extreme value procedure.</p>
+<p><a href="#foot0028">Back to Table D 8.B</a></p>
+</dd>
+<dt id="footnote0029">Definition of *</dt>
+<dd>
+<p>Tukey spectral peak probability greater than 0.99</p>
+<p><a href="#foot0029">Back to Tukey Spectral Peaks Table</a></p>
+</dd>
+<dt id="footnote0030">Definition of **</dt>
+<dd>
+<p>Tukey spectral peak probability greater than 0.90</p>
+<p><a href="#foot0030">Back to Tukey Spectral Peaks Table</a></p>
+</dd>
+<dt id="footnote0031">Definition of *</dt>
+<dd>
+<p>Tukey spectral peak probability greater than 0.99</p>
+<p><a href="#foot0031">Back to Tukey Spectral Peaks Table</a></p>
+</dd>
+</dl>
+</div>
+
+<div id="rightnavigation">
+
+<a name="index"></a>
+
+<h2>Index for Rout.html</h2>
+<ul class="indentnav">
+<li><a name="index00001" href="#pos00001">Program Header</a></li>
+<li><a name="index00002" href="#pos00002">Content of input specification file</a></li>
+<li><a name="index00003" href="#pos00003"><abbr title="Akaike information criterion">AIC</abbr> test for transformation</a></li>
+<li><a name="index00004" href="#pos00004">A 1  Time series data (for the span analyzed)</a></li>
+<li><a name="index00005" href="#pos00005">Automatic ARIMA model selection</a></li>
+<li><a name="index00006" href="#pos00006">ARIMA model</a></li>
+<li><a name="index00007" href="#pos00007">Maximized log-likelihood and model selection criteria</a></li>
+<li><a name="index00008" href="#pos00008">Durbin-Watson statistic for model residuals</a></li>
+<li><a name="index00009" href="#pos00009">Friedman non-parametric test for residual seasonality</a></li>
+<li><a name="index00010" href="#pos00010">QS Statistic for regARIMA Model Residuals</a></li>
+<li><a name="index00011" href="#pos00011">Plot of Spectrum of the regARIMA model residuals</a></li>
+<li><a name="index00012" href="#pos00012">Forecasting</a></li>
+<li><a name="index00013" href="#pos00013">B 1  Original series (prior adjusted)</a></li>
+<li><a name="index00014" href="#pos00014">C 17  Final weights for irregular component</a></li>
+<li><a name="index00015" href="#pos00015">D 8  Final unmodified SI ratios</a></li>
+<li><a name="index00016" href="#pos00016">D 8.B  Final unmodified SI ratios, with labels for outliers and extreme values</a></li>
+<li><a name="index00017" href="#pos00017">D 9  Final replacement values for SI ratios</a></li>
+<li><a name="index00018" href="#pos00018">D 9.A  Moving seasonality ratio</a></li>
+<li><a name="index00019" href="#pos00019">D 10  Final seasonal factors</a></li>
+<li><a name="index00020" href="#pos00020">D 11  Final seasonally adjusted data</a></li>
+<li><a name="index00021" href="#pos00021">D 12  Final trend cycle</a></li>
+<li><a name="index00022" href="#pos00022">D 13  Final irregular component</a></li>
+<li><a name="index00023" href="#pos00023">D 16  Combined adjustment factors</a></li>
+<li><a name="index00024" href="#pos00024">E 4  Ratios of annual totals</a></li>
+<li><a name="index00025" href="#pos00025">E 5  Month-to-month percent change in the original series</a></li>
+<li><a name="index00026" href="#pos00026">E 6  Month-to-month percent change in seasonally adjusted series (D11)</a></li>
+<li><a name="index00027" href="#pos00027">E 7  Month-to-month percent change in final trend cycle (D12)</a></li>
+<li><a name="index00028" href="#pos00028">E 8  Month-to-month percent change in original series adjusted for calendar factors (A18)</a></li>
+<li><a name="index00029" href="#pos00029">E 18  Final adjustment ratios</a></li>
+<li><a name="index00030" href="#pos00030">QS diagnostic to detect seasonality</a></li>
+<li><a name="index00031" href="#pos00031">Plot of Spectrum of the original series</a></li>
+<li><a name="index00032" href="#pos00032">Plot of Spectrum of differenced seasonally adjusted series</a></li>
+<li><a name="index00033" href="#pos00033">Plot of Spectrum of irregular component</a></li>
+<li><a name="index00034" href="#pos00034">Peak probabilties for the Tukey spectrum</a></li>
+</ul>
+
+<p>&nbsp;</p>
+ <hr> 
+<ul class="indentnav">
+<li> <a href="Rout_err.html"> Error Messages </a> </li>
+<li> <a href="Rout_log.html#pos00001"> Log Entry </a> </li>
+</ul>
+
+<p>&nbsp;</p>
+</div>
+</body>
+</html>
