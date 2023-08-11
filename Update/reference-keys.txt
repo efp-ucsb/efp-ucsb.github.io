@@ -10,3 +10,6 @@ san-luis-obispo-industries
 comparison
 aggregate-comparison
 tri-county-comparison
+realestate
+zillow-home-value-index
+santa-barbara-county-recorders-data
