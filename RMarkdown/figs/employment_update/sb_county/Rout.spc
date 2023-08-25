@@ -1,7 +1,7 @@
 series{
 save=(a1 b1)
 title="R Output for x12a"
-start=2010.1
+start=1976.1
 period=12
 DECIMALS=5
 file = "Rout.dat"
