@@ -1,6 +1,3 @@
-for-more-information-visit-the-county-of-santa-barbara-website-here
-for-more-information-visit-the-glenn-burdette-website-here
-directors-message-2023
 snap
 local-finance
 savings-and-time-deposits
@@ -18,9 +15,6 @@ drought-recovery
 activity
 gdp
 prices
-inflation-and-retail-sales
-inflation
-retail-sales
 employment-and-income
 employment
 santa-barbara-county-employment
