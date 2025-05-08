@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Avenir";
+  src: url(https://webfonts.brand.ucsb.edu/webfont.min.css");
+}
+* {
+  font-family:Avenir, "Century Gothic", sans-serif; 
+  font-weight:100; 
+  font-style:normal;
+}
+
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+hr {
+  background-color: #0000FF !important;
+}
+
+.book .book-header h1 {
+  opacity: 1 !important;
+}
+.book-header {
+  background: #003660 !important;
+}
+.summary {
+  background: #003660;
+}
+.chapter a, .book-header a {
+  color: #FFFFFF !important;
+}
+.chapter.active>a {
+  overflow: unset !important;
+  color: #003660 !important;
+  z-index: 1000;
+}
+.chapter.active>a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 100%;
+  background-color: white !important;
+  z-index: -1;
+}
+.chapter a:hover {
+  color: #003660 !important;
+  overflow: unset !important;
+  position: relative;
+  z-index: 1000;
+}
+.chapter a:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1000px;
+  height: 100%;
+  background-color: #DCE1E5 !important;
+  z-index: -1;
+}
+.book .book-body {
+  background-color: #DCE1E5;
+}
+.js-toolbar-action[title="Search"] {
+  display: none !important;
+}
+.js-toolbar-action[title="Facebook"] {
+  display: none !important;
+}
+.js-toolbar-action[title="Twitter"] {
+  display: none !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .page-inner .normal {
+    padding-right: 4em !important;
+    padding-left: 4em !important;
+  }
+}
+
+
+
+/* Make the main content wider */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 1200px; /* default is ~800px */
+  margin: 0 auto;
+}
