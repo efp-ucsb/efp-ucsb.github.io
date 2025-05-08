@@ -1,4 +1,3 @@
-donor
 snap
 local-finance
 savings-and-time-deposits
