@@ -100,3 +100,18 @@ hr {
 body {
     font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+a {
+  color: #005fcc;
+  text-decoration: underline;
+}
+a:focus {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
