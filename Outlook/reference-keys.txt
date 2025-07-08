@@ -24,7 +24,7 @@ net-income
 the-herfindahl-hirschman-index
 pension
 oil-and-gas
-federal-offshore-oil-production
+federal-offshore-oil-production-padd-5
 agriculture
 total-crop-production
 leading-crops
@@ -47,10 +47,9 @@ affordability
 housing-prices-and-sales
 sales-price-vs.-list-price
 sb-south-coast-single-family-home-listings-sales-and-prices
-sales-price-vs.-list-price-1
 santa-barbara-and-goleta-condominium-listings-sales-and-prices
 housing-permits
-commerical-real-estate
+commercial-real-estate
 radius-insight-2025q1-south-coast-market-report
 office
 industrial
