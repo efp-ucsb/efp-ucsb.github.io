@@ -30,6 +30,10 @@ total-crop-production
 leading-crops
 wine-grape-production
 drought-recovery
+industrial-opinions-in-santa-barbara-county
+key-points
+whats-your-biggest-concern-about-your-industry-for-the-santa-barbara-county
+how-would-you-propose-santa-barbara-dealt-with-this-issue
 activity
 gdp
 prices
